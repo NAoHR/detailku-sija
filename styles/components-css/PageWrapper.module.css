@@ -1,7 +1,7 @@
 .main_full{
     width: 100vw;
     height: 100vh;
-    padding-top:60px;
+    /* padding-top:60px; */
     display: flex;
     justify-content: center;
 }

@@ -2,8 +2,8 @@
     width: 1250px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right:20px;
+    padding-left: 50px;
+    padding-right:50px;
     z-index: 5;
     align-self: center;
     display: flex;
@@ -15,7 +15,6 @@
     width: 400px;
     height: 350px;
     padding-right: 20px;
-    /* border: 1px solid black; */
 }
 .main_text{
     font-family: 'Bebas Neue', cursive;
@@ -24,8 +23,14 @@
     color: var(--black);
     word-spacing: 10px;
 }
+.right_side{
+    height: 350px;
+    /* background: black; */
+    display: flex;
+    align-items: center;
+}
 .image_logo{
-    width: 630px;
+    width: 400px;
     height: auto;
 }
 
@@ -46,11 +51,11 @@
     }
 }
 
-@media screen and (max-width: 993px) {
+/* @media screen and (max-width: 993px) {
     .image_logo{
-        width: 500px;
+        width: 300px;
     }
-}
+} */
 
 @media screen and (max-width: 787px) {
     .main_content_opener{
@@ -68,14 +73,18 @@
     .left_side{
         width: 60%;
     }
-    .image_logo{
+    .right_side{
         width: 60%;
-        height: auto;
+    }
+    .image_logo{
+        width: 70%;
+        height: 70%;
     }
     .right_side{
         margin: 0 auto;
         display: flex;
         justify-content: center;
+        height: 250px;
     }
 }
 
@@ -88,18 +97,21 @@
     }
     .p_text{
         text-align: center;
+        font-size: .9em;
     }
     .main_text{
+        font-size: 2em;
         text-align: center;
     }
     .left_side{
-        width: 100%;
+        width: 80%;
     }
     .image_logo{
         width: 100%;
         height: auto;
     }
     .right_side{
+        width: 60%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
