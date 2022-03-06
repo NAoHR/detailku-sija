@@ -55,7 +55,7 @@ export default function Navbar(){
                             </a>
                         </Link>
                     </div>
-                    <h1 className={style.icon_wrapper} >
+                    <h1 className={style.icon_wrapper} style={{color : expand ? "var(--white)" : "var(--black)", transition : ".5s"}} >
                         {expand ? <FaTimes /> : <FaBars />}
                     </h1>
                 </div>

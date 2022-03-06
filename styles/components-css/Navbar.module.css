@@ -32,6 +32,7 @@
     /* background: salmon; */
 }
 .icon_wrapper{
+    transition: 1s;
     font-size: 1.5em;
     color : var(--black);
     display: none;

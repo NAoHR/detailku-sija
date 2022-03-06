@@ -37,6 +37,21 @@
 .orange{
     color: var(--orange);
 }
+.explore_wrapper{
+    width: 180px;
+    height: 45px;
+    background: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.explore_text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color : var(--white);
+    font-weight: 600;
+}
 .p_text{
     font-family: 'Poppins', sans-serif;
     color: var(--black);
@@ -63,6 +78,10 @@
         width: 90%;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .explore_wrapper{
+        width: 80%;
+        margin: 0 auto;
     }
     .p_text{
         text-align: center;
