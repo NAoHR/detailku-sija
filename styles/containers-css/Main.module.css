@@ -1,0 +1,107 @@
+.main_content_opener{
+    width: 1250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    z-index: 5;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+}
+.left_side{
+    width: 400px;
+    height: 350px;
+    padding-right: 20px;
+    /* border: 1px solid black; */
+}
+.main_text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    margin-bottom: 2px;
+    color: var(--black);
+    word-spacing: 10px;
+}
+.image_logo{
+    width: 630px;
+    height: auto;
+}
+
+.orange{
+    color: var(--orange);
+}
+.p_text{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-weight: 500;
+    
+}
+@media screen and (max-width: 1310px) {
+    .main_content_opener{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .image_logo{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .main_content_opener{
+        flex-direction: column-reverse;
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .p_text{
+        text-align: center;
+    }
+    .main_text{
+        text-align: center;
+    }
+    .left_side{
+        width: 60%;
+    }
+    .image_logo{
+        width: 60%;
+        height: auto;
+    }
+    .right_side{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .main_content_opener{
+        flex-direction: column-reverse;
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .p_text{
+        text-align: center;
+    }
+    .main_text{
+        text-align: center;
+    }
+    .left_side{
+        width: 100%;
+    }
+    .image_logo{
+        width: 100%;
+        height: auto;
+    }
+    .right_side{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}

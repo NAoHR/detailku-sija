@@ -1,0 +1,124 @@
+.nav_wrapper{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    /* background: var(--orange); */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
+}
+.center_wrapper{
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    /* background: var(--orange); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_side{
+    width: 100px;
+    height: 100%;
+    /* background: salmon; */
+}
+.align_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_side{
+    height: 100%;
+    width: 100px;
+    /* background: salmon; */
+}
+.icon_wrapper{
+    font-size: 1.5em;
+    color : var(--black);
+    display: none;
+    z-index: 10;
+}
+
+.center_side{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    height: 100%;
+}
+
+.center_side_content{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.login_box{
+    width: 90px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.text_content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.expander{
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 100vh;
+    background: var(--orange);
+    position: fixed;
+    right: 0px;
+    transition: .6s;
+    display: none;
+    overflow: hidden;
+    z-index: 2;
+}
+.smkn_logo{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+    .center_wrapper{
+        width: 100%;
+        padding-left: 20px;
+        padding-right:20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .login_box{
+        display: none;
+    }
+    .center_side{
+        display: none;
+    }
+    .icon_wrapper{
+        display: flex;
+    }
+    div.expander{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .expander_item{
+        padding: 10px;
+    }
+    .expander_text{
+        color: var(--white);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8em;
+    }
+    .center_wrapper{
+        width: 100%;
+        padding-left: 5px;
+        padding-right:5px;
+    }
+}
