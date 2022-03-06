@@ -1,29 +1,40 @@
 .main_wrapper{
-    position: relative;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+}
+.main_padding{
     padding-bottom: 80px;
     padding-top: 80px;
 }
-
-@media screen and (max-height: 980px) {
-    div.main_wrapper {
-        padding-bottom: 0px;
-        padding-top: 0px;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.testing{
+    width: 100vw;
+    height: 1000px;
+    background: purple;
 }
+div.main_content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.balls_right{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--bold-white);
+    clip-path: circle(39.5% at 85% 17%);
 
-
+}
 .main_content_opener{
     width: 1250px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* background: blue; */
+    padding-top: 80px;
+    padding-bottom: 80px;
     padding-left: 50px;
     padding-right:50px;
     z-index: 5;
@@ -32,10 +43,46 @@
     align-items: center;
     /* background: red; */
 }
+@media screen and (max-height: 980px) {
+    div.main_wrapper {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.main_padding{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    div.main_content{
+        position: relative;
+        height: 100vh;;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+
+.main_content_opener{
+    margin: 0 auto;
+    width: 1250px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right:50px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+}
+
 .left_side{
     width: 400px;
     height: 350px;
     padding-right: 20px;
+    z-index: 8;
 }
 .main_text{
     font-family: 'Bebas Neue', cursive;
@@ -45,6 +92,7 @@
     word-spacing: 10px;
 }
 .right_side{
+    z-index: 8;
     height: 350px;
     /* background: black; */
     display: flex;
@@ -188,3 +236,4 @@
         justify-content: center;
     }
 }
+
