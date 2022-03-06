@@ -1,0 +1,16 @@
+.balls{
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bold-white);
+    clip-path: circle(39.7% at 87% 25%);
+    top: 0px;
+    right: 0px;
+}
+@media screen and (max-width: 780px) {
+    .balls{
+        transition: 1s;
+        clip-path: circle(29.6% at 81% 21%);
+    }
+}

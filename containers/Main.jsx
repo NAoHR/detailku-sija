@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import PageWrapper from "../components/PageWrapper";
+import Balls from "../components/Balls";
 import style from "../styles/containers-css/Main.module.css";
 import Link from "next/link";
 
@@ -7,7 +7,8 @@ const Main = () => {
     return (
         <>
         <Navbar />
-        <PageWrapper pt="60px" ch="res">
+        <div className={style.main_wrapper}>
+            <Balls />
             <div className={style.main_content_opener}>
                     <div className={style.left_side}>
                         <h1 className={style.main_text}>
@@ -26,7 +27,9 @@ const Main = () => {
                         <img src="/sija_logo.png" alt="logo_sija.png" className={style.image_logo}/>
                     </div>
             </div>
-        </PageWrapper>
+        </div>
+        {/* <PageWrapper pt="60px" ch="res">
+        </PageWrapper> */}
         </>
     )
 }
