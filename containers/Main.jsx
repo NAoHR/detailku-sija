@@ -1,4 +1,4 @@
-import style from "../styles/containers-css/Testing.module.css";
+import style from "../styles/containers-css/Main.module.css";
 import Navbar from "../components/Navbar";
 import People_landing from "../components/People_landing";
 import Link from "next/link";
