@@ -135,6 +135,7 @@ div.lovely_who_wrapper.lovely_who{
     position: relative;
     z-index: 9;
     width: 80%;
+    
     padding-bottom: 10px;
     /* background: blue; */
     display: flex;
@@ -273,6 +274,9 @@ div.lovely_who_wrapper.lovely_who{
         margin: 0;
         width: 180px;
     }
+    .lovely_detail_who{
+        width: 90%;
+    }
     /* Main - close */
 }
 @media (max-height: 640px){
@@ -324,7 +328,11 @@ div.lovely_who_wrapper.lovely_who{
     }
     /* Main - close */
 }
-
+@media (min-width : 1024px){
+    .lovely_detail_who{
+        width: 95%;
+    }
+}
 @media (min-height : 766px) and (min-width : 600px){
     /* Main - open */
     .lovely_wrapper{
@@ -350,6 +358,9 @@ div.lovely_who_wrapper.lovely_who{
     .lovely_right{
         width: 45%;
         padding-left: 90px;
+    }
+    .lovely_detail_who{
+        width: 1000px;
     }
     /* Main - close */
 }
