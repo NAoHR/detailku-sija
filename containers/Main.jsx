@@ -42,13 +42,13 @@ const Main = () => {
                                     </div>
                                 </div>
                                 <p className={style.lovely_who_text}>
-                                    Kami adalah jurusan Sistem Informatika Jaringan dan Aplikasi dengan program studi empat tahun yang memiliki perangkat penunjang yang memadai demi kenyamanan belajar dan mengajar
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo consectetur omnis officiis iste dolore! Unde earum laudantium, nisi ipsum mollitia, accusamus, maiores ad dolores saepe tempora aliquam ex. Maxime, delectus.
                                 </p>
                             </div>
                         <div className={style.lovely_detail_who}>
-                            <People_landing num="99" title="Jumlah Pendidik"/>
-                            <People_landing num="99" title="Jumlah Kelas"/>
-                            <People_landing num="99" title="Jumlah Murid"/>
+                            <People_landing num="99" title="Jumlah Pendidik" keyNum="0" />
+                            <People_landing num="1000" title="Jumlah Kelas" keyNum="1" />
+                            <People_landing num="200" title="Jumlah Murid" keyNum="2" />
                         </div>
                     </div>
                 </div>
