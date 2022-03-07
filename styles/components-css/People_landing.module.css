@@ -1,0 +1,53 @@
+.lovely_who_card{
+    /* background: yellow; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lovely_image_card{
+    width: 120px;
+    height: auto;
+}
+.lovely_card_num{
+    font-size: 1.9em;
+    color: var(--black);
+}
+.lovely_card_text{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    margin: 0px;
+}
+@media (max-width:846px){
+    div.lovely_detail_who{
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+    }
+    .lovely_who_card{
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .lovely_image_card{
+        width: 50%;
+        height: auto;
+    }
+    .lovely_card_num{
+        font-size: 1.5em;
+        color: var(--black);
+    }
+    .lovely_card_text{
+        font-size: 1.1em;
+        margin: 0px;
+    }
+}

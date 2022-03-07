@@ -1,5 +1,6 @@
-import style from "../styles/containers-css/Main.module.css";
+import style from "../styles/containers-css/Testing.module.css";
 import Navbar from "../components/Navbar";
+import People_landing from "../components/People_landing";
 import Link from "next/link";
 
 const Main = () => {
@@ -41,25 +42,13 @@ const Main = () => {
                                     </div>
                                 </div>
                                 <p className={style.lovely_who_text}>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo consectetur omnis officiis iste dolore! Unde earum laudantium, nisi ipsum mollitia, accusamus, maiores ad dolores saepe tempora aliquam ex. Maxime, delectus.
+                                    Kami adalah jurusan Sistem Informatika Jaringan dan Aplikasi dengan program studi empat tahun yang memiliki perangkat penunjang yang memadai demi kenyamanan belajar dan mengajar
                                 </p>
                             </div>
                         <div className={style.lovely_detail_who}>
-                            <div className={style.lovely_who_card}>
-                                <div className={style.lovely_card_ball}>
-
-                                </div>
-                            </div>
-                            <div className={style.lovely_who_card}>
-                                <div className={style.lovely_card_ball}>
-                                    
-                                </div>
-                            </div>
-                            <div className={style.lovely_who_card}>
-                                <div className={style.lovely_card_ball}>
-                                    
-                                </div>
-                            </div>
+                            <People_landing num="99" title="Jumlah Pendidik"/>
+                            <People_landing num="99" title="Jumlah Kelas"/>
+                            <People_landing num="99" title="Jumlah Murid"/>
                         </div>
                     </div>
                 </div>
@@ -67,7 +56,8 @@ const Main = () => {
             <div className={style.absolute_lovely_ball}>
 
             </div>
-        </>)
+        </>
+    )
 }
 
 export default Main;

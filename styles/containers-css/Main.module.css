@@ -75,6 +75,7 @@ div.lovely_who_wrapper.lovely_who{
     justify-content: center;
     align-items: center;
     min-height: auto;
+    margin-bottom: 60px;
 }
 .lovely_flexed_who{
     width: 90%;
@@ -131,38 +132,21 @@ div.lovely_who_wrapper.lovely_who{
     clip-path: circle(30% at 30% 30%);
 }
 .lovely_detail_who{
-    margin: 20px auto;
+    width: 800px;
+    height: 300px;
+    /* background: green; */
     position: relative;
-    z-index: 9;
-    width: 80%;
-    
-    padding-bottom: 10px;
-    /* background: blue; */
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
-.lovely_who_card{
-    width: 250px;
-    height: 280px;
-    background: var(--orange);
-    border-radius: 12px;
-    margin: 8px;
-    position: relative;
-    transition: .5s;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-}
-.lovely_who_card:hover{
-    transform: scale(1.1);
-    transition: .5s;
-}
-.lovely_card_ball{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #fff;
-    clip-path: circle(75.3% at 66% 10%);
+@media (max-width:846px){
+    div.lovely_detail_who{
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+    }
 }
 /* BELOW - close */
 
@@ -274,9 +258,6 @@ div.lovely_who_wrapper.lovely_who{
         margin: 0;
         width: 180px;
     }
-    .lovely_detail_who{
-        width: 90%;
-    }
     /* Main - close */
 }
 @media (max-height: 640px){
@@ -328,11 +309,7 @@ div.lovely_who_wrapper.lovely_who{
     }
     /* Main - close */
 }
-@media (min-width : 1024px){
-    .lovely_detail_who{
-        width: 95%;
-    }
-}
+
 @media (min-height : 766px) and (min-width : 600px){
     /* Main - open */
     .lovely_wrapper{
@@ -358,9 +335,6 @@ div.lovely_who_wrapper.lovely_who{
     .lovely_right{
         width: 45%;
         padding-left: 90px;
-    }
-    .lovely_detail_who{
-        width: 1000px;
     }
     /* Main - close */
 }
