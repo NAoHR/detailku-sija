@@ -69,6 +69,13 @@
 /* MAIN - close*/
 
 /* BELOW - open */
+.lovely_circle{
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    width: 100px;
+}
+
 div.lovely_who_wrapper.lovely_who{
     margin-bottom: 0px;
     display: flex;
@@ -82,6 +89,10 @@ div.lovely_who_wrapper.lovely_who{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(10%);
+    position: relative;
 }
 
 .lovely_who_text_wrap{
@@ -177,7 +188,11 @@ div.lovely_who_wrapper.lovely_who{
 
 
 
-
+@media (max-width:823px){
+    .lovely_circle{
+        display: none;
+    }
+}
 
 
 

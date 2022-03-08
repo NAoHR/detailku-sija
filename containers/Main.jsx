@@ -2,8 +2,25 @@ import style from "../styles/containers-css/Main.module.css";
 import Navbar from "../components/Navbar";
 import People_landing from "../components/People_landing";
 import Link from "next/link";
+import { useRef,useEffect } from "react";
 
 const Main = () => {
+    const flexedStatus = useRef(true);
+
+    function animate_flex_who() {
+        const flexedPosition = document.getElementsByClassName(style.lovely_flexed_who)[0];
+            if(flexedPosition.getBoundingClientRect().top < window.innerHeight){
+                flexedPosition.style = "opacity:1;transition:1s;transform: translateY(0%);"
+            }else{
+                flexedPosition.style = "opacity:0;transition:1s;transform: translateY(10%);"
+            }
+    }
+
+    useEffect(()=>{
+        window.addEventListener("scroll",() => {
+            animate_flex_who();
+        })
+    })
     return (
         <>
             <Navbar />
@@ -32,6 +49,7 @@ const Main = () => {
                     <div className={style.lovely_who_ball}>
                     </div>
                     <div className={style.lovely_flexed_who}>
+                        <img src="/3circle.svg" alt="circle" className={style.lovely_circle} />
                             <div className={style.lovely_who_text_wrap}>
                                 <div className={style.lovely_head_wrapper}>
                                     <h1 className={style.lovely_who_head}>
@@ -42,7 +60,7 @@ const Main = () => {
                                     </div>
                                 </div>
                                 <p className={style.lovely_who_text}>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo consectetur omnis officiis iste dolore! Unde earum laudantium, nisi ipsum mollitia, accusamus, maiores ad dolores saepe tempora aliquam ex. Maxime, delectus.
+                                    Jurusan Sistem Informatika Jaringan dan Aplikasi dengan program studi empat tahun yang memiliki perangkat penunjang memadai untuk program belajar dan mengajar
                                 </p>
                             </div>
                         <div className={style.lovely_detail_who}>
