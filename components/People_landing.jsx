@@ -17,7 +17,7 @@ const People_landing = ({num, title,keyNum}) => {
                             document.getElementsByClassName(style.lovely_card_num)[Number(keyNum)].innerHTML = counter
                         }
                         clearInterval();
-                    },10)
+                    },Number(num) > 100 ? 20 : 90)
                     stateRef.current = false;
                 };
             }

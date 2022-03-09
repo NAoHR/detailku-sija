@@ -66,9 +66,9 @@ const Main = () => {
                                     </p>
                                 </div>
                             <div className={style.lovely_detail_who}>
-                                <People_landing num="99" title="Jumlah Pendidik" keyNum="0" />
-                                <People_landing num="1000" title="Jumlah Kelas" keyNum="1" />
-                                <People_landing num="200" title="Jumlah Murid" keyNum="2" />
+                                <People_landing num="5" title="Jumlah Pendidik" keyNum="0" />
+                                <People_landing num="206" title="Jumlah Murid" keyNum="1" />
+                                <People_landing num="9" title="Jumlah Pelajaran" keyNum="2" />
                             </div>
                         </div>
                     </div>
