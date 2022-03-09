@@ -10,7 +10,7 @@ const People_landing = ({num, title,keyNum}) => {
             if(doc < window.innerHeight){
                 if(stateRef.current){
                     console.log("here")
-                    let counter = 0;
+                    let counter = Number(num) > 200 ? Math.floor(Number(num) * (4/5)) : 0;
                     setInterval(()=>{
                         if(Number(num) > counter){
                             counter +=1
