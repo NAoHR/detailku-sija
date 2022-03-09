@@ -72,7 +72,7 @@
     top: 0px;
     width: 0px;
     height: 100vh;
-    background: var(--orange);
+    background: var(--light-black);
     position: fixed;
     right: 0px;
     transition: .6s;
