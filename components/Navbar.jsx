@@ -80,15 +80,6 @@ export default function Navbar(){
                                 </Link>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="/home">
-                                    <a>
-                                        <h1 className={style.expander_text}>
-                                            News
-                                        </h1>
-                                    </a>
-                                </Link>
-                            </div>
-                            <div className={style.expander_item}>
                                 <Link href="/about">
                                     <a>
                                         <h1 className={style.expander_text}>
@@ -110,7 +101,7 @@ export default function Navbar(){
                                 <Link href="/auth/login">
                                     <a>
                                         <h1 className={style.expander_text}>
-                                            Login
+                                            Detailku
                                         </h1>
                                     </a>
                                 </Link>
