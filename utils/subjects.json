@@ -1,0 +1,22 @@
+[
+    {
+        "title" : "Sistem Komputer",
+        "content" : "Pelajaran untuk memberikan konsep dasar komputer pada sisi perangkat keras yang bertujuan untuk mengoptimalkan pemahaman tentang aplikasi komputer dan perangkat keras serta troubleshooting"
+    },
+    {
+        "title" : "Komputer dan Jaringan Dasar",
+        "content" : "Pelajaran untuk memberikan konsep dasar komputer pada sisi perangkat Jaringan yang bertujuan untuk mengoptimalkan pemahaman tentang instalasi jaringan serta troubleshooting"
+    },
+    {
+        "title" : "Pemrograman Dasar",
+        "content" : "Pelajaran untuk memberikan konsep dasar tentang pemrograman, logika dasar dalam pemrograman, struktur data, serta algoritma pada komputer"
+    },
+    {
+        "title" : "Dasar Desain Grafis",
+        "content" : "Pelajaran untuk memberikan konsep dasar tentang Desain Grafis, pemilihan warna, kombinasi warna, serta implementasi desain grafis dalam bentuk product jadi"
+    },
+    {
+        "title" : "Sistem Keamanan Jaringan",
+        "content" : "Pelajaran tingkat selanjutnya dari komputer dan jaringan dasar, pada pembelajaran ini dilakukan pembahasan mengenain cara mengamankan jaringan, defense serta metodologi penyerangan jaringan"
+    }
+]

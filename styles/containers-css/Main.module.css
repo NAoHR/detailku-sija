@@ -84,16 +84,16 @@ div.lovely_who_wrapper.lovely_who{
     min-height: auto;
     margin-bottom: 60px;
     position: relative;
-    z-index: 10;
+    z-index: 6;
 }
 .lovely_flexed_who{
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 1s;
+    transition: 1.2s;
     opacity: 0;
-    transform: translateY(10%);
+    transform: translateY(50px);
     position: relative;
 }
 
@@ -105,7 +105,7 @@ div.lovely_who_wrapper.lovely_who{
 .lovely_who_head{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0px;
     padding: 0px;
     word-spacing: 6px;
@@ -182,6 +182,50 @@ div.lovely_who_wrapper.lovely_who{
 
 
 
+/* SUBJECT - OPEN */
+.lovely_subjects_side{
+    width: 100%;
+    background: var(--black);
+    margin: 0 auto;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.lovely_subject_head{
+    text-align: center;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.lovely_subject_line{
+    width: 90%;
+    height: 6px;
+    background: var(--orange);
+    margin: 0 auto;
+}
+.lovely_subject_text_side{
+    width: 60%;
+    margin: 0 auto;
+}
+.lovely_subject_content{
+    margin-top: 20px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    /* background: red; */
+    flex-wrap: wrap;
+}
+/* SUBJECT - CLOSE */
 
 
 
@@ -211,6 +255,9 @@ div.lovely_who_wrapper.lovely_who{
     }
     .lovely_p_text{
         font-size: 1.2em;
+    }
+    .lovely_who_head{
+        font-size: 1.85em;
     }
     /* Main - close */
 }
@@ -313,6 +360,14 @@ div.lovely_who_wrapper.lovely_who{
         width: 500px;
     }
     /* Main - close */
+}
+
+@media screen and (min-width:974px) {
+    .lovely_subject_content{
+        justify-content: flex-start;
+        margin: 20px auto;
+        width: 974px;
+    }
 }
 
 @media (min-width: 1200px) and (min-height : 1024px) {

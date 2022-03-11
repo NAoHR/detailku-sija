@@ -1,23 +1,31 @@
 import style from "../styles/containers-css/Main.module.css";
 import Navbar from "../components/Navbar";
 import People_landing from "../components/People_landing";
-import Link from "next/link";
-import { useRef,useEffect } from "react";
 import Footer from "../components/Footer";
+import Link from "next/link";
+import Subject_card from "../components/Subject_card";
+import subjects from "../utils/subjects.json";
+
+import { useRef,useEffect } from "react";
+
 
 const Main = () => {
     const flexedStatus = useRef(true);
-
+    
     function animate_flex_who() {
         const flexedPosition = document.getElementsByClassName(style.lovely_flexed_who)[0];
-            if(flexedPosition.getBoundingClientRect().top < window.innerHeight){
-                flexedPosition.style = "opacity:1;transition:1s;transform: translateY(0%);"
-            }else{
-                flexedPosition.style = "opacity:0;transition:1s;transform: translateY(10%);"
-            }
+        let innerheight = window.innerHeight
+        let boundTop = flexedPosition.getBoundingClientRect().top;
+        if(innerheight > boundTop){
+            flexedPosition.style = "opacity:1;transition:1.3s;transform: translateY(0%);"
+        }else{
+            flexedPosition.style = "opacity:0;transition:1.3s;transform: translateY(50px);"
+        }
     }
 
     useEffect(()=>{
+        animate_flex_who();
+
         window.addEventListener("scroll",() => {
             animate_flex_who();
         })
@@ -74,7 +82,23 @@ const Main = () => {
                     </div>
                 </div>
                 <div className={style.absolute_lovely_ball}>
+                </div>
+                <div className={style.lovely_subjects_side}>
+                    <div className={style.lovely_subject_text_side}>
+                        <h1 className={style.lovely_subject_head}>
+                            Subjects
+                        </h1>
+                        <div className={style.lovely_subject_line}>
 
+                        </div>
+                    </div>
+                    <div className={style.lovely_subject_content}>
+                        {
+                            subjects.map((val,index) => {
+                                return <Subject_card title={val.title} desc={val.content} key={val.title.split(" ").join("-")} index={index}/>
+                            })
+                        }
+                    </div>
                 </div>
             </div>
             <Footer />

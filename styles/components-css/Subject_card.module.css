@@ -1,0 +1,60 @@
+.lovely_subject_card{
+    width: 300px;
+    height: 490px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    transition: 1.3s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.lovely_subject_icon_side{
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: var(--orange);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lovely_subject_fill_side{
+    background: var(--light-black);
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 410px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.37) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.lovelY_icon_wrapper{
+    font-size: 45px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--black);
+}
+
+.subject_fill_head{
+    color: var(--white);
+    font-size: 1.4em;
+    text-decoration: underline var(--orange);
+    font-family: 'Poppins', sans-serif;
+}
+.subject_fill_description{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.lovely_head_wrapper{
+    width: 100%;
+    min-height: 80px;
+}
