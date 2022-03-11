@@ -15,7 +15,7 @@ export default function Navbar(){
                 <div className={`${style.left_side} ${style.align_center}`}>
                     <img src="/smkn26_logo.png" alt="smkn26logo" className={style.smkn_logo}/>
                 </div>
-                <div className={`${style.center_side} ${style.align_center}`}>
+                <div className={`${style.center_side}  ${style.align_center}`}>
                     <Link href="/">
                         <a>
                             <h1 className={style.center_side_content}>
@@ -50,7 +50,7 @@ export default function Navbar(){
                         <Link href="/auth/login">
                             <a>
                                 <h1 className={style.text_content}>
-                                    Login
+                                Detailku
                                 </h1>
                             </a>
                         </Link>
@@ -67,7 +67,9 @@ export default function Navbar(){
                         "width" : expand ? "100%" : "0px"
                     }
                     }>
-                        <div className={style.relative_wrapper}>
+                        <div className={style.abs_wrapper_top}></div>
+                        <div className={style.abs_wrapper_bottom}></div>
+                        <div className={style.expander_wrapper}>
                             <div className={style.expander_item}>
                                 <Link href="/">
                                     <a>
