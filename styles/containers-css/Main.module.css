@@ -201,7 +201,7 @@ div.lovely_who_wrapper.lovely_who{
     padding: 0px;
 }
 .lovely_subject_line{
-    width: 90%;
+    width: 200px;
     height: 6px;
     background: var(--orange);
     margin: 0 auto;
@@ -367,6 +367,12 @@ div.lovely_who_wrapper.lovely_who{
         justify-content: flex-start;
         margin: 20px auto;
         width: 974px;
+    }
+    .lovely_subject_head{
+        font-size: 2.2em;
+    }
+    .lovely_subject_line{
+        width: 300px;
     }
 }
 

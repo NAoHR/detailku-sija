@@ -3,7 +3,9 @@ import {FaRegCalendarAlt} from "react-icons/fa";
 import { useEffect } from "react";
 
 export default function Subject_card(props){
-    const {index, title, desc} = props;
+    let {index, title, desc} = props;
+    title = title.split("-");
+
     function bulp(){
         let card = document.getElementsByClassName(style.lovely_subject_card)[Number(index)];
         let card_top = card.getBoundingClientRect().top;
@@ -30,11 +32,11 @@ export default function Subject_card(props){
                 </h1>
             </div>
             <div className={style.lovely_subject_fill_side}>
-                <h1 className={style.subject_fill_head}>
-                    <div className={style.lovely_head_wrapper}>
-                        {title}
-                    </div>
-                </h1>
+                <div className={style.lovely_head_wrapper}>
+                    <h1 className={style.subject_fill_head}>{
+                        title.length > 1 ? <span>{title[0]} <br /> {title[1]} </span> : title[0]
+                    }</h1>
+                </div>
                 <p className={style.subject_fill_description}>
                     {desc}
                 </p>
