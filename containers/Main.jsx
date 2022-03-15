@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import Subject_card from "../components/Subject_card";
 import subjects from "../utils/subjects.json";
+import AchievedCard from "../components/AchievedCard";
 
 import { useRef,useEffect } from "react";
 
@@ -82,6 +83,25 @@ const Main = () => {
                     </div>
                 </div>
                 <div className={style.absolute_lovely_ball}>
+                </div>
+                <div className={style.lovely_wwha}>
+                    <div className={style.lovely_wwha_main}>
+                        <div className={`${style.lovely_wwha_head_wrap}`}>
+                            <h1 className={style.lovely_wwha_head}>
+                                What We Have Achieved
+                            </h1>
+                            <div className={style.lovely_wwha_line}>
+
+                            </div>
+                        </div>
+                        <div className={style.lovely_wwha_content}>
+                            <AchievedCard />
+                            <AchievedCard />
+                            <AchievedCard />
+                        </div>
+                        <div className={style.lovely_wwha_ball}>
+                        </div>
+                    </div>
                 </div>
                 <div className={style.lovely_subjects_side}>
                     <div className={style.lovely_subject_text_side}>

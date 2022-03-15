@@ -1,0 +1,89 @@
+.lovely_wwha_card{
+    border-radius: 8px;
+    width: 90%;
+    height: 530px;
+    position: relative;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-bottom: 8px solid var(--orange);
+    margin: 20px 10px 20px 10px;
+}
+.wwha_card_top{
+    width: 100%;
+    height: 260px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.lovely_wwha_card_image{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(82% at 50% 8%);
+}
+
+.wwha_card_bottom{
+    position: relative;
+    width: 100%;
+    height: 245px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.wwha_card_head{
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    color: var(--light-black);
+    font-size: 1.55em;
+    text-decoration: underline var(--orange);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wwha_sub_head{
+    width: 100%;
+}
+
+.card_decoration{
+    width: 70px;
+    height: 70px;
+    background: var(--white);
+    top: 4px;
+    position: absolute;
+    right: 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_center{
+    font-size: 2em;
+    position: relative;
+    top: 4px;
+    color: var(--orange);
+}
+.wwha_card_place{
+    margin: 0px;
+    padding: 0px 0px 8px 0px;
+    color: var(--light-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    text-decoration: underline var(--orange);
+}
+.wwha_card_head .icon_card_text{
+    margin-right: 5px;
+    color: var(--green);
+}
+.wwha_card_place .icon_card_text{
+    margin-right: 10px;
+    color: var(--dark-orange);
+}
+
+@media screen and (min-width : 361px) {
+    .lovely_wwha_card{
+        width: 323px;
+    }
+}
