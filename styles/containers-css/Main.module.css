@@ -39,6 +39,7 @@
     font-size: 2em;
     color: var(--black);
     word-spacing: 4px;
+    letter-spacing: 2px;
 }
 .lovely_p_text{
     text-align: center;
@@ -195,7 +196,7 @@ div.lovely_who_wrapper.lovely_who{
     text-align: center;
     color: var(--white);
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 0px;
     padding: 0px;
@@ -226,6 +227,73 @@ div.lovely_who_wrapper.lovely_who{
     flex-wrap: wrap;
 }
 /* SUBJECT - CLOSE */
+
+
+
+
+
+/* WWHA - OPEN */
+.lovely_wwha{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: var(--white);
+    position: relative;
+}
+.lovely_wwha_main{
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+.lovely_wwha_ball{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: var(--bold-white);
+    clip-path: circle(130px at 70% 30%);
+}
+.lovely_wwha_head_wrap{
+    margin: 0 auto;
+    position: relative;
+    z-index: 7;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.lovely_wwha_head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    color: var(--black);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.lovely_wwha_line{
+    width: 100%;
+    margin: 0 auto;
+    height: 7px;
+    background-color: var(--orange);
+}
+.lovely_wwha_content{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1100px) {
+    div.lovely_wwha_content{
+        width: 100%;
+    }
+}
+/* WWHA - CLOSE */
+
+
 
 
 
@@ -292,6 +360,11 @@ div.lovely_who_wrapper.lovely_who{
         clip-path: circle(150px at 22% 35%);
     }
     /* WHO - open */
+
+    .lovely_wwha_line{
+        width: 350px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
