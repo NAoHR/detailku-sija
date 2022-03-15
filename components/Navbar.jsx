@@ -37,17 +37,10 @@ export default function Navbar(){
                             </h1>
                         </a>
                     </Link>
-                    <Link href="/profiles">
-                        <a>
-                            <h1 className={style.center_side_content}>
-                                Profiles
-                            </h1>
-                        </a>
-                    </Link>
                 </div>
                 <div className={`${style.right_side} ${style.align_center}`} onClick={function(e){setExpand(!expand)}}>
                     <div className={`${style.login_box} ${style.align_center}`}>
-                        <Link href="/auth/login">
+                        <Link href="/detailku">
                             <a>
                                 <h1 className={style.text_content}>
                                 Detailku
@@ -98,7 +91,7 @@ export default function Navbar(){
                                 </Link>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="/auth/login">
+                                <Link href="/detailku">
                                     <a>
                                         <h1 className={style.expander_text}>
                                             Detailku
