@@ -122,6 +122,16 @@ const Main = () => {
                         }
                     </div>
                 </div> 
+                <div className={style.lovely_quote_side}>
+                        <div className={style.lovely_main_quote}>
+                            <h1 className={style.lovely_quote_text}>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus impedit provident libero eaque natus pariatur.
+                            </h1>
+                            <h2 className={style.lovely_quote_by}>
+                                someone
+                            </h2>
+                        </div>
+                </div>
             </div>
             <Footer />
         </>
@@ -129,3 +139,5 @@ const Main = () => {
 }
 
 export default Main;
+// manusia bisa berandai,berangan,berharap
+// namun mereka juga bisa merusaknya
