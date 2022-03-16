@@ -1,0 +1,30 @@
+{
+    "highlight" : [
+        {
+            "title" : "IOT South East Asia Creative Camp",
+            "place" : "SEAMEO",
+            "year" : "2018",
+            "compState" : "Inernasional",
+            "placement" : "Juara 1"
+        },
+        {
+            "title" : "AR South East Asia Creative Camp",
+            "place" : "SEAMEO",
+            "year" : "2019",
+            "compState" : "Inernasional",
+            "placement" : "Juara 2"
+        },
+        {
+            "title" : "SS South East Asia Creative Camp",
+            "place" : "SEAMEO",
+            "year" : "2018",
+            "compState" : "Inernasional",
+            "placement" : "Juara 1"
+        }
+    ],
+    "full" : [
+        {
+
+        }
+    ]
+}

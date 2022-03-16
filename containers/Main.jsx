@@ -6,6 +6,7 @@ import Link from "next/link";
 import Subject_card from "../components/Subject_card";
 import subjects from "../utils/subjects.json";
 import AchievedCard from "../components/AchievedCard";
+import AchivedJson from "../utils/achieved.json";
 
 import { useRef,useEffect } from "react";
 
@@ -55,6 +56,7 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
+                <div className={style.absolute_lovely_ball}></div>
                 <div className={`${style.lovely_who_wrapper} ${style.lovely_who}`}>
                     <div className={style.lovely_detail_wrapper}>
                         <div className={style.lovely_who_ball}>
@@ -82,8 +84,6 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <div className={style.absolute_lovely_ball}>
-                </div>
                 <div className={style.lovely_wwha}>
                     <div className={style.lovely_wwha_main}>
                         <div className={`${style.lovely_wwha_head_wrap}`}>
@@ -95,9 +95,11 @@ const Main = () => {
                             </div>
                         </div>
                         <div className={style.lovely_wwha_content}>
-                            <AchievedCard />
-                            <AchievedCard />
-                            <AchievedCard />
+                            {
+                                AchivedJson["highlight"].map((val,index)=>{
+                                    return <AchievedCard detail={val} key={index} num={index}/>
+                                })
+                            }
                         </div>
                         <div className={style.lovely_wwha_ball}>
                         </div>
@@ -119,7 +121,7 @@ const Main = () => {
                             })
                         }
                     </div>
-                </div>
+                </div> 
             </div>
             <Footer />
         </>
