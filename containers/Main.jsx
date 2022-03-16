@@ -7,6 +7,9 @@ import Subject_card from "../components/Subject_card";
 import subjects from "../utils/subjects.json";
 import AchievedCard from "../components/AchievedCard";
 import AchivedJson from "../utils/achieved.json";
+import {
+    FaLightbulb
+} from "react-icons/fa"
 
 import { useRef,useEffect } from "react";
 
@@ -124,6 +127,9 @@ const Main = () => {
                 </div> 
                 <div className={style.lovely_quote_side}>
                         <div className={style.lovely_main_quote}>
+                            <h1 className={style.lovely_quote_icon}>
+                                <FaLightbulb />
+                            </h1>
                             <h1 className={style.lovely_quote_text}>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus impedit provident libero eaque natus pariatur.
                             </h1>

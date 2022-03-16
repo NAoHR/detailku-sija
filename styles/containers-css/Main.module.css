@@ -312,20 +312,29 @@ div.lovely_who_wrapper.lovely_who{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
-    font-size: 2.5em;
+    font-size: 1.8em;
     text-align: center;
     color: var(--light-black);
     font-weight: 400;
     font-style: oblique;
 }
+.lovely_quote_icon{
+    margin: 0px;
+    padding: 0px;
+    font-size: 3em;
+    text-align: center;
+    color: var(--black);
+}
+
 .lovely_quote_by{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
     padding: 0px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
     font-style: oblique;
+    letter-spacing: 5px;
 }
 /* QUOTE - close*/
 
@@ -511,10 +520,10 @@ div.lovely_who_wrapper.lovely_who{
         width: 900px;
     }
     .lovely_quote_text{
-        font-size: 2.6em;
+        font-size: 2.2em;
     }
     .lovely_quote_by{
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 }
 
