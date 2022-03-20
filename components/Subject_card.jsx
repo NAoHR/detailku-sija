@@ -8,18 +8,20 @@ export default function Subject_card(props){
 
     function bulp(){
         let card = document.getElementsByClassName(style.lovely_subject_card)[Number(index)];
-        let card_top = card.getBoundingClientRect().top;
-        let innerHeight = window.innerHeight;
-        if(innerHeight > card_top){
-            card.style = "transition: 1.3s;transform: translateY(0px);opacity: 1;"
-        }else{
-            card.style = "transition: 1.3s;transform: translateY(20px);opacity: 0;"
+        if(card){
+            let card_top = card.getBoundingClientRect().top;
+            let innerHeight = window.innerHeight;
+            if(innerHeight > card_top){
+                card.style = "transition: 1.3s;transform: translateY(0px);opacity: 1;"
+            }else{
+                card.style = "transition: 1.3s;transform: translateY(20px);opacity: 0;"
+            }
         }
     }
 
-    useEffect(()=>{
+    useEffect(function (){
         bulp();
-        window.addEventListener("scroll", () => {
+        window.addEventListener("scroll", function(){
             bulp()
         })
     },[])

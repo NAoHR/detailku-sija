@@ -4,22 +4,25 @@ import style from "../styles/components-css/People_landing.module.css";
 const People_landing = ({num, title,keyNum}) => {
     const stateRef = useRef(true)
 
-    useEffect(()=>{
-        window.addEventListener("scroll",(e)=>{
-            let doc = document.getElementsByClassName(style.lovely_who_card)[Number(keyNum)].getBoundingClientRect().top;
-            if(doc < window.innerHeight){
-                if(stateRef.current){
-                    console.log("here")
-                    let counter = Number(num) > 200 ? Math.floor(Number(num) * (4/5)) : 0;
-                    setInterval(()=>{
-                        if(Number(num) > counter){
-                            counter +=1
-                            document.getElementsByClassName(style.lovely_card_num)[Number(keyNum)].innerHTML = counter
-                        }
-                        clearInterval();
-                    },Number(num) > 100 ? 50 : 90)
-                    stateRef.current = false;
-                };
+    useEffect(function(){
+        window.addEventListener("scroll",function(e){
+            let doc = document.getElementsByClassName(style.lovely_who_card)[Number(keyNum)];
+            if(doc){
+                doc = doc.getBoundingClientRect().top
+                if(doc < window.innerHeight){
+                    if(stateRef.current){
+                        console.log("here")
+                        let counter = Number(num) > 200 ? Math.floor(Number(num) * (4/5)) : 0;
+                        setInterval(()=>{
+                            if(Number(num) > counter){
+                                counter +=1
+                                document.getElementsByClassName(style.lovely_card_num)[Number(keyNum)].innerHTML = counter
+                            }
+                            clearInterval();
+                        },Number(num) > 100 ? 50 : 90)
+                        stateRef.current = false;
+                    };
+                }
             }
             // console.log(statusT)
         })

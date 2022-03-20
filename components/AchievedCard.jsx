@@ -8,12 +8,14 @@ const AchievedCard = (props) => {
     const {detail,num} = props
     function bulp(){
         const card = document.getElementsByClassName(style.lovely_wwha_card)[Number(num)];
-        let card_top = card.getBoundingClientRect().top;
-        let innerHeight = window.innerHeight;
-        if(innerHeight > card_top){
-            card.style = "transition: 1s;transform: translateY(0%);opacity: 1;"
-        }else{
-            card.style = "transition: 1s;transform: translateY(15%);opacity: 0;"
+        if(card){
+            let card_top = card.getBoundingClientRect().top;
+            let innerHeight = window.innerHeight;
+            if(innerHeight > card_top){
+                card.style = "transition: 1s;transform: translateY(0%);opacity: 1;"
+            }else{
+                card.style = "transition: 1s;transform: translateY(15%);opacity: 0;"
+            }
         }
     }
 

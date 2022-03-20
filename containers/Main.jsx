@@ -19,19 +19,21 @@ const Main = () => {
     
     function animate_flex_who() {
         const flexedPosition = document.getElementsByClassName(style.lovely_flexed_who)[0];
-        let innerheight = window.innerHeight
-        let boundTop = flexedPosition.getBoundingClientRect().top;
-        if(innerheight > boundTop){
-            flexedPosition.style = "opacity:1;transition:1.3s;transform: translateY(0%);"
-        }else{
-            flexedPosition.style = "opacity:0;transition:1.3s;transform: translateY(50px);"
+        if(flexedPosition){
+            let innerheight = window.innerHeight
+            let boundTop = flexedPosition.getBoundingClientRect().top;
+            if(innerheight > boundTop){
+                flexedPosition.style = "opacity:1;transition:1.3s;transform: translateY(0%);"
+            }else{
+                flexedPosition.style = "opacity:0;transition:1.3s;transform: translateY(50px);"
+            }
         }
     }
 
-    useEffect(()=>{
+    useEffect(function(){
         animate_flex_who();
 
-        window.addEventListener("scroll",() => {
+        window.addEventListener("scroll",function(){
             animate_flex_who();
         })
     })
