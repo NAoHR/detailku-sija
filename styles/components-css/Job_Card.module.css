@@ -1,0 +1,96 @@
+.lovely_card{
+    width: 95%;
+    height: 500px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    margin: 10px 5px 10px 5px;
+}
+.mpdefault{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', cursive;
+}
+.lovely_bubble{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background: var(--orange);
+    border-radius: 50%;
+}
+.lovely_top_side{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 60px;
+    background: var(--black);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px 8px 5px 8px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+.lovely_bottom_side{
+    word-wrap: break-word;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 70px 10px 5px 10px;
+}
+.lovely_card_title{
+    font-size: 1.6em;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.lovely_perks_h3{
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+.lovely_card_paragraph{
+    margin-top: 10px;
+    color: var(--black);
+    font-size: 1em;
+}
+.lovely_gap{
+    margin-right: 6px;
+    color: var(--dark-orange);
+}
+.perks_link{
+    text-decoration: underline var(--orange);
+    margin-top: 10px;
+}
+.lovely_salary_range{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
+.salary_wrapper{
+    padding: 5px;
+    margin-left: 8px;
+    width: auto;
+    float: left;
+    background: var(--light-black);
+    border-radius: 8px;
+}
+.salary_text{
+    color: var(--white);
+    font-weight: 400;
+}
+
+.lovely_gapper{
+    height: 100px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 280px) {
+    .lovely_card{
+        height: 620px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .lovely_card{
+        width: 360px;
+    }
+}
