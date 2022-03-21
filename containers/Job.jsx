@@ -59,33 +59,35 @@ const Job  = (props) => {
     return (
         <>
             <Navbar />
-            <div className={style.lovely_top_wrapper}>
-                <div className={`${style.lovely_top_content} ${style.zindex}`}>
-                    <div className={style.lovely_top_text}>
-                        <h1 className={style.lovely_top_head}>
-                            <span className={style.bigger}><FaBriefcase /></span> <br/>Find A job<br />that Suits You
-                        </h1>
-                        <h3 className={style.lovely_top_offer}>
-                            Or maybe offer it
-                        </h3>
-                    </div>
-                </div>
-                
-                <div className={style.lovely_decorations}></div>
-            </div>
-            <div className={style.lovely_bottom_wrapper}>
-                <div className={style.lovely_bottom_content}>
-                    <div className={style.lovely_search_bar_wrapper}>
-                        <div className={style.lovely_search_bar}>
-                            <input type="text" name="val" id={style.lovely_input} className={style.lovely_form_variant} autoComplete="off" placeholder="front-end developer" onChange={HandleSubmit} />
-                            <button type="submit" id={style.lovely_button} className={style.lovely_form_variant}>
-                                <FaSearch />
-                            </button>
+            <div className={style.lovely_wrapper}>
+                <div className={style.lovely_top_wrapper}>
+                    <div className={`${style.lovely_top_content} ${style.zindex}`}>
+                        <div className={style.lovely_top_text}>
+                            <h1 className={style.lovely_top_head}>
+                                <span className={style.bigger}><FaBriefcase /></span> <br/>Find A job<br />that Suits You
+                            </h1>
+                            <h3 className={style.lovely_top_offer}>
+                                Or maybe offer it
+                            </h3>
                         </div>
                     </div>
-                    <div className={style.lovely_bottom_card_wrapper}>
-                        <MapData data={tobeDislayedData}/>
-                    </div> 
+                    
+                    <div className={style.lovely_decorations}></div>
+                </div>
+                <div className={style.lovely_bottom_wrapper}>
+                    <div className={style.lovely_bottom_content}>
+                        <div className={style.lovely_search_bar_wrapper}>
+                            <div className={style.lovely_search_bar}>
+                                <input type="text" name="val" id={style.lovely_input} className={style.lovely_form_variant} autoComplete="off" placeholder="front-end developer" onChange={HandleSubmit} />
+                                <button type="submit" id={style.lovely_button} className={style.lovely_form_variant}>
+                                    <FaSearch />
+                                </button>
+                            </div>
+                        </div>
+                        <div className={style.lovely_bottom_card_wrapper}>
+                            <MapData data={tobeDislayedData}/>
+                        </div> 
+                    </div>
                 </div>
             </div>
             <Footer />
