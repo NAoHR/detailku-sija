@@ -138,8 +138,14 @@
     font-size: 4em;
 }
 
+@media screen and (max-height:470px){
+    div.lovely_top_wrapper{
+        height: 600px;
+    }
+}
+
 @media screen and (min-height:900px){
-    .lovely_top_wrapper{
+    div.lovely_top_wrapper{
         height: 900px;
     }
 }
