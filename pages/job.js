@@ -1,6 +1,4 @@
-import { useEffect,useState } from "react";
 import Job from "../containers/Job";
-import {requestMethod} from "../utils/apiCaller"
 export default function Home() {
   
   return (
