@@ -43,7 +43,7 @@ const Job  = (props) => {
         e.preventDefault();
         if(typeof data === "object"){
             let filteredData = data.filter((item) => {
-                let vall = e.target.value
+                let vall = e.target.value.toLowerCase();
                 if(
                     item.title.toLowerCase().indexOf(vall) != -1      ||
                     item.reqruiter.toLowerCase().indexOf(vall) != -1  ||
