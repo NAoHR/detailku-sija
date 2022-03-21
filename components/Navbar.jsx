@@ -13,7 +13,9 @@ export default function Navbar(){
         <nav className={style.nav_wrapper}>
             <div className={style.center_wrapper}>
                 <div className={`${style.left_side} ${style.align_center}`}>
-                    <img src="/smkn26_logo.png" alt="smkn26logo" className={style.smkn_logo}/>
+                    <h1 className={style.center_side_content}>
+                        Detailku
+                    </h1>
                 </div>
                 <div className={`${style.center_side}  ${style.align_center}`}>
                     <Link href="/">
@@ -37,17 +39,25 @@ export default function Navbar(){
                             </h1>
                         </a>
                     </Link>
+                    <Link href="/people">
+                        <a>
+                            <h1 className={style.center_side_content}>
+                                People
+                            </h1>
+                        </a>
+                    </Link>
+                    <Link href="/job">
+                        <a>
+                            <h1 className={style.center_side_content}>
+                                Job
+                            </h1>
+                        </a>
+                    </Link>
                 </div>
                 <div className={`${style.right_side} ${style.align_center}`} onClick={function(e){setExpand(!expand)}}>
-                    <div className={`${style.login_box} ${style.align_center}`}>
-                        <Link href="/detailku">
-                            <a>
-                                <h1 className={style.text_content}>
-                                Detailku
-                                </h1>
-                            </a>
-                        </Link>
-                    </div>
+                        <div className={`${style.align_center} ${style.diss}`}>
+                            <img src="/smkn26_logo.png" alt="smkn26logo" className={style.smkn_logo}/>
+                        </div>
                     <h1 className={style.icon_wrapper} style={{color : expand ? "var(--white)" : "var(--black)", transition : ".5s"}} >
                         {expand ? <FaTimes /> : <FaBars />}
                     </h1>
@@ -94,7 +104,16 @@ export default function Navbar(){
                                 <Link href="/detailku">
                                     <a>
                                         <h1 className={style.expander_text}>
-                                            Detailku
+                                            People
+                                        </h1>
+                                    </a>
+                                </Link>
+                            </div>
+                            <div className={style.expander_item}>
+                                <Link href="/job">
+                                    <a>
+                                        <h1 className={style.expander_text}>
+                                            Job
                                         </h1>
                                     </a>
                                 </Link>

@@ -118,6 +118,9 @@
     .login_box{
         display: none;
     }
+    .diss{
+        display: none;
+    }
     .center_side{
         display: none;
     }
