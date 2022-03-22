@@ -7,7 +7,7 @@ const Loader = ({status}) => {
             height : status && "0vh",
             transition : "1.5s"
         }}>
-            <div class={style.lovely_load_main} style={{
+            <div className={style.lovely_load_main} style={{
                 transition : ".5s",
                 opacity : status && "0"
             }}>
