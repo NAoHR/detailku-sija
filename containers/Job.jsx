@@ -25,6 +25,7 @@ const ErrJob = ({message}) => {
 
 const MapData = ({data}) => {
     if(typeof data === "object"){
+        console.log("wew");
         if(data.length > 0){
             return data.map((val,index) => {
                 return <Job_Card key={index} card_detail={val}/>
@@ -35,8 +36,7 @@ const MapData = ({data}) => {
     return <ErrJob message={"Something Went Wrong"}/>
 }
 
-const Job  = (props) => {
-    const {data} = props;
+const Job  = ({data}) => {
     const [tobeDislayedData,setTBDD] = useState(data);
 
     function HandleSubmit(e){
