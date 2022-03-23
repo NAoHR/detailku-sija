@@ -101,7 +101,7 @@ export default function Navbar(){
                                 </Link>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="/detailku">
+                                <Link href="/people">
                                     <a>
                                         <h1 className={style.expander_text}>
                                             People

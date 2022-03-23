@@ -11,20 +11,23 @@ const People_landing = ({num, title,keyNum}) => {
                 doc = doc.getBoundingClientRect().top
                 if(doc < window.innerHeight){
                     if(stateRef.current){
-                        console.log("here")
                         let counter = Number(num) > 200 ? Math.floor(Number(num) * (4/5)) : 0;
                         setInterval(()=>{
+
                             if(Number(num) > counter){
                                 counter +=1
-                                document.getElementsByClassName(style.lovely_card_num)[Number(keyNum)].innerHTML = counter
+                                let card = document.getElementsByClassName(style.lovely_card_num)[Number(keyNum)]
+                                if(card){
+                                    card.innerHTML = counter
+                                }
                             }
                             clearInterval();
+
                         },Number(num) > 100 ? 50 : 90)
                         stateRef.current = false;
                     };
                 }
             }
-            // console.log(statusT)
         })
     },[])
     return (
