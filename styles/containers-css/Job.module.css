@@ -118,9 +118,10 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    position: relative;
 }
 
-.lovely_errMessage{
+/* .lovely_errMessage{
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -136,7 +137,7 @@
 }
 .lovely_big_icon{
     font-size: 4em;
-}
+} */
 
 @media screen and (max-height:470px){
     div.lovely_top_wrapper{

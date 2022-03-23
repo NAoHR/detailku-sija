@@ -1,0 +1,104 @@
+.lovely_peps_card{
+    width: 98%;
+    height: 280px;
+    border-radius: 10px;
+    background: var(--white);
+    margin: 10px 5px 10px 5px;
+    background: #fff;
+    position: relative;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.lovely_peps_top{
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 210px;
+    background: var(--black);
+}
+
+.lovely_absoluted{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: var(--light-black);
+}
+.lovely_peps_dec_right{
+    clip-path: circle(25.6% at 84% 82%);
+}
+.lovely_peps_dec_left{
+    clip-path: circle(25.6% at 16% 18%);
+    border-top-left-radius: 8px;
+}
+
+.lovely_peps_bottom{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
+.lovely_icon{
+    font-size: 2.2em;
+    color: var(--black);
+}
+.lovely_more_side{
+    width: 120px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: var(--black);
+}
+.lovely_more_text{
+    font-family: 'Poppins', cursive;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: var(--orange);
+}
+
+.lovely_peps_content{
+    width: 100%;
+    height: 100%;
+    /* background-color: navy; */
+    padding: 8px;
+    position: relative;
+    z-index: 3;
+}
+
+.lovely_peps_subGrade{
+    margin: 0px;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    font-family: 'Poppins', cursive;
+    color: var(--orange);
+}
+
+.lovely_peps_count{
+    margin: 0px;
+    position: absolute;
+    padding: 0px;
+    right: 15px;
+    bottom: 0px;
+    font-family: 'Poppins', cursive;
+    color: var(--orange);
+    font-size: 3.4em;
+}
+
+@media screen and (min-width:413px) {
+    .lovely_peps_card{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 848px){
+    .lovely_peps_card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

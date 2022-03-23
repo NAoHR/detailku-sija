@@ -1,0 +1,36 @@
+.lovely_people_content{
+    width: 100vw;
+    height: auto;
+    margin-bottom: 40px;
+}
+.lovely_people_text{
+    width: 100%;
+    margin-bottom: 0px;
+    position: relative;
+    padding: 2px;
+}
+.lovely_people_title{
+    margin: 0;
+    color: var(--black);
+    font-family: 'Poppins', cursive;
+    font-size: 2.4em;
+}
+.lovely_icon{
+    font-size: 1.3em;
+    position: relative;
+    top: 9px;
+    color: var(--dark-orange);
+}
+.lovely_people_card_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:908px){
+    .lovely_people_content{
+        width:900px;
+    }
+}

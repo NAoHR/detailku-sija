@@ -2,26 +2,11 @@ import style from "../styles/containers-css/Job.module.css";
 import Job_Card from "../components/Job_Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
-import {BiErrorCircle} from "react-icons/bi"
+import ErrData from "../components/ErrorData";
 import {
     FaBriefcase,FaSearch
 } from "react-icons/fa";
 import {useState} from "react";
-
-const ErrJob = ({message}) => {
-    return (
-        <>
-            <div className={style.lovely_errMessage}>
-                <h1 className={`${style.lovely_errmessage_text} ${style.lovely_big_icon}`}>
-                    <BiErrorCircle />
-                </h1>
-                <h1 className={style.lovely_errmessage_text}>
-                    {message}
-                </h1>
-            </div>
-        </>
-    )
-}
 
 const MapData = ({data}) => {
     if(typeof data === "object"){
@@ -31,9 +16,9 @@ const MapData = ({data}) => {
                 return <Job_Card key={index} card_detail={val}/>
             })
         }
-        return <ErrJob message={"No Data To Be Displayed"}/>
+        return <ErrData message={"No Data To Be Displayed"}/>
     }
-    return <ErrJob message={"Something Went Wrong"}/>
+    return <ErrData message={"Something Went Wrong"}/>
 }
 
 const Job  = ({data}) => {
