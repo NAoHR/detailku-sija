@@ -23,7 +23,7 @@ const People_card = ({data}) => {
                     <IoSchool />
                 </h3>
                 <div className={style.lovely_more_side}>
-                    <Link href={`user/${data.subgrade.split(" ").join("_")}`}>
+                    <Link href={`people/grade/${data.subgrade.split(" ").join("_")}`}>
                         <a>
                             <h3 className={style.lovely_more_text}>
                                 more
