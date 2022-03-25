@@ -1,0 +1,18 @@
+.lovely_grade_wrapper{
+    width: 100%;
+    min-height: 1000px;
+    position: relative;
+    /* background: red; */
+    padding: 80px 6px 80px 6px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 1160px){
+    .lovely_grade_wrapper{
+        width: 1153px;
+        margin: 0 auto;
+    }
+}
