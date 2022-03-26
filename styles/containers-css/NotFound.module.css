@@ -1,0 +1,94 @@
+.lovely_nf_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    /* background: rebeccapurple; */
+    padding-top: 78px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pm_remover{
+    margin: 0px;
+    padding: 0px;
+}
+.lovely_redirect{
+    height: 60px;
+    top: 60px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.lovely_format{
+    font-family: 'Poppins', cursive;
+    color: var(--light-black);
+    text-decoration: underline var(--orange);
+}
+
+.redirect_text{
+    vertical-align: center;
+    position: relative;
+    margin-left: 5px;
+    font-size: 1.5em;
+}
+.lovely_icon_r{
+    position: relative;
+    top: 3px;
+    font-size: 1.5em;
+}
+.lovely_hori{
+    display: inline-block;
+}
+.image_wrapper{
+    width: 95%;
+}
+.lovely_image{
+    width: 100%;
+}
+.lovely_nf_content{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lovely_title{
+    font-size: 2.5em;
+    padding-top: 20px;
+}
+.lovely_message{
+    font-size: 2.4em;
+    padding-top: 5px;
+}
+
+@media screen and (min-width:360px) {
+    .image_wrapper{
+        width: 360px;
+    }
+}
+
+@media screen and (min-width:780px) and (min-height:900px) {
+    .image_wrapper{
+        width: 560px;
+    }
+    .lovely_title{
+        font-size: 3.5em;
+        padding-top: 20px;
+    }
+    .lovely_message{
+        font-size: 3em;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .lovely_nf_wrapper{
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
