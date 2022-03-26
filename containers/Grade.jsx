@@ -14,8 +14,11 @@ const Grade_Main = ({eachdata}) => {
     return (
         <>
             <Navbar />
-            <div className={style.lovely_grade_wrapper}>
-                {eachdata.length > 0 ? <GradeCard_looper data={eachdata} /> : "zan"}
+            <div className={style.lovely_grade_wrapper} style={{
+                padding : eachdata.length == 0 && "0px 6px 0px 6px;",
+                minHeight: eachdata.length == 0 && "100vh"
+            }}>
+                <GradeCard_looper data={eachdata} />
             </div>
             <Footer />
         </>

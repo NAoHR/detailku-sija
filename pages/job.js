@@ -16,7 +16,9 @@ export default function Home() {
  },[])
   return (
     <>
-      {data !== null && <Job data={data}/>}
+      {data !== null && 
+        <Job data={data}/>
+      }
       <Loader status={data !== null && true}/>
     </>
   )

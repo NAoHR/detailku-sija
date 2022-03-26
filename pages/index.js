@@ -1,8 +1,21 @@
 import Main from "../containers/Main";
-// import Testing from "../containers/Testing";
+import Loader from "../components/Loader";
+import { useState,useEffect } from "react";
 
 export default function Home() {
+  const [data,setData] = useState(null);
+  useEffect(()=>{
+    setTimeout(()=>{
+      setData(true)
+    },1000)
+  },[])
   return (
-    <Main />
+    <>
+
+      {data !== null && 
+        <Main />
+      }
+      <Loader status={data !== null && true}/>
+    </>
   )
 }

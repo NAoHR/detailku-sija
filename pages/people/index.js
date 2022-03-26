@@ -16,7 +16,9 @@ const PeopleMain = () => {
     },[])
     return (
         <>
-            {data !== null && <People data={data}/>}
+            {data !== null && 
+                <People data={data}/>
+            }
             <Loader status={data !== null && true}/>
         </>
     )
