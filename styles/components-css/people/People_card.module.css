@@ -54,12 +54,18 @@
     align-items: center;
     border-radius: 60px;
     background: var(--black);
+    transition: .5s;
 }
 .lovely_more_text{
     font-family: 'Poppins', cursive;
     font-size: 1.2em;
     letter-spacing: 2px;
     color: var(--orange);
+    transition: .5s;
+}
+
+.lovely_more_text:hover{
+    color: var(--white);
 }
 
 .lovely_peps_content{

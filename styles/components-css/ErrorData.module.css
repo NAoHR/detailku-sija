@@ -14,6 +14,7 @@
     font-family: 'Poppins', cursive;
     font-size: 2.6em;
 }
-.lovely_big_icon{
+.lovely_errmessage_text.lovely_big_icon{
     font-size: 4em;
+    color: var(--dark-orange);
 }
