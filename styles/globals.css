@@ -22,6 +22,15 @@ body {
   background: var(--white);
   min-height: 100vh;
 }
+.lovely_transit_page{
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 0px;
+  transition: 1s;
+  background: var(--black);
+  z-index: 10;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
