@@ -17,11 +17,12 @@ const DecideToShow = ({data}) => {
 const Grade = () => {
     const [data,setData] = useState(null);
     const router = useRouter();
-    const {gname} = router.query;
+    const {grade} = router.query;
 
     useEffect(()=> {
       if(router.isReady){
-        requestMethod.getGradeBased(gname)
+        console.log(router.query)
+        requestMethod.getGradeBased(grade)
           .then((val)=>{
             setData(val.data.data);
           })

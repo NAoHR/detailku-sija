@@ -12,7 +12,7 @@ const GradeCard = ({creds}) => {
                 <div className={style.lovely_image_side}>
                     {creds.detail.picture === undefined ? 
                     <h2 className={`${style.lovely_ifundefined} ${style.pm_remover}`}>
-                        {name.length == 1 ? name[0].slice(0,1).toUpperCase() : `${name[0].slice(0,1).toUpperCase()}${name[1].slice(0,1).toUpperCase()}`}
+                        {name.length == 1 ? name[0].slice(0,1).toUpperCase() : `${name[0].slice(0,1).toUpperCase()}${name[name.length-1].slice(0,1).toUpperCase()}`}
                     </h2>  : 
                     <img src={creds.detail.picture} alt="profile.jpg" className={style.user_image}/>
                     }

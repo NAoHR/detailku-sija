@@ -25,7 +25,7 @@ const People_card = ({data}) => {
                     <IoSchool />
                 </h3>
                 <div className={style.lovely_more_side}>
-                    <h3 className={style.lovely_more_text} onClick={()=> TransitHandler(`people/grade/${data.subgrade.split(" ").join("_")}`)}>
+                    <h3 className={style.lovely_more_text} onClick={()=> TransitHandler(`people/${data.subgrade.split(" ").join("_")}`)}>
                         more
                     </h3>
                 </div>

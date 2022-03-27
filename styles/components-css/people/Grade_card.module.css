@@ -1,7 +1,7 @@
 .lovely_grade_card{
     width: 95%;
     background-color: #fff;
-    height: 350px;
+    height: 385px;
     border-radius: 8px;
     border-bottom: 10px solid var(--orange);
     margin: 8px;
@@ -63,8 +63,9 @@
 }
 .lovely_username_side{
     width: 100%;
-    /* background: green; */
-    max-height: 70px;
+    display: flex;
+    align-items: center;
+    height: 70px;
     overflow-y: auto;
 }
 .lovely_user_username{

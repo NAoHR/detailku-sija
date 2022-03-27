@@ -106,6 +106,9 @@
     position: relative;
     z-index: 9;
 }
+.center_side_content:hover{
+    cursor: pointer;
+}
 @media screen and (max-width: 1440px) {
     .center_wrapper{
         width: 100%;

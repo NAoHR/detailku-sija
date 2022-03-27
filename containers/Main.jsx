@@ -7,16 +7,17 @@ import Subject_card from "../components/Subject_card";
 import subjects from "../utils/subjects.json";
 import AchievedCard from "../components/AchievedCard";
 import AchivedJson from "../utils/achieved.json";
+import { TransitContext } from "../utils/Transition_Context";
 import {
     FaLightbulb
 } from "react-icons/fa"
 
-import { useRef,useEffect } from "react";
+import { useRef,useEffect, useContext } from "react";
 
 
 const Main = () => {
     const flexedStatus = useRef(true);
-    
+    const TransitHandler = useContext(TransitContext)
     function animate_flex_who() {
         const flexedPosition = document.getElementsByClassName(style.lovely_flexed_who)[0];
         if(flexedPosition){
@@ -49,11 +50,7 @@ const Main = () => {
                             </h1>
                             <p className={`${style.lovely_p_text} ${style.lovely_z_index}`}>Belajar, Bekerja, membangun dengan semangat yang penuh dan tidak lupa disertai dengan doa dan keihklasan agar bisa mencapai kejayaan di masa depan</p>
                             <div className={`${style.lovely_explore_wrapper} ${style.lovely_z_index}`}>
-                                <Link href="https://youtu.be/dQw4w9WgXcQ">
-                                    <a>        
-                                        <h1 className={style.lovely_explore_text}>explore</h1>
-                                    </a>
-                                </Link>
+                                <h1 className={style.lovely_explore_text} onClick={()=>{TransitHandler("/people")}}>explore</h1>
                             </div>
                         </div>
                         <div className={style.lovely_right}>

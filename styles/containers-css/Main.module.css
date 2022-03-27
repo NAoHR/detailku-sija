@@ -72,9 +72,14 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.4em;
     font-weight: 700;
+    transition: .5s;
     color: var(--white);
 }
-
+.lovely_explore_text:hover{
+    cursor: pointer;
+    transition: .5s;
+    color: var(--light-black);
+}
 .absolute_lovely_ball{
     transition: 1s;
     width: 100vw;
