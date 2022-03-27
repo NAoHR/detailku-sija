@@ -45,6 +45,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.lovely_li:hover{
+    cursor: pointer;
+}
+
 .lovely_center{
     text-align: center;
 }

@@ -3,8 +3,11 @@ import {
     FaTwitterSquare, FaLinkedin, FaYoutube, FaInstagramSquare, FaHeart
 } from "react-icons/fa";
 import Link from "next/link";
+import { TransitContext } from "../utils/Transition_Context";
+import { useContext } from "react";
 
 const Footer = () => {
+    const TransitHandler = useContext(TransitContext)
     return (
         <>
             <footer className={style.lovely_footer_wrapper}>
@@ -16,41 +19,30 @@ const Footer = () => {
                             More
                         </h2>
                         <ul className={style.lovely_ul}>
-                            <li className={style.lovely_li}>
-                                <Link href="/">
-                                    <a>
-                                        <p className={style.lovely_socmed_title}>
-                                            Home
-                                        </p>
-                                    </a>
-                                </Link>
+                            <li className={style.lovely_li} onClick={() => TransitHandler("/")}>
+                                <p className={style.lovely_socmed_title}>
+                                    Home
+                                </p>
                             </li>
-                            <li className={style.lovely_li}>
-                                <Link href="/profiles">
-                                    <a>
-                                        <p className={style.lovely_socmed_title}>
-                                            Profiles
-                                        </p>
-                                    </a>
-                                </Link>
+                            <li className={style.lovely_li} onClick={() => TransitHandler("/people")}>
+                                <p className={style.lovely_socmed_title}>
+                                    People
+                                </p>
                             </li>
-                            <li className={style.lovely_li}>
-                                <Link href="/about">
-                                    <a>
-                                        <p className={style.lovely_socmed_title}>
-                                            about
-                                        </p>
-                                    </a>
-                                </Link>
+                            <li className={style.lovely_li} onClick={() => TransitHandler("/job")}>
+                                <p className={style.lovely_socmed_title}>
+                                    Job
+                                </p>
                             </li>
-                            <li className={style.lovely_li}>
-                                <Link href="/news">
-                                    <a>
-                                        <p className={style.lovely_socmed_title}>
-                                            News
-                                        </p>
-                                    </a>
-                                </Link>
+                            <li className={style.lovely_li} onClick={() => TransitHandler("/about")}>
+                                <p className={style.lovely_socmed_title}>
+                                    About
+                                </p>
+                            </li>
+                            <li className={style.lovely_li} onClick={() => TransitHandler("/news")}>
+                                <p className={style.lovely_socmed_title}>
+                                    News
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -60,35 +52,51 @@ const Footer = () => {
                         </h2>
                         <ul className={style.lovely_ul}>
                             <li className={style.lovely_li}>
-                                <p className={style.lovely_socmed_title}>
-                                    <span className={style.lovely_span}>
-                                        <FaLinkedin />
-                                    </span> LinkedIn
-                                </p>
+                                <Link href="https://id.linkedin.com/company/smk-negeri-26-jakarta/">
+                                    <a>
+                                        <p className={style.lovely_socmed_title}>
+                                            <span className={style.lovely_span}>
+                                                <FaLinkedin />
+                                            </span> LinkedIn
+                                        </p>
+                                    </a>
+                                </Link>
                             </li>
                             <li className={style.lovely_li}>
-                                <p className={style.lovely_socmed_title}>
-                                    <span className={style.lovely_span}>
-                                        <FaTwitterSquare /> 
-                                    </span>
-                                    Twitter
-                                </p>
+                                <Link href="https://twitter.com">
+                                    <a>
+                                        <p className={style.lovely_socmed_title}>
+                                            <span className={style.lovely_span}>
+                                                <FaTwitterSquare /> 
+                                            </span>
+                                            Twitter
+                                        </p>
+                                    </a>
+                                </Link>
                             </li>
                             <li className={style.lovely_li}>
-                                <p className={style.lovely_socmed_title}>
-                                    <span className={style.lovely_span}>
-                                        <FaYoutube /> 
-                                    </span>
-                                    Youtube
-                                </p>
+                                <Link href="https://www.youtube.com/channel/UC1lmdxhbnccuoXY5fzhO9tg">
+                                    <a>
+                                        <p className={style.lovely_socmed_title}>
+                                            <span className={style.lovely_span}>
+                                                <FaYoutube /> 
+                                            </span>
+                                            Youtube
+                                        </p>
+                                    </a>
+                                </Link>
                             </li>
                             <li className={style.lovely_li}>
-                                <p className={style.lovely_socmed_title}>
-                                    <span className={style.lovely_span}>
-                                        <FaInstagramSquare / > 
-                                    </span>
-                                    Instagram
-                                </p>
+                                <Link href="https://www.instagram.com/smkn26jktofficial">
+                                    <a>
+                                        <p className={style.lovely_socmed_title}>
+                                            <span className={style.lovely_span}>
+                                                <FaInstagramSquare / > 
+                                            </span>
+                                            Instagram
+                                        </p>
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

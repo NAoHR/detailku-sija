@@ -1,5 +1,4 @@
 import style from "../../styles/components-css/people/People_card.module.css";
-import Link from "next/link"
 import {IoSchool} from "react-icons/io5";
 import { TransitContext } from "../../utils/Transition_Context";
 import {useContext} from "react"

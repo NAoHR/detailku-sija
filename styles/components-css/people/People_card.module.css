@@ -66,6 +66,7 @@
 
 .lovely_more_text:hover{
     color: var(--white);
+    cursor: pointer;
 }
 
 .lovely_peps_content{
