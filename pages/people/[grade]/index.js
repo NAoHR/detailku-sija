@@ -6,6 +6,7 @@ import Loader from "../../../components/Loader";
 import NotFound from "../../../containers/NotFound";
 
 const DecideToShow = ({data}) => {
+  console.log(data)
   if(data === false){
     return <NotFound message={"Internal Error"} title={500} redirect={"/people"}/>
   }else if(data.length == 0){
@@ -21,7 +22,6 @@ const Grade = () => {
 
     useEffect(()=> {
       if(router.isReady){
-        console.log(router.query)
         requestMethod.getGradeBased(grade)
           .then((val)=>{
             setData(val.data.data);
