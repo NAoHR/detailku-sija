@@ -2,6 +2,15 @@ import People from "../../containers/People.jsx";
 import {requestMethod} from "../../utils/apiCaller";
 import Loader from "../../components/Loader";
 import { useEffect,useState } from "react";
+import NotFound from "../../containers/NotFound"
+
+const DecideToShow = ({data}) => {
+    if(data === false){
+        return <NotFound message={"Internal Error"} title={501} redirect={"/"}/>
+    }
+    return <People data={data}/>
+}
+
 
 const PeopleMain = () => {
     const [data,setData] = useState(null)
@@ -17,7 +26,7 @@ const PeopleMain = () => {
     return (
         <>
             {data !== null && 
-                <People data={data}/>
+                <DecideToShow data={data}/>
             }
             <Loader status={data !== null && true}/>
         </>

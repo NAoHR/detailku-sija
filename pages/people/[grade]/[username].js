@@ -10,7 +10,7 @@ const DecideToShow = ({data,route}) =>{
     if(data === 0){
         return <NotFound message={"User Not Found"} title={"404"} redirect={"/people"} />
     }else if (data === false){
-        return <NotFound message={"Internal Server Error"} title={"500"} redirect={"/"} />
+        return <NotFound message={"Internal Server Error"} title={"501"} redirect={"/"} />
     }else if (data === 1){
         return <NotFound message={`User Not In ${route.split("_").join(" ")}`} title={"404"} redirect={`/people/${route}`} />
     }
