@@ -17,12 +17,10 @@
 .lovely_topt_user{
     width: 98%;
     height: 120px;
-    /* background-color: black; */
     margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: row;
-    position: relative;
 }
 .image_side{
     width: 100px;
@@ -36,11 +34,11 @@
     align-items: center;
 }
 .lovely_topt_creds{
+    width: calc(100% - 110px);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
     margin-left: 10px;
 }
 .lovely_name_side{

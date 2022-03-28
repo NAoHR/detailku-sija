@@ -87,6 +87,11 @@
     }
 }
 
+@media screen and (min-height:900px) {
+    .lovely_nf_wrapper{
+        min-height: 900px;
+    }
+}
 @media screen and (min-width:1200px){
     .lovely_nf_wrapper{
         width: 1100px;
