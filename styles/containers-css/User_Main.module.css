@@ -1,0 +1,332 @@
+.lovely_user_wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    /* background: red; */
+    padding-top: 80px;
+}
+.pm_remover{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+.lovely_top_user{
+    width: 100%;
+    padding-bottom: 10px;
+    /* background: green; */
+}
+.lovely_topt_user{
+    width: 98%;
+    height: 120px;
+    /* background-color: black; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.image_side{
+    width: 100px;
+    height: 100px;
+    background: var(--light-black);
+    border: 5px solid var(--orange);
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lovely_topt_creds{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 10px;
+}
+.lovely_name_side{
+    max-height: 80px;
+    overflow-y: auto;
+    display: flex;
+}
+.profile_pict_text{
+    font-size: 2em;
+    color: var(--orange);
+    font-family: 'Poppins', sans-serif;
+}
+.lovely_image{
+    width: 100%;
+    height: 100%;
+}
+.lovely_name{
+    font-size: 1.3em;
+    text-decoration: underline var(--orange);
+    color: var(--black);
+}
+.lovely_username{
+    font-size: 1.1em;
+    color: var(--black);
+    opacity: .8;
+}
+.description_side{
+    width: 100%;
+    height: 100px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+.lovely_description{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: oblique;
+}
+.lovely_link{
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: underline var(--orange);
+}
+.lovely_topb_user{
+    width: 100%;
+    height: 200px;
+    padding: 5px 10px 5px 10px;
+    color: var(--black);
+    /* background: blue; */
+    position: relative;
+}
+.lovely_gap{
+    margin-right: 5px;
+}
+.social_Media{
+    width: 100%;
+    /* background: green; */
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.user_social{
+    margin-right: 18px;
+    font-size: 1.7em;
+}
+
+.lovely_bottom_user{
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.event_selector{
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 45px;
+    background: var(--orange);
+    justify-content: space-evenly;
+    display: flex;
+}
+.event_perks{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event_perks:hover{
+    cursor: pointer;
+}
+
+.perks_icon{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+
+.lovely_go_back{
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.lovely_gb_wrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 200px;
+}
+.lovely_gb_wrap:hover{
+    cursor: pointer;
+}
+
+.lovely_gb_icon{
+    font-size: 1.4em;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.lovely_gb_text{
+    font-size: 1.5em;
+    text-decoration: underline var(--orange);
+}
+
+
+/* PCS- OPEn */
+.lovely_pcs_card{
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+}
+.lovely_pcs_icon_side{
+    width: 120px;
+    background: var(--light-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pcs_icon{
+    color: var(--orange);
+    font-size: 3em;
+}
+.pcs_text_side{
+    flex: 1;
+    height: 100%;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pcs_title{
+    color: var(--light-black);
+    font-size: 1.5em;
+    text-decoration: underline var(--orange);
+}
+.title_pcs_side{
+    width: 100%;
+    padding: 5px;
+    overflow: auto;
+}
+/* PCS - OPEn */
+
+/* Project - OPEn */
+.project_description_side{
+    width: 100%;
+    padding: 5px;
+    overflow-y: auto;
+    display: flex;
+}
+.description_text{
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-black);
+    font-size: 1.1em;
+}
+
+.project_link_side{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.project_link{
+    margin-right: 8px;
+    font-size: 1.1em;
+    text-decoration: underline var(--orange);
+}
+
+/* PROJECT - CLOSE */
+
+/* SKIL - OPEN */
+.percentage_wrapper{
+    width: 100%;
+    height: 20px;
+    border-radius: 8px;
+    margin: 15px 0px 15px 0px;
+    background-color: var(--light-black);
+    position: relative;
+    
+}
+
+.percentage_filler{
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--orange);
+}
+
+.percentage_title{
+    margin-left: 10px;
+    color: var(--dark-orange);
+}
+/* SKIL - CLOSe */
+
+/* CERT - OPEN */
+.cert_org{
+    color: var(--light-black);
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.cert_ID{
+    color: var(--light-black);
+    margin-top: 10px;
+    font-size: 1em;
+    opacity: .8;
+}
+.cert_link{
+    color: var(--light-black);
+    margin-top: 10px;
+    font-size: 1.1em;
+    text-decoration: underline var(--orange);
+}
+/* CERT - CLOSE */
+
+@media screen and (min-width:400px){
+    .lovely_topt_creds{
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width:650px){
+    .lovely_name{
+        font-size: 1.6em;
+    }
+    .lovely_description{
+        font-size: 1.4em;
+    }
+    .lovely_link{
+        font-size: 1.3em;
+    }
+    .user_social{
+        font-size: 1.7em;
+    }
+    .lovely_name_side{
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .lovely_user_wrapper{
+        width: 800px;
+        margin: 0px auto;
+    }
+    .lovely_name{
+        font-size: 1.8em;
+    }
+    .lovely_description{
+        font-size: 1.5em;
+    }
+    .lovely_link{
+        font-size: 1.5em;
+    }
+    .user_social{
+        font-size: 1.9em;
+    }
+}
+
+
+@media screen and (min-height: 800px) {
+    .lovely_user_wrapper{
+        min-height: 800px;
+    }
+}
