@@ -1,0 +1,133 @@
+.pm_remover{
+    margin: 0px;
+    padding: 0px;
+}
+.each_grade_wrapper{
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background: var(--white);
+}
+.title_grade{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-black);
+    font-size: 2.2em;
+    text-decoration: underline var(--orange);
+}
+.eachGrade_content{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.grade_card_wrapper{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 8px;
+    transition: .5s;
+}
+.grade_card_wrapper:hover{
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+.card_icon{
+    width: 100px;
+    height: 80px;
+    background: var(--light-black);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.icon_school{
+    color: var(--orange);
+    font-size: 3em;
+}
+
+.grade_card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 360px;
+    background: #fff;
+    border-bottom: 8px solid var(--light-black);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.grade_card_image{
+    width: 100%;
+    height: 200px;
+}
+.image_card_grad{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.grade_card_perks{
+    width: 100%;
+    height: 160px;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+}
+.title_card{
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-black);
+    text-decoration: underline var(--orange);
+    font-size: 2em;
+}
+.title_teacher{
+    font-size:1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-black);
+    font-weight: 500;
+}
+.wrapper_detail{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--light-black);
+    position: absolute;
+    right: 5px;
+    bottom: 18px;
+    transition: .5s;
+}
+.wrapper_detail:hover{
+    cursor: pointer;
+}
+.wrapper_detail:hover > .title_more{
+    color: var(--white);
+    transition: .5s;
+}
+.title_more{
+    transition: .5s;
+    font-size:1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--orange);
+}
+@media screen and (min-width: 330px) {
+    .grade_card_wrapper{
+        width: 330px;
+    }
+}
+@media screen and (min-width: 1110px) {
+    .eachGrade_content{
+        width: 1110px;
+        margin: 0 auto;
+    }
+    
+}
