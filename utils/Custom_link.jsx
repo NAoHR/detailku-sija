@@ -1,16 +1,17 @@
 import {TransitContext} from "./Transition_Context";
 import { useContext } from "react";
-import Link from "next/link";
 
 const CustomLink = (props) => {
-    const {path} = props;
+    const {path,color} = props;
     const TransitHandler = useContext(TransitContext);
+    function anchorHandler(e){
+        e.preventDefault();
+        return TransitHandler(path);
+    }
     return (
-        <Link href="#" as={path}>
-            <a className="pm_remover" onClick={() => TransitHandler(path)}>
+            <a href={path} className="pm_remover" onClick={anchorHandler} >
                 {props.children}
             </a>
-        </Link>
     )
 }
 
