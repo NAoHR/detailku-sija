@@ -2,6 +2,7 @@ import style from "../../styles/components-css/people/People_card.module.css";
 import {IoSchool} from "react-icons/io5";
 import { TransitContext } from "../../utils/Transition_Context";
 import {useContext} from "react"
+import CustomLink from "../../utils/Custom_link";
 
 const People_card = ({data}) => {
     const TransitHandler = useContext(TransitContext)
@@ -24,9 +25,11 @@ const People_card = ({data}) => {
                     <IoSchool />
                 </h3>
                 <div className={style.lovely_more_side}>
-                    <h3 className={style.lovely_more_text} onClick={()=> TransitHandler(`people/${data.subgrade.split(" ").join("_")}`)}>
-                        more
-                    </h3>
+                    <CustomLink path={`/people/${data.subgrade.split(" ").join("_")}`}>
+                        <h3 className={style.lovely_more_text}>
+                            more
+                        </h3>
+                    </CustomLink>
                 </div>
             </div>
         </div>

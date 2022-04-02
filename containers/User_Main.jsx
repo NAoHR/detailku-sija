@@ -10,7 +10,7 @@ import {
 import {BsFillArrowLeftCircleFill} from "react-icons/bs"
 import { useContext, useEffect, useState } from "react";
 import { TransitContext } from "../utils/Transition_Context";
-
+import CustomLink from "../utils/Custom_link";
 
 const Project_Card = ({subdata}) => {
     return (
@@ -137,14 +137,16 @@ const User_Main = ({data}) => {
             <Navbar />
             <div className={style.lovely_user_wrapper}>
                 <div className={style.lovely_go_back}>
-                    <div className={style.lovely_gb_wrap} onClick={()=> {TransitHandler(`/people/${data.grade}`)}}>
-                        <h1 className={`${style.lovely_gb_icon} ${style.pm_remover}`}>
-                            <BsFillArrowLeftCircleFill />
-                        </h1>
-                        <h1 className={`${style.lovely_gb_text} ${style.pm_remover}`}>
-                            Go Back
-                        </h1>
-                    </div>
+                    <CustomLink path={`/people/${data.grade}`}>
+                        <div className={style.lovely_gb_wrap}>
+                            <h1 className={`${style.lovely_gb_icon} ${style.pm_remover}`}>
+                                <BsFillArrowLeftCircleFill />
+                            </h1>
+                            <h1 className={`${style.lovely_gb_text} ${style.pm_remover}`}>
+                                Go Back
+                            </h1>
+                        </div>
+                    </CustomLink>
                 </div>
                 <div className={style.lovely_top_user}>
                     <div className={style.lovely_topt_user}>
@@ -240,15 +242,9 @@ const User_Main = ({data}) => {
                             </h3>
                         </div>
                     </div>
-                    {/* {activeState == "project" && <Project_Card />}
-                    {activeState == "skill" && <Skill_Card />}
-                    {activeState == "cert" && <Cert_Card />} */}
-
                     {activeState == "project" && <Card_Looper type={"project"} data={data.project} />}
                     {activeState == "skill" && <Card_Looper type={"skill"} data={data.skill} />}
                     {activeState == "cert" && <Card_Looper type={"certificate"} data={data.certificate} />}
-
-                    {/* <ErrData message={"not found"} /> */}
                 </div>
             </div>
             <Footer />

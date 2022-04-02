@@ -1,8 +1,9 @@
 import style from "../../styles/components-css/About/About_grade.module.css"
+import CustomLink from "../../utils/Custom_link"
 import { TransitContext } from "../../utils/Transition_Context"
 import { useContext } from "react"
 import {
-    FaMapPin,FaSchool
+    FaSchool
 } from "react-icons/fa"
 
 const grade_data = [
@@ -60,11 +61,13 @@ const GradeCard = ({data}) => {
                         <h2 className={`${style.title_teacher} ${style.pm_remover}`}>
                             {val.teacher}
                         </h2>
-                        <div className={style.wrapper_detail} onClick={() => TransitHandler(`/people/${val.title.split(" ").join("_")}`)}>
-                            <h2 className={`${style.title_more} ${style.pm_remover}`}>
-                                more
-                            </h2>
-                        </div>
+                        <CustomLink path={`/people/${val.title.split(" ").join("_")}`}>
+                            <div className={style.wrapper_detail}>
+                                <h2 className={`${style.title_more} ${style.pm_remover}`}>
+                                    more
+                                </h2>
+                            </div>
+                        </CustomLink>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,8 @@
 import style from "../../styles/components-css/people/Grade_card.module.css";
 import {FaLink} from "react-icons/fa"
-import { TransitContext } from "../../utils/Transition_Context";
-import { useContext } from "react";
+import CustomLink from "../../utils/Custom_link";
 
 const GradeCard = ({creds}) => {
-    const TransitHandler =  useContext(TransitContext);
     const name = creds.name.split(" ")
     return (
         <div className={style.lovely_grade_card}>
@@ -27,9 +25,11 @@ const GradeCard = ({creds}) => {
                         {name.length >= 2 ? `${name[0]} ${name[name.length -1]}` : name[0]}
                     </h1>
                 </div>
-                    <h2 className={`${style.lovely_user_username} ${style.pm_remover}`} onClick={() => {TransitHandler(`/people/${creds.grade}/${creds.username}`)}}>
-                        <FaLink /> @{creds.username}
-                    </h2>
+                    <CustomLink path={`/people/${creds.grade}/${creds.username}`}>
+                        <h2 className={`${style.lovely_user_username} ${style.pm_remover}`}>
+                            <FaLink /> @{creds.username}
+                        </h2>
+                    </CustomLink>
                 <div className={style.lovely_description}>
                     <h3 className={`${style.lovely_user_desc} ${style.pm_remover}`}>
                         {creds.detail.description.length > 120 ? `${creds.detail.description.slice(0,116)}...` : creds.detail.description}

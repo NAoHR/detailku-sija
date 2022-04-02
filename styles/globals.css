@@ -57,3 +57,7 @@ a {
 * {
   box-sizing: border-box;
 }
+.pm_remover{
+  padding: 0px;
+  margin: 0px;
+}

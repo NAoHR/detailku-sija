@@ -5,9 +5,9 @@ import {
 import Link from "next/link";
 import { TransitContext } from "../utils/Transition_Context";
 import { useContext } from "react";
+import CustomLink from "../utils/Custom_link";
 
 const Footer = () => {
-    const TransitHandler = useContext(TransitContext)
     return (
         <>
             <footer className={style.lovely_footer_wrapper}>
@@ -19,30 +19,40 @@ const Footer = () => {
                             More
                         </h2>
                         <ul className={style.lovely_ul}>
-                            <li className={style.lovely_li} onClick={() => TransitHandler("/")}>
-                                <p className={style.lovely_socmed_title}>
-                                    Home
-                                </p>
+                            <li className={style.lovely_li}>
+                                <CustomLink path={"/"}>
+                                    <p className={style.lovely_socmed_title}>
+                                        Home
+                                    </p>
+                                </CustomLink>
                             </li>
-                            <li className={style.lovely_li} onClick={() => TransitHandler("/people")}>
-                                <p className={style.lovely_socmed_title}>
-                                    People
-                                </p>
+                            <li className={style.lovely_li} >
+                                <CustomLink path={"/people"}>
+                                    <p className={style.lovely_socmed_title}>
+                                        People
+                                    </p>
+                                </CustomLink>
                             </li>
-                            <li className={style.lovely_li} onClick={() => TransitHandler("/job")}>
-                                <p className={style.lovely_socmed_title}>
-                                    Job
-                                </p>
+                            <li className={style.lovely_li} >
+                                <CustomLink path={"/job"}>
+                                    <p className={style.lovely_socmed_title}>
+                                        Job
+                                    </p>
+                                </CustomLink>
                             </li>
-                            <li className={style.lovely_li} onClick={() => TransitHandler("/about")}>
-                                <p className={style.lovely_socmed_title}>
-                                    About
-                                </p>
+                            <li className={style.lovely_li} >
+                                <CustomLink path={"/"}>
+                                    <p className={style.lovely_socmed_title}>
+                                        About
+                                    </p>
+                                </CustomLink>
                             </li>
-                            <li className={style.lovely_li} onClick={() => TransitHandler("/news")}>
-                                <p className={style.lovely_socmed_title}>
-                                    News
-                                </p>
+                            <li className={style.lovely_li} >
+                                <CustomLink path={"/news"}>
+                                    <p className={style.lovely_socmed_title}>
+                                        Home
+                                    </p>
+                                </CustomLink>
                             </li>
                         </ul>
                     </div>

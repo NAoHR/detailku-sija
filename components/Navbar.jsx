@@ -1,15 +1,13 @@
-import { useContext, useState } from "react";
 import style from "../styles/components-css/Navbar.module.css";
-import Link from "next/link";
+import CustomLink from "../utils/Custom_link";
+
+import { useState } from "react";
 import {
     FaBars,FaTimes
 } from "react-icons/fa";
 
-import { TransitContext } from "../utils/Transition_Context";
-
 export default function Navbar(){
     const [expand, setExpand] = useState(false);
-    const transitHandler = useContext(TransitContext);
     return (
         <>
         <nav className={style.nav_wrapper}>
@@ -21,49 +19,39 @@ export default function Navbar(){
                 </div>
                 <div className={`${style.center_side}  ${style.align_center}`}>
                     <span className={style.center_span}>
-                        <Link href="#" as="/">
-                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/")}>
-                                <h1 className={style.center_side_content}>
-                                    Home
-                                </h1>
-                            </a>
-                        </Link>
+                        <CustomLink path={"/"}>
+                            <h1 className={style.center_side_content}>
+                                Home
+                            </h1>
+                        </CustomLink>
                     </span>
                     <span className={style.center_span}>
-                        <Link href="#" as="/news">
-                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/news")}>
-                                <h1 className={style.center_side_content}>
-                                    News
-                                </h1>
-                            </a>
-                        </Link>
+                        <CustomLink path={"/news"}>
+                            <h1 className={style.center_side_content}>
+                                news
+                            </h1>
+                        </CustomLink>
                     </span>
                     <span className={style.center_span}>
-                        <Link href="#" as="/about">
-                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/about")}>
-                                <h1 className={style.center_side_content} >
-                                    About
-                                </h1>
-                            </a>
-                        </Link>
+                        <CustomLink path={"/about"}>
+                            <h1 className={style.center_side_content}>
+                                About
+                            </h1>
+                        </CustomLink>
                     </span>
                     <span className={style.center_span}>
-                        <Link href="#" as="/people">
-                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/people")}>
-                                <h1 className={style.center_side_content} >
-                                    People
-                                </h1>
-                            </a>
-                        </Link>
+                        <CustomLink path={"/people"}>
+                            <h1 className={style.center_side_content}>
+                                People
+                            </h1>
+                        </CustomLink>
                     </span>
                     <span className={style.center_span}>
-                        <Link href="#" as="/job">
-                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/job")}>
-                                <h1 className={style.center_side_content} >
-                                    Job
-                                </h1>
-                            </a>
-                        </Link>
+                        <CustomLink path={"/job"}>
+                            <h1 className={style.center_side_content}>
+                                Job
+                            </h1>
+                        </CustomLink>
                     </span>
                 </div>
                 <div className={`${style.right_side} ${style.align_center}`} onClick={function(e){setExpand(!expand)}}>
@@ -86,49 +74,39 @@ export default function Navbar(){
                         <div className={style.abs_wrapper_bottom}></div>
                         <div className={style.expander_wrapper}>
                             <div className={style.expander_item}>
-                                <Link href="#" as="/">
-                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/")}>
-                                        <h1 className={style.expander_text} >
-                                            Home
-                                        </h1>
-                                    </a>
-                                </Link>
+                                <CustomLink path={"/"}>
+                                    <h1 className={style.expander_text} >
+                                        Home
+                                    </h1>
+                                </CustomLink>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="#" as="/news">
-                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/news")}>
-                                        <h1 className={style.expander_text} >
-                                            News
-                                        </h1>
-                                    </a>
-                                </Link>
+                                <CustomLink path={"/news"}>
+                                    <h1 className={style.expander_text} >
+                                        News
+                                    </h1>
+                                </CustomLink>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="#" as="/people">
-                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/people")}>
-                                        <h1 className={style.expander_text} >
-                                            People
-                                        </h1>
-                                    </a>
-                                </Link>
+                                <CustomLink path={"/people"}>
+                                    <h1 className={style.expander_text} >
+                                        People
+                                    </h1>
+                                </CustomLink>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="#" as="/job">
-                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/job")}>
-                                        <h1 className={style.expander_text}>
-                                            Job
-                                        </h1>
-                                    </a>
-                                </Link>
+                                <CustomLink path={"/job"}>
+                                    <h1 className={style.expander_text} >
+                                        Job
+                                    </h1>
+                                </CustomLink>
                             </div>
                             <div className={style.expander_item}>
-                                <Link href="#" as="/about">
-                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/about")}>
-                                        <h1 className={style.expander_text}>
-                                            About
-                                        </h1>
-                                    </a>
-                                </Link>
+                                <CustomLink path={"/about"}>
+                                    <h1 className={style.expander_text} >
+                                        About
+                                    </h1>
+                                </CustomLink>
                             </div>
                         </div>
                     </div>

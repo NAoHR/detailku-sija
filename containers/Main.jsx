@@ -2,22 +2,18 @@ import style from "../styles/containers-css/Main.module.css";
 import Navbar from "../components/Navbar";
 import People_landing from "../components/People_landing";
 import Footer from "../components/Footer";
-import Link from "next/link";
 import Subject_card from "../components/Subject_card";
 import subjects from "../utils/subjects.json";
 import AchievedCard from "../components/AchievedCard";
 import AchivedJson from "../utils/achieved.json";
-import { TransitContext } from "../utils/Transition_Context";
+import CustomLink from "../utils/Custom_link";
 import {
     FaLightbulb
 } from "react-icons/fa"
-
-import { useRef,useEffect, useContext } from "react";
+import { useRef,useEffect,} from "react";
 
 
 const Main = () => {
-    const flexedStatus = useRef(true);
-    const TransitHandler = useContext(TransitContext)
     function animate_flex_who() {
         const flexedPosition = document.getElementsByClassName(style.lovely_flexed_who)[0];
         if(flexedPosition){
@@ -50,7 +46,9 @@ const Main = () => {
                             </h1>
                             <p className={`${style.lovely_p_text} ${style.lovely_z_index}`}>Belajar, Bekerja, membangun dengan semangat yang penuh dan tidak lupa disertai dengan doa dan keihklasan agar bisa mencapai kejayaan di masa depan</p>
                             <div className={`${style.lovely_explore_wrapper} ${style.lovely_z_index}`}>
-                                <h1 className={style.lovely_explore_text} onClick={()=>{TransitHandler("/about")}}>explore</h1>
+                                <CustomLink path={"/about"}>
+                                    <h1 className={style.lovely_explore_text}>explore</h1>
+                                </CustomLink>
                             </div>
                         </div>
                         <div className={style.lovely_right}>
