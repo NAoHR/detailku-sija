@@ -50,7 +50,7 @@ const Main = () => {
                             </h1>
                             <p className={`${style.lovely_p_text} ${style.lovely_z_index}`}>Belajar, Bekerja, membangun dengan semangat yang penuh dan tidak lupa disertai dengan doa dan keihklasan agar bisa mencapai kejayaan di masa depan</p>
                             <div className={`${style.lovely_explore_wrapper} ${style.lovely_z_index}`}>
-                                <h1 className={style.lovely_explore_text} onClick={()=>{TransitHandler("/people")}}>explore</h1>
+                                <h1 className={style.lovely_explore_text} onClick={()=>{TransitHandler("/about")}}>explore</h1>
                             </div>
                         </div>
                         <div className={style.lovely_right}>
