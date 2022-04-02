@@ -121,6 +121,15 @@ export default function Navbar(){
                                     </a>
                                 </Link>
                             </div>
+                            <div className={style.expander_item}>
+                                <Link href="#" as="/about">
+                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/about")}>
+                                        <h1 className={style.expander_text}>
+                                            About
+                                        </h1>
+                                    </a>
+                                </Link>
+                            </div>
                         </div>
                     </div>
         </nav>
