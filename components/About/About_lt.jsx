@@ -16,7 +16,7 @@ const About_lt = () =>{
                 </h1>
             </div>
             <div className={style.media_content_wrapper}>
-                <Link href="">
+                <Link href="https://www.instagram.com/smkn26jktofficial">
                     <a>        
                         <div className={style.social_media_card}>
                             <div className={style.socmed_card_top}>
@@ -32,7 +32,7 @@ const About_lt = () =>{
                         </div>
                     </a>
                 </Link>
-                <Link href="">
+                <Link href="https://www.facebook.com/SMK-Negeri-26-STM-Pembangunan-Jakarta-48205335886/">
                     <a>        
                         <div className={style.social_media_card}>
                             <div className={style.socmed_card_top}>
@@ -48,7 +48,7 @@ const About_lt = () =>{
                         </div>
                     </a>
                 </Link>
-                <Link href="">
+                <Link href="https://www.linkedin.com/company/smk-negeri-26-jakarta">
                     <a>        
                         <div className={style.social_media_card}>
                             <div className={style.socmed_card_top}>
@@ -64,7 +64,7 @@ const About_lt = () =>{
                         </div>
                     </a>
                 </Link>
-                <Link href="">
+                <Link href="https://www.youtube.com/channel/UC1lmdxhbnccuoXY5fzhO9tg">
                     <a>        
                         <div className={style.social_media_card}>
                             <div className={style.socmed_card_top}>
@@ -80,7 +80,7 @@ const About_lt = () =>{
                         </div>
                     </a>
                 </Link>
-                <Link href="">
+                <Link href="https://app.lapentor.com/sphere/smkn-26-1602643278?scene=5f87dd1c362df77f177c1f53">
                     <a>        
                         <div className={style.social_media_card}>
                             <div className={style.socmed_card_top}>
@@ -96,7 +96,7 @@ const About_lt = () =>{
                         </div>
                     </a>
                 </Link>
-                <Link href="">
+                <Link href="mailto:smkn26jkt@gmail.com">
                     <a>        
                         <div className={style.social_media_card}>
                             <div className={style.socmed_card_top}>

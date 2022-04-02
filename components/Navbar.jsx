@@ -20,41 +20,51 @@ export default function Navbar(){
                     </h1>
                 </div>
                 <div className={`${style.center_side}  ${style.align_center}`}>
-                    <Link href="#" as="/">
-                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/")}>
-                            <h1 className={style.center_side_content}>
-                                Home
-                            </h1>
-                        </a>
-                    </Link>
-                    <Link href="#" as="/news">
-                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/news")}>
-                            <h1 className={style.center_side_content}>
-                                News
-                            </h1>
-                        </a>
-                    </Link>
-                    <Link href="#" as="/about">
-                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/about")}>
-                            <h1 className={style.center_side_content} >
-                                About
-                            </h1>
-                        </a>
-                    </Link>
-                    <Link href="#" as="/people">
-                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/people")}>
-                            <h1 className={style.center_side_content} >
-                                People
-                            </h1>
-                        </a>
-                    </Link>
-                    <Link href="#" as="/job">
-                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/job")}>
-                            <h1 className={style.center_side_content} >
-                                Job
-                            </h1>
-                        </a>
-                    </Link>
+                    <span className={style.center_span}>
+                        <Link href="#" as="/">
+                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/")}>
+                                <h1 className={style.center_side_content}>
+                                    Home
+                                </h1>
+                            </a>
+                        </Link>
+                    </span>
+                    <span className={style.center_span}>
+                        <Link href="#" as="/news">
+                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/news")}>
+                                <h1 className={style.center_side_content}>
+                                    News
+                                </h1>
+                            </a>
+                        </Link>
+                    </span>
+                    <span className={style.center_span}>
+                        <Link href="#" as="/about">
+                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/about")}>
+                                <h1 className={style.center_side_content} >
+                                    About
+                                </h1>
+                            </a>
+                        </Link>
+                    </span>
+                    <span className={style.center_span}>
+                        <Link href="#" as="/people">
+                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/people")}>
+                                <h1 className={style.center_side_content} >
+                                    People
+                                </h1>
+                            </a>
+                        </Link>
+                    </span>
+                    <span className={style.center_span}>
+                        <Link href="#" as="/job">
+                            <a classsName={`${style.pm_remover}`} onClick={()=> transitHandler("/job")}>
+                                <h1 className={style.center_side_content} >
+                                    Job
+                                </h1>
+                            </a>
+                        </Link>
+                    </span>
                 </div>
                 <div className={`${style.right_side} ${style.align_center}`} onClick={function(e){setExpand(!expand)}}>
                         <div className={`${style.align_center} ${style.diss}`}>
