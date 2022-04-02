@@ -28,7 +28,7 @@ const teacherList = [
 
 const Teacher_Card = ({data}) => {
     return data.map((val) => {
-        return (<span>
+        return (<span key={val.name}>
             <div className={style.teacher_card}>
                 <div className={style.teacher_card_top}>
                     <div className={style.card_decoration}>

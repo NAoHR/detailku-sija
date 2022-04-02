@@ -43,7 +43,7 @@ const GradeCard = ({data}) => {
 
     return data.map((val)=>{
         return (
-            <div className={style.grade_card_wrapper}>
+            <div className={style.grade_card_wrapper} key={val.teacher}>
                 <div className={style.card_icon}>
                     <h1 className={`${style.icon_school} ${style.pm_remover}`}>
                         <FaSchool />
