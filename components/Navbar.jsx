@@ -21,36 +21,36 @@ export default function Navbar(){
                 </div>
                 <div className={`${style.center_side}  ${style.align_center}`}>
                     <Link href="#" as="/">
-                        <a>
-                            <h1 className={style.center_side_content} onClick={()=> transitHandler("/")}>
+                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/")}>
+                            <h1 className={style.center_side_content}>
                                 Home
                             </h1>
                         </a>
                     </Link>
                     <Link href="#" as="/news">
-                        <a>
-                            <h1 className={style.center_side_content} onClick={()=> transitHandler("/news")}>
+                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/news")}>
+                            <h1 className={style.center_side_content}>
                                 News
                             </h1>
                         </a>
                     </Link>
                     <Link href="#" as="/about">
-                        <a>
-                            <h1 className={style.center_side_content} onClick={()=> transitHandler("/about")}>
+                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/about")}>
+                            <h1 className={style.center_side_content} >
                                 About
                             </h1>
                         </a>
                     </Link>
                     <Link href="#" as="/people">
-                        <a>
-                            <h1 className={style.center_side_content} onClick={()=> transitHandler("/people")}>
+                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/people")}>
+                            <h1 className={style.center_side_content} >
                                 People
                             </h1>
                         </a>
                     </Link>
                     <Link href="#" as="/job">
-                        <a>
-                            <h1 className={style.center_side_content} onClick={()=> transitHandler("/job")}>
+                        <a classsName={style.pm_remover} onClick={()=> transitHandler("/job")}>
+                            <h1 className={style.center_side_content} >
                                 Job
                             </h1>
                         </a>
@@ -77,8 +77,8 @@ export default function Navbar(){
                         <div className={style.expander_wrapper}>
                             <div className={style.expander_item}>
                                 <Link href="#" as="/">
-                                    <a>
-                                        <h1 className={style.expander_text} onClick={()=> transitHandler("/")}>
+                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/")}>
+                                        <h1 className={style.expander_text} >
                                             Home
                                         </h1>
                                     </a>
@@ -86,8 +86,8 @@ export default function Navbar(){
                             </div>
                             <div className={style.expander_item}>
                                 <Link href="#" as="/news">
-                                    <a>
-                                        <h1 className={style.expander_text} onClick={()=> transitHandler("/news")}>
+                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/news")}>
+                                        <h1 className={style.expander_text} >
                                             News
                                         </h1>
                                     </a>
@@ -95,8 +95,8 @@ export default function Navbar(){
                             </div>
                             <div className={style.expander_item}>
                                 <Link href="#" as="/people">
-                                    <a>
-                                        <h1 className={style.expander_text} onClick={()=> transitHandler("/people")}>
+                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/people")}>
+                                        <h1 className={style.expander_text} >
                                             People
                                         </h1>
                                     </a>
@@ -104,8 +104,8 @@ export default function Navbar(){
                             </div>
                             <div className={style.expander_item}>
                                 <Link href="#" as="/job">
-                                    <a>
-                                        <h1 className={style.expander_text} onClick={()=> transitHandler("/job")}>
+                                    <a classsName={style.pm_remover} onClick={()=> transitHandler("/job")}>
+                                        <h1 className={style.expander_text}>
                                             Job
                                         </h1>
                                     </a>
