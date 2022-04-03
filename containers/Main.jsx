@@ -128,10 +128,10 @@ const Main = () => {
                                 <FaLightbulb />
                             </h1>
                             <h1 className={style.lovely_quote_text}>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus impedit provident libero eaque natus pariatur.
+                                Education is not to be viewed as something like filling a vessel with water but, rather, assisting a flower to grow in its own way
                             </h1>
                             <h2 className={style.lovely_quote_by}>
-                                someone
+                                Bertrand Russell
                             </h2>
                         </div>
                 </div>
