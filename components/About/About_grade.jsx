@@ -1,10 +1,10 @@
 import style from "../../styles/components-css/About/About_grade.module.css"
 import CustomLink from "../../utils/Custom_link"
-import { TransitContext } from "../../utils/Transition_Context"
-import { useContext } from "react"
+
 import {
     FaSchool
 } from "react-icons/fa"
+import { useEffect } from "react"
 
 const grade_data = [
     {
@@ -39,40 +39,54 @@ const grade_data = [
     },
 ]
 
-const GradeCard = ({data}) => {
-    const TransitHandler = useContext(TransitContext);
-
-    return data.map((val)=>{
-        return (
-            <div className={style.grade_card_wrapper} key={val.teacher}>
-                <div className={style.card_icon}>
-                    <h1 className={`${style.icon_school} ${style.pm_remover}`}>
-                        <FaSchool />
-                    </h1>
+const GradeCard = ({data,index}) => {
+    function bulp(){
+        const card = document.getElementsByClassName(style.grade_card_wrapper)[Number(index)];
+        if(card){
+            let card_top = card.getBoundingClientRect().top;
+            let innerHeight = window.innerHeight;
+            if(innerHeight > card_top){
+                card.style = "transition: 1s;transform: translateY(0%);opacity: 1;"
+            }else{
+                card.style = "transition: 1s;transform: translateY(15%);opacity: 0;"
+            }
+        }
+    }
+    useEffect(()=>{
+        bulp();
+        window.addEventListener("scroll",()=>{
+            bulp()
+        })
+    })
+    return (
+        <div className={style.grade_card_wrapper}>
+            <div className={style.card_icon}>
+                <h1 className={`${style.icon_school} ${style.pm_remover}`}>
+                    <FaSchool />
+                </h1>
+            </div>
+            <div className={style.grade_card}>
+                <div className={style.grade_card_image}>
+                    <img src={`/gradepict/${data.imagePath}`} alt="" className={style.image_card_grad} />
                 </div>
-                <div className={style.grade_card}>
-                    <div className={style.grade_card_image}>
-                        <img src={`/gradepict/${val.imagePath}`} alt="" className={style.image_card_grad} />
-                    </div>
-                    <div className={style.grade_card_perks}>
-                        <h1 className={`${style.title_card} ${style.pm_remover}`}>
-                            {val.title}
-                        </h1>
-                        <h2 className={`${style.title_teacher} ${style.pm_remover}`}>
-                            {val.teacher}
-                        </h2>
-                        <CustomLink path={`/people/${val.title.split(" ").join("_")}`}>
-                            <div className={style.wrapper_detail}>
-                                <h2 className={`${style.title_more} ${style.pm_remover}`}>
-                                    more
-                                </h2>
-                            </div>
-                        </CustomLink>
-                    </div>
+                <div className={style.grade_card_perks}>
+                    <h1 className={`${style.title_card} ${style.pm_remover}`}>
+                        {data.title}
+                    </h1>
+                    <h2 className={`${style.title_teacher} ${style.pm_remover}`}>
+                        {data.teacher}
+                    </h2>
+                    <CustomLink path={`/people/${data.title.split(" ").join("_")}`}>
+                        <div className={style.wrapper_detail}>
+                            <h2 className={`${style.title_more} ${style.pm_remover}`}>
+                                more
+                            </h2>
+                        </div>
+                    </CustomLink>
                 </div>
             </div>
-        )
-    })
+        </div>
+    )
 }
 
 
@@ -85,7 +99,11 @@ const About_grade = () => {
                 </h1>
             </div>
             <div className={style.eachGrade_content}>
-                <GradeCard data={grade_data}/>                
+                {
+                grade_data.map((val,index)=>{
+                    return <GradeCard data={val} key={val.teacher} index={index}/>
+                })
+                }
             </div>
         </div>
     )

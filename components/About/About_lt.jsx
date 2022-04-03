@@ -1,10 +1,30 @@
 import {
-    FaMapPin,FaInstagram,FaFacebook,FaMapMarkerAlt,FaLinkedin,FaYoutube,FaEnvelope
+    FaInstagram,FaFacebook,FaMapMarkerAlt,FaLinkedin,FaYoutube,FaEnvelope
 } from "react-icons/fa"
 import Link from "next/link"
 import style from "../../styles/components-css/About/About_lt.module.css"
+import { useEffect } from "react"
 
 const About_lt = () =>{
+    function bulp(){
+        const card = document.getElementsByClassName(style.media_content_wrapper)[0];
+        if(card){
+            let card_top = card.getBoundingClientRect().top;
+            let innerHeight = window.innerHeight;
+            if(innerHeight > card_top){
+                card.style = "transition: 1s;transform: translateX(0%);opacity: 1;"
+            }else{
+                card.style = "transition: 1s;transform: translateX(15%);opacity: 0;"
+            }
+        }
+    }
+
+    useEffect(()=>{
+        bulp();
+        window.addEventListener("scroll",()=>{
+            bulp()
+        })
+    },[])
     return (
         <>        
         <div className={style.lovely_media_wrapper}>

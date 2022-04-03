@@ -2,6 +2,7 @@ import style from "../../styles/components-css/About/About_Teacher.module.css"
 import {
     FaChalkboardTeacher
 } from "react-icons/fa"
+import {useEffect} from "react"
 
 const teacherList = [
     {
@@ -49,6 +50,25 @@ const Teacher_Card = ({data}) => {
 }
 
 const About_Teacher = () => {
+    function bulp(){
+        const card = document.getElementsByClassName(style.teacher_bottom)[0];
+        if(card){
+            let card_top = card.getBoundingClientRect().top;
+            let innerHeight = window.innerHeight;
+            if(innerHeight > card_top){
+                card.style = "transition: 1s;transform: translateX(0%);opacity: 1;"
+            }else{
+                card.style = "transition: 1s;transform: translateX(-15%);opacity: 0;"
+            }
+        }
+    }
+
+    useEffect(()=>{
+        bulp()
+        window.addEventListener("scroll",()=>{
+            bulp()
+        })
+    },[])
     return (
         <div className={style.teacher_wrapper}>
             <div className={style.teacher_content}>
