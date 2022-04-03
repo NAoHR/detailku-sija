@@ -1,5 +1,5 @@
 import style from "../styles/components-css/Subject_card.module.css";
-import {FaRegCalendarAlt} from "react-icons/fa";
+import {FaBookReader} from "react-icons/fa";
 import { useEffect } from "react";
 
 export default function Subject_card(props){
@@ -30,7 +30,7 @@ export default function Subject_card(props){
         <div className={style.lovely_subject_card}>
             <div className={style.lovely_subject_icon_side}>
                 <h1 className={style.lovelY_icon_wrapper}>
-                    <FaRegCalendarAlt />
+                    <FaBookReader />
                 </h1>
             </div>
             <div className={style.lovely_subject_fill_side}>
