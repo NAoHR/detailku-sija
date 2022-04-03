@@ -13,9 +13,11 @@ export default function Navbar(){
         <nav className={style.nav_wrapper}>
             <div className={style.center_wrapper}>
                 <div className={`${style.left_side} ${style.align_center}`}>
-                    <h1 className={style.center_side_content}>
-                        Detailku
-                    </h1>
+                    <CustomLink path={"/"}>
+                        <h1 className={style.center_side_content}>
+                            Detailku
+                        </h1>
+                    </CustomLink>
                 </div>
                 <div className={`${style.center_side}  ${style.align_center}`}>
                     <span className={style.center_span}>

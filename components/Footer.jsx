@@ -41,7 +41,7 @@ const Footer = () => {
                                 </CustomLink>
                             </li>
                             <li className={style.lovely_li} >
-                                <CustomLink path={"/"}>
+                                <CustomLink path={"/about"}>
                                     <p className={style.lovely_socmed_title}>
                                         About
                                     </p>
