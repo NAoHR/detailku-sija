@@ -47,13 +47,6 @@ const Footer = () => {
                                     </p>
                                 </CustomLink>
                             </li>
-                            <li className={style.lovely_li} >
-                                <CustomLink path={"/news"}>
-                                    <p className={style.lovely_socmed_title}>
-                                        Home
-                                    </p>
-                                </CustomLink>
-                            </li>
                         </ul>
                     </div>
                     <div className={`${style.lovely_socmed_segment}`}>

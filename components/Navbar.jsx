@@ -26,13 +26,6 @@ export default function Navbar(){
                         </CustomLink>
                     </span>
                     <span className={style.center_span}>
-                        <CustomLink path={"/news"}>
-                            <h1 className={style.center_side_content}>
-                                news
-                            </h1>
-                        </CustomLink>
-                    </span>
-                    <span className={style.center_span}>
                         <CustomLink path={"/about"}>
                             <h1 className={style.center_side_content}>
                                 About
@@ -77,13 +70,6 @@ export default function Navbar(){
                                 <CustomLink path={"/"}>
                                     <h1 className={style.expander_text} >
                                         Home
-                                    </h1>
-                                </CustomLink>
-                            </div>
-                            <div className={style.expander_item}>
-                                <CustomLink path={"/news"}>
-                                    <h1 className={style.expander_text} >
-                                        News
                                     </h1>
                                 </CustomLink>
                             </div>
