@@ -139,10 +139,10 @@ const User_Main = ({data}) => {
                 <div className={style.lovely_go_back}>
                     <CustomLink path={`/people/${data.grade}`}>
                         <div className={style.lovely_gb_wrap}>
-                            <h1 className={`${style.lovely_gb_icon} ${style.pm_remover}`}>
+                            <h1 className={`${style.lovely_gb_icon} ${style.pm_remover} ${style.lighten_black}`}>
                                 <BsFillArrowLeftCircleFill />
                             </h1>
-                            <h1 className={`${style.lovely_gb_text} ${style.pm_remover}`}>
+                            <h1 className={`${style.lovely_gb_text} ${style.pm_remover} ${style.lighten_black}`}>
                                 Go Back
                             </h1>
                         </div>
