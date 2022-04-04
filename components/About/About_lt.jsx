@@ -32,7 +32,7 @@ const About_lt = () =>{
             <div className={`${style.media_wrapper_aces} ${style.righted}`}></div>
             <div className={style.media_title_wrapper}>
                 <h1 className={`${style.media_title} ${style.pm_remover}`}>
-                    Little Thing About Us
+                    Mari Berkenalan
                 </h1>
             </div>
             <div className={style.media_content_wrapper}>

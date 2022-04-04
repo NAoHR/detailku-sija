@@ -10,15 +10,14 @@ import {useState} from "react";
 
 const MapData = ({data}) => {
     if(typeof data === "object"){
-        console.log("wew");
         if(data.length > 0){
             return data.map((val,index) => {
-                return <Job_Card key={index} card_detail={val}/>
+                return <Job_Card key={index} card_detail={val} index={index}/>
             })
         }
-        return <ErrData message={"No Data To Be Displayed"}/>
+        return <ErrData message={"Data Yang Kamu Cari Tidak Ada"}/>
     }
-    return <ErrData message={"Something Went Wrong"}/>
+    return <ErrData message={"Terjadi Kesalahan Internal"}/>
 }
 
 const Job  = ({data}) => {
@@ -49,10 +48,10 @@ const Job  = ({data}) => {
                     <div className={`${style.lovely_top_content} ${style.zindex}`}>
                         <div className={style.lovely_top_text}>
                             <h1 className={style.lovely_top_head}>
-                                <span className={style.bigger}><FaBriefcase /></span> <br/>Find A job<br />that Suits You
+                                <span className={style.bigger}><FaBriefcase /></span> <br/>Temui Pekerjaan<br />Sesuai Kemampuanmu
                             </h1>
                             <h3 className={style.lovely_top_offer}>
-                                Or maybe offer it
+                                Atau mungkin Rekrut Kami
                             </h3>
                         </div>
                     </div>

@@ -8,9 +8,9 @@ import NotFound from "../../../containers/NotFound";
 const DecideToShow = ({data}) => {
   console.log(data)
   if(data === false){
-    return <NotFound message={"Internal Error"} title={501} redirect={"/people"}/>
+    return <NotFound message={"Terjadi Error"} title={501} redirect={"/people"}/>
   }else if(data.length == 0){
-    return <NotFound message={"Data Not Found"} title={404} redirect={"/people"}/>
+    return <NotFound message={"Kelas Tidak Ditemukan"} title={404} redirect={"/people"}/>
   }
   return <Grade_Main eachdata={data} />
 }

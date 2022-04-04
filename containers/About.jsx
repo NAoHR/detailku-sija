@@ -19,7 +19,7 @@ const About_Main = () => {
                         <FaMapPin />
                     </h1>
                     <h1 className={`${style.lovely_about_gtku} ${style.pm_remover}`}>
-                        Get To <br /><span className={style.lovely_orange}>Know</span> Us More
+                        Ayo <span className={style.lovely_orange}>Kenal</span> <br />Kami Lebih Dalam
                     </h1>
                 </div>
             </div>

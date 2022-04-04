@@ -42,12 +42,12 @@ const Main = () => {
                     <div className={style.lovely_divider}>
                         <div className={`${style.lovely_left} ${style.lovely_z_index}`}>
                             <h1 className={`${style.lovely_main_text} ${style.lovely_z_index}`}>
-                                <span className={style.lovely_orange}>sija</span> smkn negeri 26 <br/> Jakarta
+                                <span className={style.lovely_orange}>sija</span> smk negeri 26 <br/> Jakarta
                             </h1>
                             <p className={`${style.lovely_p_text} ${style.lovely_z_index}`}>Belajar, Bekerja, membangun dengan semangat yang penuh dan tidak lupa disertai dengan doa dan keihklasan agar bisa mencapai kejayaan di masa depan</p>
                             <div className={`${style.lovely_explore_wrapper} ${style.lovely_z_index}`}>
                                 <CustomLink path={"/about"}>
-                                    <h1 className={style.lovely_explore_text}>explore</h1>
+                                    <h1 className={style.lovely_explore_text}>Jelajahi</h1>
                                 </CustomLink>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const Main = () => {
                                 <div className={style.lovely_who_text_wrap}>
                                     <div className={style.lovely_head_wrapper}>
                                         <h1 className={style.lovely_who_head}>
-                                            Who We Are
+                                            Kami Adalah
                                         </h1>
                                         <div className={style.lovely_long_bar}>
 
@@ -88,7 +88,7 @@ const Main = () => {
                     <div className={style.lovely_wwha_main}>
                         <div className={`${style.lovely_wwha_head_wrap}`}>
                             <h1 className={style.lovely_wwha_head}>
-                                What We Have Achieved
+                                Sekilas Tentang Pencapaian
                             </h1>
                             <div className={style.lovely_wwha_line}>
 
@@ -108,7 +108,7 @@ const Main = () => {
                 <div className={style.lovely_subjects_side}>
                     <div className={style.lovely_subject_text_side}>
                         <h1 className={style.lovely_subject_head}>
-                            Subjects
+                            Mata Pelajaran
                         </h1>
                         <div className={style.lovely_subject_line}>
 
@@ -142,5 +142,3 @@ const Main = () => {
 }
 
 export default Main;
-// manusia bisa berandai,berangan,berharap
-// namun mereka juga bisa merusaknya

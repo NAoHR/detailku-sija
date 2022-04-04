@@ -79,7 +79,7 @@ const GradeCard = ({data,index}) => {
                     <CustomLink path={`/people/${data.title.split(" ").join("_")}`}>
                         <div className={style.wrapper_detail}>
                             <h2 className={`${style.title_more} ${style.pm_remover}`}>
-                                more
+                                Detail
                             </h2>
                         </div>
                     </CustomLink>
@@ -95,7 +95,7 @@ const About_grade = () => {
         <div className={style.each_grade_wrapper}>
             <div className={style.text_grade}>
                 <h1 className={`${style.title_grade} ${style.pm_remover}`}>
-                    A Glimpse <br />of our class
+                    Sekilas Tentang <br />Kelas Kami
                 </h1>
             </div>
             <div className={style.eachGrade_content}>

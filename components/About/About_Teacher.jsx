@@ -74,7 +74,7 @@ const About_Teacher = () => {
             <div className={style.teacher_content}>
                 <div className={style.teacher_top}>
                     <h1 className={`${style.teacher_title} ${style.pm_remover}`}>
-                        Teachers
+                        Guru Kami
                     </h1>
                 </div>
                 <div className={style.teacher_bottom}>

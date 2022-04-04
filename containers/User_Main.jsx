@@ -182,7 +182,7 @@ const User_Main = ({data}) => {
                                     <span className={style.lovely_gap}>
                                         <FaLink/>
                                     </span>
-                                    Know Me More
+                                    Tentang saya
                                 </p>
                             </a>
                         </Link>

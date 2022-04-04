@@ -3,9 +3,26 @@ import Link from "next/link";
 import {
     FaBriefcase,FaMeteor, FaBuilding, FaStickyNote, FaLink
 } from "react-icons/fa";
+import { useEffect } from "react";
 
-const Job_Card = ({card_detail}) => {
-
+const Job_Card = ({card_detail,index}) => {
+    function bulp(){
+        const card = document.getElementsByClassName(style.lovely_card)[Number(index)];
+        if(card){
+            let card_top = card.getBoundingClientRect().top;
+            let innerHeight = window.innerHeight;
+            if(innerHeight > card_top){
+                card.style = "transition: 1s;transform: translateY(0%);opacity: 1;"
+            }else{
+                card.style = "transition: 1s;transform: translateY(15%);opacity: 0;"
+            }
+        }
+    }
+    useEffect(()=>{
+        window.addEventListener("scroll",()=>{
+            bulp()
+        })
+    },[])
     return (
         <div className={style.lovely_card}>
             <div className={style.lovely_top_side}>
@@ -32,7 +49,7 @@ const Job_Card = ({card_detail}) => {
                 <Link href={card_detail.more}>
                     <a>
                     <h3 className={`${style.lovely_perks_h3} ${style.mpdefault} ${style.perks_link}`}>
-                        <span className={`${style.lovely_gap}`}><FaLink /></span> More
+                        <span className={`${style.lovely_gap}`}><FaLink /></span> Lebih Lanjut
                     </h3>
                     </a>
                 </Link>

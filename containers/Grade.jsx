@@ -24,7 +24,7 @@ const Grade_Main = ({eachdata}) => {
                     </CustomLink>
                     <CustomLink path={"/people"}>
                         <h1 className={`${style.lovely_gb_text} ${style.pm_remover}`}>
-                            Go Back
+                            Kembali
                         </h1>
                     </CustomLink>
                 </div>

@@ -27,7 +27,7 @@ const People_card = ({data}) => {
                 <div className={style.lovely_more_side}>
                     <CustomLink path={`/people/${data.subgrade.split(" ").join("_")}`}>
                         <h3 className={style.lovely_more_text}>
-                            more
+                            Lebih Lanjut
                         </h3>
                     </CustomLink>
                 </div>

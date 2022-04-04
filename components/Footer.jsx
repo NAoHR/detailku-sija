@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className={style.lovely_footer_content}>
                     <div className={style.lovely_more_segment}>
                         <h2 className={`${style.lovely_segment_title} ${style.lovely_center}`}>
-                            More
+                            Laman
                         </h2>
                         <ul className={style.lovely_ul}>
                             <li className={style.lovely_li}>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                     <div className={`${style.lovely_socmed_segment}`}>
                         <h2 className={`${style.lovely_segment_title} ${style.lovely_center}`}>
-                            Contact
+                            Kontak
                         </h2>
                         <ul className={style.lovely_ul}>
                             <li className={style.lovely_li}>
@@ -105,7 +105,7 @@ const Footer = () => {
                     </div>
                     <div className={`${style.lovely_address_segment}`}>
                         <h2 className={`${style.lovely_segment_title} ${style.lovely_center}`}>
-                            Address
+                            Alamat
                         </h2>
                         <p className={`${style.lovely_paragraph} ${style.lovely_center}`}>
                         Jl. Balai Pustaka Baru I No.2, RW.7, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220

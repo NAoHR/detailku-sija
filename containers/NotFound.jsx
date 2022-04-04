@@ -17,7 +17,7 @@ const NotFound = ({message, redirect, title}) => {
                         </CustomLink>
                         <CustomLink path={redirect}>
                             <h1 className={`${style.redirect_text} ${style.pm_remover} ${style.lovely_format}`}>
-                                Go Back
+                                Kembali
                             </h1>
                         </CustomLink>
                     </div>
