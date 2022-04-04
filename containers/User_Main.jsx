@@ -5,10 +5,10 @@ import Link from "next/link";
 import ErrData from "../components/ErrorData";
 
 import {
-    FaLink,FaInstagramSquare,FaLinkedin,FaGithubSquare,FaMailBulk,FaCertificate,FaChartBar,FaTools,FaCompass,FaPen
+    FaLink,FaInstagramSquare,FaLinkedin,FaGithubSquare,FaCertificate,FaChartBar,FaTools,FaCompass,FaPen,FaEnvelope
 } from "react-icons/fa";
 import {BsFillArrowLeftCircleFill} from "react-icons/bs"
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { TransitContext } from "../utils/Transition_Context";
 import CustomLink from "../utils/Custom_link";
 
@@ -143,7 +143,7 @@ const User_Main = ({data}) => {
                                 <BsFillArrowLeftCircleFill />
                             </h1>
                             <h1 className={`${style.lovely_gb_text} ${style.pm_remover} ${style.lighten_black}`}>
-                                Go Back
+                                Kembali
                             </h1>
                         </div>
                     </CustomLink>
@@ -211,7 +211,7 @@ const User_Main = ({data}) => {
                             <Link href={`mailto:${data.detail.email}`}>
                                 <a>
                                     <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaMailBulk />
+                                        <FaEnvelope />
                                     </h3>
                                 </a>
                             </Link>
