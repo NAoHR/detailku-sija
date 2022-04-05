@@ -1,43 +1,11 @@
 import style from "../../styles/components-css/About/About_grade.module.css"
 import CustomLink from "../../utils/Custom_link"
-
+import {grade_data} from "../../utils/nesData"
 import {
     FaSchool
 } from "react-icons/fa"
 import { useEffect } from "react"
 
-const grade_data = [
-    {
-        title : "X SIJA 1",
-        teacher : "EVA YULIZAR, S.KOM",
-        imagePath : "X_SIJA_1.jpg"
-    },
-    {
-        title : "X SIJA 2",
-        teacher : "Dra. Derliana P. ",
-        imagePath : "X_SIJA_2.jpg"
-    },
-    {
-        title : "XI SIJA 1",
-        teacher : "Sevia Helena Kiranti, S.Kom",
-        imagePath : "XI_SIJA_1.jpeg"
-    },
-    {
-        title : "XI SIJA 2",
-        teacher : "Novita Andriani, S.E",
-        imagePath : "XI_SIJA_2.jpeg"
-    },
-    {
-        title : "XII SIJA 1",
-        teacher : "Riaty, S.Pd.",
-        imagePath : "XII_SIJA_1.jpg"
-    },
-    {
-        title : "XII SIJA 2",
-        teacher : "Aisyah Fatoni, M.Pd.",
-        imagePath : "XII_SIJA_1.jpg"
-    },
-]
 
 const GradeCard = ({data,index}) => {
     function bulp(){

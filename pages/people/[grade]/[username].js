@@ -6,7 +6,6 @@ import User_Main from "../../../containers/User_Main";
 import {requestMethod} from "../../../utils/apiCaller";
 
 const DecideToShow = ({data,route}) =>{
-    console.log(data);
     if(data === 0){
         return <NotFound message={"User Tidak Ditemukan"} title={"404"} redirect={`/people/${route}`} />
     }else if (data === false){

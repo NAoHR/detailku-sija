@@ -11,7 +11,6 @@
     width: 1440px;
     height: 100%;
     margin: 0 auto;
-    /* background: var(--orange); */
     display: flex;
     justify-content: space-between;
 }
@@ -22,7 +21,6 @@
 .left_side{
     width: 100px;
     height: 100%;
-    /* background: salmon; */
 }
 .align_center{
     display: flex;
@@ -32,7 +30,6 @@
 .right_side{
     height: 100%;
     width: 100px;
-    /* background: salmon; */
 }
 .icon_wrapper{
     transition: 1s;

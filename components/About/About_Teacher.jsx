@@ -5,30 +5,7 @@ import {
 import {useEffect} from "react"
 import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
-
-
-const teacherList = [
-    {
-        name : "Kuri Asih, S.E., S.Kom.",
-        image : "/teacher/bukuri.png"
-    },
-    {
-        name : "Eva Yulizar, S.Kom.",
-        image : "/teacher/bueva.png"
-    },
-    {
-        name : "Danial Ahadian, M.Pd",
-        image : "/teacher/pakdanial.png"
-    },
-    {
-        name : "Samsul Bahri, S.Pd.",
-        image : "/teacher/paksamsul.png"
-    },
-    {
-        name : "Sevia Helena Kiranti, S.Kom.",
-        image : "/teacher/busevia.png"
-    }
-]
+import {teacherList} from "../../utils/nesData"
 
 const Teacher_Card = ({data}) => {
     return data.map((val) => {

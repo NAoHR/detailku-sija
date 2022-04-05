@@ -121,24 +121,6 @@
     position: relative;
 }
 
-/* .lovely_errMessage{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.lovely_errmessage_text{
-    text-align: center;
-    margin: 0px;
-    color: var(--black);
-    font-family: 'Poppins', cursive;
-    font-size: 2.6em;
-}
-.lovely_big_icon{
-    font-size: 4em;
-} */
-
 @media screen and (max-height:568px){
     div.lovely_top_wrapper{
         height: 650px;

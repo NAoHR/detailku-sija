@@ -6,7 +6,6 @@ import Loader from "../../../components/Loader";
 import NotFound from "../../../containers/NotFound";
 
 const DecideToShow = ({data}) => {
-  console.log(data)
   if(data === false){
     return <NotFound message={"Terjadi Error"} title={501} redirect={"/people"}/>
   }else if(data.length == 0){

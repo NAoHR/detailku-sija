@@ -1,7 +1,6 @@
 /* LANDING - OPEN */
 .lovely_wrapper{
     width: 100%;
-    /* background: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,20 +14,17 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
-    /* background: green; */
     justify-content: space-between;
 }
 .lovely_left{
     width: 100%;
     display: flex;
-    /* background: yellow; */
     flex-direction: column;
     padding-top: 10px;
 }
 .lovely_right{
     width: 100%;
     display: flex;
-    /* background: blue; */
     justify-content: center;
     margin-bottom: 20px;
 }
@@ -178,7 +174,6 @@ div.lovely_who_wrapper.lovely_who{
 .lovely_detail_who{
     width: 800px;
     height: 300px;
-    /* background: green; */
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -296,7 +291,6 @@ div.lovely_who_wrapper.lovely_who{
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
-    /* background: red; */
     flex-wrap: wrap;
 }
 /* SUBJECT - CLOSE */

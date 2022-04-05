@@ -3,14 +3,13 @@ import Navbar from "../components/Navbar";
 import People_landing from "../components/People_landing";
 import Footer from "../components/Footer";
 import Subject_card from "../components/Subject_card";
-import subjects from "../utils/subjects.json";
 import AchievedCard from "../components/AchievedCard";
-import AchivedJson from "../utils/achieved.json";
 import CustomLink from "../utils/Custom_link";
+import {subjects,achieved_card} from "../utils/nesData"
 import {
     FaLightbulb
 } from "react-icons/fa"
-import { useRef,useEffect,} from "react";
+import {useEffect} from "react";
 
 
 const Main = () => {
@@ -96,7 +95,7 @@ const Main = () => {
                         </div>
                         <div className={style.lovely_wwha_content}>
                             {
-                                AchivedJson["highlight"].map((val,index)=>{
+                                achieved_card["highlight"].map((val,index)=>{
                                     return <AchievedCard detail={val} key={index} num={index}/>
                                 })
                             }

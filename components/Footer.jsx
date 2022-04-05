@@ -3,8 +3,6 @@ import {
     FaTwitterSquare, FaLinkedin, FaYoutube, FaInstagramSquare, FaHeart
 } from "react-icons/fa";
 import Link from "next/link";
-import { TransitContext } from "../utils/Transition_Context";
-import { useContext } from "react";
 import CustomLink from "../utils/Custom_link";
 
 const Footer = () => {
