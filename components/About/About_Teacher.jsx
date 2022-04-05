@@ -3,6 +3,9 @@ import {
     FaChalkboardTeacher
 } from "react-icons/fa"
 import {useEffect} from "react"
+import { useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
+
 
 const teacherList = [
     {
@@ -50,6 +53,9 @@ const Teacher_Card = ({data}) => {
 }
 
 const About_Teacher = () => {
+    const ref = useRef();                 
+    const { events } = useDraggable(ref);
+
     function bulp(){
         const card = document.getElementsByClassName(style.teacher_bottom)[0];
         if(card){
@@ -77,7 +83,7 @@ const About_Teacher = () => {
                         Guru Kami
                     </h1>
                 </div>
-                <div className={style.teacher_bottom}>
+                <div className={style.teacher_bottom} {...events} ref={ref}>
                     <Teacher_Card data={teacherList}/>
                 </div>
             </div>

@@ -139,9 +139,9 @@
     font-size: 4em;
 } */
 
-@media screen and (max-height:470px){
+@media screen and (max-height:568px){
     div.lovely_top_wrapper{
-        height: 600px;
+        height: 650px;
     }
 }
 

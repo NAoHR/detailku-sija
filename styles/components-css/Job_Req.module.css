@@ -1,0 +1,129 @@
+.lovely_reqrute{
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+}
+.reqrute_text_side{
+    width: 100%;
+    padding: 25px 10px 10px 10px;
+}
+.reqrute_decoration{
+    width: 200px;
+    height: 200px;
+    background: var(--bold-white);
+    border-left: 5px solid var(--orange);
+    border-bottom: 5px solid var(--orange);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 22% 78% 0% 100% / 63% 0% 100% 37% ;
+}
+.reqrute_text{
+    font-size: 2em;
+    font-family: 'Poppins', cursive;
+    color: var(--light-black);
+    position: relative;
+    z-index: 2;
+    text-decoration: underline var(--black);
+}
+.reqrute_body{
+    margin-top: 30px;
+    width: 100%;
+    z-index: 2;
+    padding: 30px 10px 10px 10px;
+    scrollbar-width: none; 
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    justify-content: flex-start;
+}
+.reqrute_body::-webkit-scrollbar{
+    display: none;
+}
+.reqrute_card{
+    width: 200px;
+    height: 250px;
+    border-bottom: 8px solid var(--light-black);
+    background: #fff;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.reqrute_icon{
+    font-size: 3em;
+    text-align: center;
+    padding: 20px 5px 0px 5px;
+    color: var(--black);   
+}
+.text_side{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reqrute_name{
+    font-family: 'Poppins', cursive;
+    color: var(--light-black);
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 500;
+}
+.reqrute_link{
+    font-family: 'Poppins', cursive;
+    color: var(--light-black);
+    font-size: 1.1em;
+    text-decoration: underline var(--orange);
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 400;
+}
+.dec{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    background-color: var(--orange);
+}
+.right_dec{
+    right: 0px;
+    border-bottom-left-radius: 50%;
+}
+.left_dec{
+    border-bottom-right-radius: 50%;
+}
+
+@media screen and (min-width:500px) {
+    .reqrute_text_side{
+        width: 400px;
+    }
+    .reqrute_text{
+        font-size: 2.3em;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .lovely_reqrute{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .reqrute_decoration{
+        width: 230px;
+        height: 230px;
+        background: var(--bold-white);
+        border: 5px solid var(--orange);
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        border-radius: 25% 75% 23% 77% / 70% 28% 72% 30% ;
+    }
+    .reqrute_text{
+        font-size: 2.5em;
+    }
+}

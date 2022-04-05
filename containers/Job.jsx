@@ -3,6 +3,7 @@ import Job_Card from "../components/Job_Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
 import ErrData from "../components/ErrorData";
+import Job_Req from "../components/Job_req";
 import {
     FaBriefcase,FaSearch
 } from "react-icons/fa";
@@ -60,6 +61,7 @@ const Job  = ({data}) => {
                 </div>
                 <div className={style.lovely_bottom_wrapper}>
                     <div className={style.lovely_bottom_content}>
+                        <Job_Req />
                         <div className={style.lovely_search_bar_wrapper}>
                             <div className={style.lovely_search_bar}>
                                 <input type="text" name="val" id={style.lovely_input} className={style.lovely_form_variant} autoComplete="off" placeholder="front-end developer" onChange={HandleSubmit} />
@@ -70,7 +72,7 @@ const Job  = ({data}) => {
                         </div>
                         <div className={style.lovely_bottom_card_wrapper}>
                             <MapData data={tobeDislayedData}/>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
