@@ -1,6 +1,7 @@
 const achieved_card = {
     "highlight" : [
         {
+            "image" : "/prestasi/P_1.jpg",
             "title" : "IOT South East Asia Creative Camp",
             "place" : "SEAMEO",
             "year" : "2018",
@@ -8,6 +9,7 @@ const achieved_card = {
             "placement" : "Juara 1"
         },
         {
+            "image" : "/prestasi/p_2.jpg",
             "title" : "AR South East Asia Creative Camp",
             "place" : "SEAMEO",
             "year" : "2019",
@@ -15,6 +17,7 @@ const achieved_card = {
             "placement" : "Juara 2"
         },
         {
+            "image" : "/prestasi/p_3.jpg",
             "title" : "SS South East Asia Creative Camp",
             "place" : "SEAMEO",
             "year" : "2018",

@@ -28,7 +28,7 @@ const AchievedCard = (props) => {
     return (
         <div className={style.lovely_wwha_card}>
             <div className={style.wwha_card_top}>
-                <img src="https://ufa.org.uk/wp-content/uploads/2015/04/img_9944-e1428558388289.jpg" alt="" className={style.lovely_wwha_card_image}/>
+                <img src={detail.image} alt="" className={style.lovely_wwha_card_image}/>
             </div>
             <div className={style.wwha_card_bottom}>
                 <div className={style.wwha_card_text_side}>
