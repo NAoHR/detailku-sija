@@ -1,7 +1,7 @@
 import style from "../styles/components-css/Job_Req.module.css";
 import {FaCloud} from "react-icons/fa";
-import { useRef,useEffect } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
+import { useRef,useEffect} from "react";
+import useDraggableScroll from 'use-draggable-scroll';
 import {reqJob} from "../utils/nesData"
 
 
@@ -34,8 +34,9 @@ const Job_Req_Lopper = ({data}) => {
 }
 
 const Job_Req = () => {
-    const ref = useRef();                 
-    const { events } = useDraggable(ref); 
+    const ref = useRef(null)
+    const {onMouseDown} = useDraggableScroll(ref)
+
     function bulp(){
         const card = document.getElementsByClassName(style.reqrute_body)[0];
         if(card){
@@ -63,7 +64,7 @@ const Job_Req = () => {
                     Tawarkan Pekerjaan atau Rekrut Kami
                 </h3>
             </div>
-            <div className={style.reqrute_body}  {...events} ref={ref} >
+            <div className={style.reqrute_body} ref={ref} onMouseDown={onMouseDown}>
                 <Job_Req_Lopper data={reqJob} />
             </div>
         </div>

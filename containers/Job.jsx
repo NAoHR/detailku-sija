@@ -49,7 +49,7 @@ const Job  = ({data}) => {
                     <div className={`${style.lovely_top_content} ${style.zindex}`}>
                         <div className={style.lovely_top_text}>
                             <h1 className={style.lovely_top_head}>
-                                <span className={style.bigger}><FaBriefcase /></span> <br/>Temui Pekerjaan<br />Sesuai Kemampuanmu
+                                <span className={style.bigger}><FaBriefcase /></span> <br/>Temui Pekerjaan<br />Sesuai Kemampuan
                             </h1>
                             <h3 className={style.lovely_top_offer}>
                                 Atau mungkin Rekrut Kami

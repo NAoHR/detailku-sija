@@ -9,7 +9,6 @@ const url = {
 
 export const requestMethod = {
     getAllJob : () => {
-        console.log(url.job);
         return axios.get(url.job)
     },
     getGradeBased : (grade) => {

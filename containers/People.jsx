@@ -8,7 +8,7 @@ const People = ({data}) => {
     return <>
         <Navbar />
             <div className={style.lovely_people_wrapper} style={{
-                padding : data === false ? "0px" : "0px 5px 90px 5px;"
+                padding : data === false ? "0px" : "0px 5px 90px 5px"
             }}>
                 {data === false ? <ErrData message={"Gagal Dalam Mengambil Data"}/> : data.map((val,index)=>{
                     return <People_Wrapper data={val} key={index}/>

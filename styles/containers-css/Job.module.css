@@ -120,7 +120,11 @@
     flex-direction: row;
     position: relative;
 }
-
+@media screen and (max-width:568px){
+    .lovely_top_head{
+        font-size: 3.8em;
+    }
+}
 @media screen and (max-height:568px){
     div.lovely_top_wrapper{
         height: 650px;

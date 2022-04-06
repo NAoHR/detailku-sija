@@ -4,7 +4,7 @@ import {
 } from "react-icons/fa"
 import {useEffect} from "react"
 import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
+import useDraggableScroll from 'use-draggable-scroll';
 import {teacherList} from "../../utils/nesData"
 
 const Teacher_Card = ({data}) => {
@@ -30,8 +30,8 @@ const Teacher_Card = ({data}) => {
 }
 
 const About_Teacher = () => {
-    const ref = useRef();                 
-    const { events } = useDraggable(ref);
+    const ref = useRef(null);
+    const {onMouseDown} = useDraggableScroll(ref);
 
     function bulp(){
         const card = document.getElementsByClassName(style.teacher_bottom)[0];
@@ -60,7 +60,7 @@ const About_Teacher = () => {
                         Guru Kami
                     </h1>
                 </div>
-                <div className={style.teacher_bottom} {...events} ref={ref}>
+                <div className={style.teacher_bottom} ref={ref} onMouseDown={onMouseDown}>
                     <Teacher_Card data={teacherList}/>
                 </div>
             </div>

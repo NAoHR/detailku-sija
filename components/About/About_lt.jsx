@@ -5,12 +5,11 @@ import Link from "next/link"
 import style from "../../styles/components-css/About/About_lt.module.css"
 import { useEffect } from "react"
 import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
+import useDraggableScroll from 'use-draggable-scroll';
 
 const About_lt = () =>{
-    const ref = useRef();                 
-    const { events } = useDraggable(ref);
-
+    const ref = useRef(null);
+    const {onMouseDown} = useDraggableScroll(ref);
 
     function bulp(){
         const card = document.getElementsByClassName(style.media_content_wrapper)[0];
@@ -41,7 +40,7 @@ const About_lt = () =>{
                     Mari Berkenalan
                 </h1>
             </div>
-            <div className={style.media_content_wrapper} {...events} ref={ref} >
+            <div className={style.media_content_wrapper} ref={ref} onMouseDown={onMouseDown} >
                 <Link href="https://www.instagram.com/smkn26jktofficial">
                     <a>        
                         <div className={style.social_media_card}>
