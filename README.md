@@ -4,7 +4,7 @@
   </a>
 </div>
 
-  <h3>PPDBDataMaker</h3>
+  <h3>Detailku</h3>
 <p>
 <samp>
 	&nbsp;platform to show the details of each vocation of vocational high school including school's detail, student, job and such.
