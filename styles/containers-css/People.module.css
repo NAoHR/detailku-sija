@@ -1,10 +1,10 @@
 .lovely_people_wrapper{
     width: 100vw;
     min-height: 1000px;
-    margin: 0 auto;
+    margin: 70px auto;
     display: flex;
     flex-direction: column;
-    padding: 90px 5px 90px 5px;
+    padding: 120px 5px 90px 5px;
     align-items: center;
     position: relative;
     justify-content: center;
