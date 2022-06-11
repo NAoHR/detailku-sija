@@ -13,3 +13,9 @@
 		&nbsp;this platform provide all information about all project that has been done by the student, skill, and certificate of each student
 </samp>
 </p>
+
+<p>
+<samp>
+	I hate the code ~ so ugly
+</samp>
+</p>
