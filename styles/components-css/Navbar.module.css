@@ -54,7 +54,6 @@
     font-size: 1.3rem;
     font-weight: 600;
     transition: .5s;
-    text-decoration: none;
 }
 .login_box{
     width: 90px;
@@ -103,9 +102,6 @@
 .expander_wrapper{
     position: relative;
     z-index: 9;
-}
-.center_span:hover .center_side_content{
-    text-decoration: underline var(--orange);
 }
 @media screen and (max-width: 1440px) {
     .center_wrapper{
