@@ -58,7 +58,6 @@ const Job_Req = () => {
 
     return (
         <div className={style.lovely_reqrute}>
-            <div className={style.reqrute_decoration}></div>
             <div className={style.reqrute_text_side}>
                 <h3 className={`${style.reqrute_text} pm_remover`}>
                     Tawarkan Pekerjaan atau Rekrut Kami

@@ -56,7 +56,6 @@ const Job  = ({data}) => {
                             </h3>
                         </div>
                     </div>
-                    
                     <div className={style.lovely_decorations}></div>
                 </div>
                 <div className={style.lovely_bottom_wrapper}>
