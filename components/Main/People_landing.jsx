@@ -1,5 +1,5 @@
 import { useRef,useEffect } from "react";
-import style from "../styles/components-css/People_landing.module.css";
+import style from "../../styles/components-css/Main/People_landing.module.css";
 
 const People_landing = ({num, title,keyNum}) => {
     const stateRef = useRef(true)

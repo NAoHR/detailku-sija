@@ -1,4 +1,4 @@
-import style from "../styles/components-css/AchievedCard.module.css";
+import style from "../../styles/components-css/Main/AchievedCard.module.css";
 import {
     FaTrophy, FaGlobe, FaCompass, FaSeedling, FaHourglassStart
 } from "react-icons/fa"
