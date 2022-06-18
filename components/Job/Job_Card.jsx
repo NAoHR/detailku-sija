@@ -1,4 +1,4 @@
-import style from "../styles/components-css/Job_Card.module.css";
+import style from "../../styles/components-css/Job/Job_Card.module.css";
 import Link from "next/link";
 import {
     FaBriefcase,FaMeteor, FaBuilding, FaStickyNote, FaLink

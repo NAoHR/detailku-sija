@@ -1,8 +1,8 @@
-import style from "../styles/components-css/Job_Req.module.css";
+import style from "../../styles/components-css/Job/Job_Req.module.css";
 import {FaCloud} from "react-icons/fa";
 import { useRef,useEffect} from "react";
 import useDraggableScroll from 'use-draggable-scroll';
-import {reqJob} from "../utils/nesData"
+import {reqJob} from "../../utils/nesData"
 
 
 const Job_Req_Lopper = ({data}) => {
