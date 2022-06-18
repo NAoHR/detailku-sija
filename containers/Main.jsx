@@ -1,9 +1,9 @@
 import style from "../styles/containers-css/Main.module.css";
 import Navbar from "../components/Navbar";
-import People_landing from "../components/People_landing";
+import People_landing from "../components/Main/People_landing";
 import Footer from "../components/Footer";
-import Subject_card from "../components/Subject_card";
-import AchievedCard from "../components/AchievedCard";
+import Subject_card from "../components/Main/Subject_card";
+import AchievedCard from "../components/Main/AchievedCard";
 import CustomLink from "../utils/Custom_link";
 import {subjects,achieved_card} from "../utils/nesData"
 import {

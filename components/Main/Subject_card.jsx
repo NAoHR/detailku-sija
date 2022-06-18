@@ -1,4 +1,4 @@
-import style from "../styles/components-css/Subject_card.module.css";
+import style from "../../styles/components-css/Main/Subject_card.module.css";
 import {FaBookReader} from "react-icons/fa";
 import { useEffect } from "react";
 
