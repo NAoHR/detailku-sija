@@ -1,6 +1,6 @@
 import style from "../styles/containers-css/About.module.css";
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer";
+import Navbar from "../components/Usable/Navbar"
+import Footer from "../components/Usable/Footer";
 import {
     FaMapPin,FaSchool
 } from "react-icons/fa"

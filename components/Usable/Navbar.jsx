@@ -1,5 +1,5 @@
-import style from "../styles/components-css/Navbar.module.css";
-import CustomLink from "../utils/Custom_link";
+import style from "../../styles/components-css/usable/Navbar.module.css";
+import CustomLink from "../../utils/Custom_link";
 import { useRouter } from "next/router";
 import { useState,useEffect } from "react";
 

@@ -2,7 +2,7 @@ import {useRouter} from "next/router";
 import { useEffect, useState } from "react";
 import Grade_Main from "../../../containers/Grade";
 import {requestMethod} from "../../../utils/apiCaller";
-import Loader from "../../../components/Loader";
+import Loader from "../../../components/Usable/Loader";
 import NotFound from "../../../containers/NotFound";
 
 const DecideToShow = ({data}) => {

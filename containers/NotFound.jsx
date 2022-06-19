@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/Usable/Navbar";
+import Footer from "../components/Usable/Footer";
 import style from "../styles/containers-css/NotFound.module.css";
 import CustomLink from "../utils/Custom_link";
 import {BsFillArrowLeftCircleFill} from "react-icons/bs";

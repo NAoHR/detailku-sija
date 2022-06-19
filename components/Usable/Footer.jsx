@@ -1,9 +1,9 @@
-import style from "../styles/components-css/Footer.module.css";
+import style from "../../styles/components-css/usable/Footer.module.css";
 import {
     FaTwitterSquare, FaLinkedin, FaYoutube, FaInstagramSquare, FaHeart
 } from "react-icons/fa";
 import Link from "next/link";
-import CustomLink from "../utils/Custom_link";
+import CustomLink from "../../utils/Custom_link";
 
 const Footer = () => {
     return (

@@ -1,8 +1,8 @@
 import style from "../styles/containers-css/User_Main.module.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/Usable/Navbar";
+import Footer from "../components/Usable/Footer";
 import Link from "next/link";
-import ErrData from "../components/ErrorData";
+import ErrData from "../components/Usable/ErrorData";
 
 import {
     FaLink,FaInstagramSquare,FaLinkedin,FaGithubSquare,FaCertificate,FaChartBar,FaTools,FaCompass,FaPen,FaEnvelope

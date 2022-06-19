@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/Usable/Navbar";
+import Footer from "../components/Usable/Footer";
 import style from "../styles/containers-css/People.module.css";
 import People_Wrapper from "../components/people/People_wrapper";
-import ErrData from "../components/ErrorData";
+import ErrData from "../components/Usable/ErrorData";
 
 const People = ({data}) => {
     return <>

@@ -1,6 +1,6 @@
 import {useRouter} from "next/router";
 import { useEffect, useState } from "react";
-import Loader from "../../../components/Loader";
+import Loader from "../../../components/Usable/Loader";
 import NotFound from "../../../containers/NotFound";
 import User_Main from "../../../containers/User_Main";
 import {requestMethod} from "../../../utils/apiCaller";

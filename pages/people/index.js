@@ -1,6 +1,6 @@
 import People from "../../containers/People.jsx";
 import {requestMethod} from "../../utils/apiCaller";
-import Loader from "../../components/Loader";
+import Loader from "../../components/Usable/Loader";
 import { useEffect,useState } from "react";
 import NotFound from "../../containers/NotFound"
 

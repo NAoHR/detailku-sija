@@ -1,8 +1,8 @@
 import style from "../styles/containers-css/Job.module.css";
 import Job_Card from "../components/Job/Job_Card";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"
-import ErrData from "../components/ErrorData";
+import Navbar from "../components/Usable/Navbar";
+import Footer from "../components/Usable/Footer"
+import ErrData from "../components/Usable/ErrorData";
 import Job_Req from "../components/Job/Job_req";
 import {
     FaBriefcase,FaSearch
