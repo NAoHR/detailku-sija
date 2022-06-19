@@ -1,5 +1,5 @@
 import {BiErrorCircle} from "react-icons/bi"
-import style from "../styles/components-css/ErrorData.module.css"
+import style from "../../styles/components-css/usable/ErrorData.module.css"
 
 const ErrData = ({message}) => {
     return (

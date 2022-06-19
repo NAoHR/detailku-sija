@@ -1,6 +1,6 @@
 import Job from "../containers/Job";
 import {useEffect,useState} from "react";
-import Loader from "../components/Loader";
+import Loader from "../components/Usable/Loader";
 import {requestMethod} from "../utils/apiCaller";
 import NotFound from "../containers/NotFound";
 
