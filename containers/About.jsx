@@ -1,8 +1,9 @@
 import style from "../styles/containers-css/About.module.css";
 import Navbar from "../components/Usable/Navbar"
 import Footer from "../components/Usable/Footer";
+import About_map from "../components/About/About_map";
 import {
-    FaMapPin,FaSchool
+    FaMapPin
 } from "react-icons/fa"
 import About_Teacher from "../components/About/About_Teacher";
 import About_lt from "../components/About/About_lt";
@@ -25,6 +26,7 @@ const About_Main = () => {
             </div>
             <div className={style.lovely_shadowy}></div>
         </div>
+        <About_map />
         <About_lt />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className={style.wave}><path fill="var(--black)" fillOpacity="1" d="M0,160L40,176C80,192,160,224,240,218.7C320,213,400,171,480,181.3C560,192,640,256,720,282.7C800,309,880,299,960,277.3C1040,256,1120,224,1200,208C1280,192,1360,192,1400,192L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
         <About_Teacher />

@@ -1,0 +1,45 @@
+.vTourWrapper{
+    width: 100%;
+    padding: 30px 10px 10px 10px;
+}
+.flexit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    padding: 10px;
+}
+.vTour{
+    width: 95%;
+    height: 450px;
+}
+
+.vt_text{
+    color: var(--black);
+    font-size: 2em;
+    text-decoration: underline var(--orange);
+    text-align: center;
+}
+
+.brdr{
+    border-right: 8px solid var(--light-black);
+    border-bottom: 8px solid var(--light-black);
+    border-radius: 5px;
+}
+@media screen and (min-width: 1200px ) {
+    .vTourWrapper{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 661px ) {
+    .flexit{
+        flex-direction: column;
+    }
+    .vmap{
+        width: 95%;
+    }
+}

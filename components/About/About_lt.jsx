@@ -105,22 +105,6 @@ const About_lt = () =>{
                         </div>
                     </a>
                 </Link>
-                <Link href="https://app.lapentor.com/sphere/smkn-26-1602643278?scene=5f87dd1c362df77f177c1f53">
-                    <a>        
-                        <div className={style.social_media_card}>
-                            <div className={style.socmed_card_top}>
-                                <h1 className={`${style.socmed_icon} ${style.pm_remover}`}>
-                                    <FaMapMarkerAlt />
-                                </h1>
-                            </div>
-                            <div className={style.socmed_card_bottom}>
-                                <h2 className={`${style.socmed_title} ${style.pm_remover}`}>
-                                    Virtual Tour
-                                </h2>
-                            </div>
-                        </div>
-                    </a>
-                </Link>
                 <Link href="mailto:smkn26jkt@gmail.com">
                     <a>        
                         <div className={style.social_media_card}>

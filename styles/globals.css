@@ -12,6 +12,14 @@
   --blue : #0094FF;
 }
 
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.bebas{
+  font-family: 'Bebas Neue', cursive;
+}
+
 html,
 body {
   overflow-x: hidden;
