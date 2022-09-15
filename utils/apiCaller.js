@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const url = {
-    job : "http://localhost:5000/api/client/jobs",
-    people : "http://localhost:5000/api/client/people",
-    gradeBased : "http://localhost:5000/api/client/grade/",
-    usernameBased : "http://localhost:5000/api/client/user/"
+    job : "https://detailku-server.herokuapp.com/api/client/jobs",
+    people : "https://detailku-server.herokuapp.com/api/client/people",
+    gradeBased : "https://detailku-server.herokuapp.com/api/client/grade/",
+    usernameBased : "https://detailku-server.herokuapp.com/api/client/user/"
 }
 
 export const requestMethod = {
