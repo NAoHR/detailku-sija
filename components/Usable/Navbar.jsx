@@ -1,7 +1,8 @@
 import style from "../../styles/components-css/usable/Navbar.module.css";
 import CustomLink from "../../utils/Custom_link";
 import { useRouter } from "next/router";
-import { useState,useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { AuthContext } from "../../utils/AuthContext";
 
 import {
     FaBars,FaTimes
@@ -11,6 +12,8 @@ export default function Navbar(){
     const [expand, setExpand] = useState(false);
     const [page,setPage] = useState(null);
     const router = useRouter();
+    const {state, isLoggedIn, dispatch} = useContext(AuthContext);
+
     function setColor(page,given){
         return {
             "textDecoration" : `${page == given ? "underline var(--orange)" : "none"}`
@@ -28,13 +31,21 @@ export default function Navbar(){
                     setPage(pathName);
                     return;
             }
-        }
 
+        }
     },[router.isReady])
 
-    useEffect(()=>{
-        console.log(page);
-    },[page])
+    useEffect(() => {
+        isLoggedIn()
+        .then((v) => {
+            dispatch({type: "isLoggedIn", payload : v});
+        })
+        .catch((e)=>{
+            console.log("here", e)
+            dispatch({type: "LogOut"});
+        });
+    }, [])
+
     return (
         <>
         <nav className={style.nav_wrapper}>
@@ -75,10 +86,29 @@ export default function Navbar(){
                             </h1>
                         </CustomLink>
                     </span>
+                    <span className={style.center_span}>
+                        <CustomLink path={"/publicmsg"}>
+                            <h1 className={style.center_side_content} style={setColor(page,"publicmsg")}>
+                                Publicmsg
+                            </h1>
+                        </CustomLink>
+                    </span>
                 </div>
                 <div className={`${style.right_side} ${style.align_center}`} onClick={function(e){setExpand(!expand)}}>
-                        <div className={`${style.align_center} ${style.diss}`}>
-                            <img src="/smkn26_logo.png" alt="smkn26logo" className={style.smkn_logo}/>
+                        <div className={`${style.align_center} ${style.diss}`} style={{
+                            background: "var(--orange)",
+                            borderRadius : "8px"
+                        }}>
+                            <CustomLink path={`${state.loginRelated.isLoggedIn ? "/me" : "/login"}`}>
+                                <h1 className={style.center_side_content} style={{
+                                    ...setColor(page,"login"),
+                                    fontSize: "1em",
+                                    padding: "5px 10px 5px 10px",
+                                    color: "var(--white)"
+                                }}>
+                                    {`${state.loginRelated.isLoggedIn ? "me" : "Login"}`}
+                                </h1>
+                            </CustomLink>
                         </div>
                     <h1 className={style.icon_wrapper} style={{color : expand ? "var(--white)" : "var(--black)", transition : ".5s"}} >
                         {expand ? <FaTimes /> : <FaBars />}
@@ -120,6 +150,20 @@ export default function Navbar(){
                                 <CustomLink path={"/about"}>
                                     <h1 className={style.expander_text} style={setColor(page,"about")}>
                                         About
+                                    </h1>
+                                </CustomLink>
+                            </div>
+                            <div className={style.expander_item}>
+                                <CustomLink path={"/publicmsg"}>
+                                    <h1 className={style.expander_text} style={setColor(page,"publicmsg")}>
+                                        Publicmsg
+                                    </h1>
+                                </CustomLink>
+                            </div>
+                            <div className={style.expander_item}>
+                                <CustomLink path={`${state.loginRelated.isLoggedIn ? "/me" : "/login"}`}>
+                                    <h1 className={style.expander_text} style={setColor(page,"login")}>
+                                        {`${state.loginRelated.isLoggedIn ? "me" : "Login"}`}
                                     </h1>
                                 </CustomLink>
                             </div>
