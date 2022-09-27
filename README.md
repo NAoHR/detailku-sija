@@ -16,6 +16,6 @@
 
 <p>
 <samp>
-	I hate the code ~ so ugly
+	on progress
 </samp>
 </p>
