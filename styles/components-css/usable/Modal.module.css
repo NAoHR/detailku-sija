@@ -1,0 +1,99 @@
+/* modal */
+@keyframes slidein {
+    from {
+      margin-bottom: 5%;
+    }
+  
+    to {
+      margin-bottom: 0%;
+    }
+  }
+
+.black_screen{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.modal_form{
+    width: 95%;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    animation-duration: .2s;
+    animation-name: slidein;
+    border: 5px solid var(--black);
+}
+
+.modal_top{
+    width: 100%;
+    height: 50px;
+    border-bottom: 5px solid var(--black);
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.mt_decor{
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    background: var(--black);
+}
+.modal_bottom{
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.form_content{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+}
+.input_modal{
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+    border: 2px solid var(--light-black);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    color: var(--light-black);
+    font-weight: 500;
+    font-size: 0.9em;
+}
+/* .input_modal:focus{
+    border: 3px solid var(--light-orange);
+} */
+
+.longText{
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn_modal{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: 90px;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    border-bottom: 2px solid var(--black);
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.btn_modal:hover{
+    cursor: pointer;
+}
