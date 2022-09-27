@@ -6,12 +6,14 @@ export const TransitContext = createContext();
 
 const TransitionContext = (props) => {
     const [pageToGo, setPTG] = useState(null);
-    const [isReady,setIsReady] = useState(false)
+    const [isReady,setIsReady] = useState(false);
     const router = useRouter();
     
     function pageTransitHandler(togo){
         if(pageToGo === null){
-            setPTG(togo);
+            if(togo !== router.pathname){
+                setPTG(togo);
+            }
         }
     }
 

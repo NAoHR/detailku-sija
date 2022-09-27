@@ -1,6 +1,5 @@
 .lovely_errMessage{
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +11,7 @@
     margin: 0px;
     color: var(--black);
     font-family: 'Poppins', cursive;
-    font-size: 2.6em;
+    font-size: 1.5em;
 }
 .lovely_errmessage_text.lovely_big_icon{
     font-size: 4em;
