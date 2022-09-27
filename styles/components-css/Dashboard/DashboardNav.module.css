@@ -1,0 +1,36 @@
+.fixedWrapper{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    z-index: 9;
+}
+
+.expand{
+    width: 55px;
+    height: 55px;
+    font-size: 1.3em;
+    border-radius: 50%;
+    border: 5px solid var(--orange);
+    z-index: 8;
+}
+.expand:hover{
+    cursor: pointer;
+}
+
+.expander{
+    width: 55px;
+    margin-bottom: 10px;
+    border-radius: 55px;
+    transition: .5s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--light-orange);
+    font-size: 2em;
+    overflow: hidden;
+}
+.expander h4:hover{
+    cursor: pointer;
+}
