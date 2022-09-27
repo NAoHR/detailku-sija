@@ -83,7 +83,7 @@ const AddPublicMessageModal = ({inputToggle, method, addNewMessage}) => {
                                 name="message"
                                 ref={messageElement}
                                 spellCheck={false}
-                                placeholder="sija asik banget coyy, bener-bener keren. jamkos dari pagi. diluar nalar coy"
+                                placeholder="Sija seru banget, banyak pengalaman yang gue dapet disini"
                                 />
                             </div>
 
@@ -156,7 +156,6 @@ const PublicMessage = ({ data }) => {
                 <div className={style.card_wrapper}>
                    <Wmw_Card text={"representasikan Diri Anda Secara Anonim"} image={"represent"}/>
                    <Wmw_Card text={"Sampaikan Pirkiran Anda Tentang Jurusan Kami"} image={"think"}/>
-                   <Wmw_Card text={"Kami Menerima Kritik dan Saran Anda"} image={"suggest"} />
                    <Wmw_Card text={"Kami Menerima Kritik dan Saran Anda"} image={"suggest"} />
                     
                 </div>

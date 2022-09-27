@@ -361,9 +361,9 @@
         font-size: 1.9em;
     }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1400px){
     .lovely_go_back{
-        width: 1200px;
+        width: 1400px;
     }
 }
 
