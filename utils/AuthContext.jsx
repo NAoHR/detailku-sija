@@ -163,7 +163,7 @@ const AuthContextProvider = ({children}) => {
     
     async function isLoggedIn(){
         const dttoken = window.localStorage.getItem("dttoken");
-        const userCred = await axios.get("http://localhost:5000/api/user/me", {
+        const userCred = await axios.get("https://detailku-server.herokuapp.com/api/user/me", {
             headers : { 
                 Authorization : dttoken
             }
