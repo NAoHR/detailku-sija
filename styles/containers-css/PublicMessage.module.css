@@ -1,0 +1,166 @@
+.opening{
+    width: 100vw;
+    max-width:100%; 
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1584869942712-4584555b58a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    position: relative;
+}
+
+.blurit{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 33, 49, 0.7);
+}
+
+.openingText{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: 20px;
+}
+
+.bebas{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.opTitle{
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+.more{
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.more:hover{
+    cursor: pointer;
+}
+
+
+.decoration{
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    padding: 10px;
+    justify-content: center;
+}
+.dec_dots{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    border: 3px solid var(--black);
+}
+
+
+/* .whyMustWrite{
+} */
+.mht{
+    text-decoration: underline var(--orange);
+}
+.card_wrapper{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 300px;
+}
+.wmw_card{
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    overflow: hidden;
+}
+.wmw_card_orange{
+    clip-path: circle(60.4% at 41% 14%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    padding-top: 22px;
+}
+
+
+.wmwc_text{
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 9;
+    text-align: center;
+    font-weight: bold;
+    font-size: .9em;
+    padding: 10px;
+}
+
+.wmwc_image{
+    height: 70%;
+    width: 90%;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .opTitle{
+        font-size: 3.5em;
+    }
+    .more{
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .openingText{
+        width: 1440px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.messageCard{
+    max-width: 280px;
+    width: 100%;
+    position: relative;
+}
+.mc_main{
+    word-wrap: break-word;
+    margin-top: 20px;
+    padding:15px;
+    padding-top: 30px;
+    min-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mc_decor{
+    position: absolute;
+    max-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30px;
+    background-color: var(--light-orange);
+}
+
+.mc_title{
+    font-weight: bold;
+    font-size: 1.5em;
+    filter: opacity(0.9);
+}
+.mc_para{
+    padding-top: 10px;
+    filter: opacity(0.9);
+    font-weight: 500;
+}
