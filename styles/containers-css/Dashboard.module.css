@@ -1,9 +1,10 @@
 .lovely_user_wrapper{
-    width: 100vw;
+    width: 92vw;
     min-height: 100vh;
     padding-top: 80px;
     display: flex;
     gap: 20px;
+    margin: 0 auto;
 }
 .pm_remover{
     padding: 0px;
@@ -74,7 +75,7 @@
     color: var(--black);
 }
 .lovely_username{
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-size: 1.1em;
     color: var(--black);
     opacity: .8;
@@ -82,11 +83,9 @@
 }
 .description_side{
     width: 100%;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 5px 5px 5px;
     min-height: 100px;
-    overflow-y: auto;
     display: flex;
-    align-items: center;
 }
 .lovely_description{
     font-size: 1em;
@@ -322,6 +321,7 @@
 @media screen and (max-width:800px){
     .lovely_user_wrapper{
         flex-direction: column;
+        width: 100vw;
     }
 }
 
@@ -352,7 +352,7 @@
         font-size: 1.8em;
     }
     .lovely_description{
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .lovely_link{
         font-size: 1.5em;

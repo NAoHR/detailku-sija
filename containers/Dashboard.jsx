@@ -288,15 +288,17 @@ const Dashboard = () => {
                                 <img src={picture} alt="userimage" className={style.lovely_image}/>
                             }
                         </div>
-                        <div className={style.lovely_topt_creds}>
-                            <div className={style.lovely_name_side}>
-                                <h1 className={`${style.lovely_name} ${style.pm_remover}`}>
-                                    {state.name}
-                                </h1>
-                            </div>
-                        </div>
                     </div>
-                    <h1 className={`${style.lovely_username} ${style.pm_remover}`}>
+                    <h1 className={`${style.lovely_username} ${style.pm_remover}`} style={{
+                        fontSize: "1.5em",
+                        paddingTop: "2rem",
+                        opacity : "1"
+                    }}>
+                        {state.name}
+                    </h1>
+                    <h1 className={`${style.lovely_username} ${style.pm_remover}`} style={{
+                        fontSize: ".8em"
+                    }}>
                         @{state.username}
                     </h1>
                     <div className={style.lovely_topb_user}>
