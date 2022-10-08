@@ -44,17 +44,39 @@
     padding-right: 10px;
     display: flex;
     height: 100%;
+    gap: 18px;
 }
 
+.hovered {
+    position: relative;
+    transition: .5s;
+  }
+  .hovered:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--orange);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hovered:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
 .center_side_content{
-    margin-left: 10px;
-    margin-right: 10px;
     color: var(--black);
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     transition: .5s;
 }
+
 .login_box{
     width: 90px;
     height: 40px;
