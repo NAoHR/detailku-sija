@@ -11,7 +11,7 @@
 
 .black_screen{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.88);
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -56,25 +56,35 @@
 
 .form_content{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-direction: column;
 
+}
+.input_perk{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border-left: 7px  solid var(--light-orange);
+    padding-left: 4px;
+}
+.input_perk label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: underline var(--orange);
+    font-size: 1em;
+    opacity: .8;
 }
 .input_modal{
     width: 100%;
     padding: 5px;
-    height: 40px;
+    height: 45px;
     outline: none;
-    border: 2px solid var(--light-black);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5px;
+    border: 0px;
     color: var(--light-black);
+    background: var(--white);
     font-weight: 500;
     font-size: 0.9em;
 }
-/* .input_modal:focus{
-    border: 3px solid var(--light-orange);
-} */
 
 .longText{
     min-height: 150px;
@@ -86,11 +96,12 @@
     min-width: 90px;
     margin: 5px;
     margin-top: 20px;
-    padding: 5px 15px 5px 15px;
+    padding: 8px 20px;
     font-family: 'Poppins', sans-serif;
     color: var(--white);
-    border-bottom: 2px solid var(--black);
-    border-radius: 5px;
+    border: 0px;
+    /* border-bottom: 2px solid var(--black); */
+    border-radius: 6px;
     font-weight: bold;
     letter-spacing: 1px;
 }
