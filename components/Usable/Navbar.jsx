@@ -52,7 +52,7 @@ export default function Navbar(){
             <div className={style.center_wrapper}>
                 <div className={`${style.left_side} ${style.align_center}`}>
                     <CustomLink path={"/"}>
-                        <h1 className={style.center_side_content}>
+                        <h1 className={`${style.center_side_content} ${style.hovered}`}>
                             Detailku
                         </h1>
                     </CustomLink>
@@ -60,36 +60,36 @@ export default function Navbar(){
                 <div className={`${style.center_side}  ${style.align_center}`}>
                     <span className={style.center_span}>
                         <CustomLink path={"/"}>
-                            <h1 className={style.center_side_content} style={setColor(page,"home")}>
+                            <h1 className={`${style.center_side_content} ${page !== "home" && style.hovered}`} style={setColor(page,"home")}>
                                 Home
                             </h1>
                         </CustomLink>
                     </span>
                     <span className={style.center_span}>
                         <CustomLink path={"/about"}>
-                            <h1 className={style.center_side_content} style={setColor(page,"about")}>
+                            <h1 className={`${style.center_side_content} ${page !== "about" && style.hovered}`} style={setColor(page,"about")}>
                                 About
                             </h1>
                         </CustomLink>
                     </span>
                     <span className={style.center_span}>
                         <CustomLink path={"/people"}>
-                            <h1 className={style.center_side_content} style={setColor(page,"people")}>
+                            <h1 className={`${style.center_side_content} ${page !== "people" && style.hovered}`} style={setColor(page,"people")}>
                                 People
                             </h1>
                         </CustomLink>
                     </span>
                     <span className={style.center_span}>
                         <CustomLink path={"/job"}>
-                            <h1 className={style.center_side_content} style={setColor(page,"job")}>
+                            <h1 className={`${style.center_side_content} ${page !== "job" && style.hovered}`} style={setColor(page,"job")}>
                                 Job
                             </h1>
                         </CustomLink>
                     </span>
                     <span className={style.center_span}>
                         <CustomLink path={"/publicmsg"}>
-                            <h1 className={style.center_side_content} style={setColor(page,"publicmsg")}>
-                                Publicmsg
+                            <h1 className={`${style.center_side_content} ${page !== "publicmsg" && style.hovered}`} style={setColor(page,"publicmsg")}>
+                                Publicmessage
                             </h1>
                         </CustomLink>
                     </span>
@@ -156,7 +156,7 @@ export default function Navbar(){
                             <div className={style.expander_item}>
                                 <CustomLink path={"/publicmsg"}>
                                     <h1 className={style.expander_text} style={setColor(page,"publicmsg")}>
-                                        Publicmsg
+                                        Publicmessage
                                     </h1>
                                 </CustomLink>
                             </div>

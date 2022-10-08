@@ -23,25 +23,33 @@ const DashboardNav = () => {
                 transition : ".5s",
                 border : `${isExpand ? "2px solid var(--orange)" : "none"}`
             }}>
-                <h4 onClick={()=>{
-                    dispatch({
-                        type: "changePmState",
-                        payload : {
-                            isLoading : true,
-                            display : true
-                        }
-                    })
-                }}>
-                    <AiFillMessage />
-                </h4>
-                <CustomLink path="/">
-                    <h4>
-                        <FaHome />
+                <abbr title="message">
+                    <h4 onClick={()=>{
+                        dispatch({
+                            type: "changePmState",
+                            payload : {
+                                isLoading : true,
+                                display : true
+                            }
+                        })
+                    }}>
+                        <AiFillMessage />
                     </h4>
+                </abbr>
+
+                <CustomLink path="/">
+                    <abbr title="home">
+                        <h4>
+                            <FaHome />
+                        </h4>
+                    </abbr>
                 </CustomLink>
-                <h4 onClick={() => logout()}>
-                    <RiLogoutCircleRFill />
-                </h4>
+
+                <abbr title="logout">
+                    <h4 onClick={() => logout()}>
+                        <RiLogoutCircleRFill />
+                    </h4>
+                </abbr>
             </div>
             <div className={`${style.expand} flex centerAll c-light-orange b-black`} onClick={() => {
                 setIS(!isExpand);

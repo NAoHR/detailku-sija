@@ -351,31 +351,37 @@ const Dashboard = () => {
                 </div>
                 <div className={style.lovely_bottom_user}>
                     <div className={style.event_selector}>
-                        <div className={style.event_perks} onClick={()=> setAS("project")} style={{
-                            borderBottom : `${ activeState == "project" ? "4px" : "0px"} solid var(--black)`
-                        }}>
-                            <h3 className={`${style.perks_icon} ${style.pm_remover}`} >
-                                <FaTools />
-                            </h3>
-                        </div>
-                        <div className={style.event_perks} onClick={()=> setAS("cert")} style={{
-                            borderBottom : `${ activeState == "cert" ? "4px" : "0px"} solid var(--black)`
-                        }}>
-                            <h3 className={`${style.perks_icon} ${style.pm_remover}`}>
-                                <FaCertificate />
-                            </h3>
-                        </div>
-                        <div className={style.event_perks} onClick={()=> setAS("skill")} style={{
-                            borderBottom : `${ activeState == "skill" ? "4px" : "0px"} solid var(--black)`
-                        }}>
-                            <h3 className={`${style.perks_icon} ${style.pm_remover}`}>
-                                <FaChartBar />
-                            </h3>
-                        </div>
+                        <abbr title="project" className={style.event_perks}>
+                            <div className={style.event_perks} onClick={()=> setAS("project")} style={{
+                                borderBottom : `${ activeState == "project" ? "4px" : "0px"} solid var(--black)`
+                            }}>
+                                <h3 className={`${style.perks_icon} ${style.pm_remover}`} >
+                                    <FaTools />
+                                </h3>
+                            </div>
+                        </abbr>
+                        <abbr title="certificate" className={style.event_perks}>
+                            <div className={style.event_perks} onClick={()=> setAS("cert")} style={{
+                                borderBottom : `${ activeState == "cert" ? "4px" : "0px"} solid var(--black)`
+                            }}>
+                                <h3 className={`${style.perks_icon} ${style.pm_remover}`}>
+                                    <FaCertificate />
+                                </h3>
+                            </div>
+                        </abbr>
+                        <abbr title="skill" className={style.event_perks}>
+                            <div className={style.event_perks} onClick={()=> setAS("skill")} style={{
+                                borderBottom : `${ activeState == "skill" ? "4px" : "0px"} solid var(--black)`
+                            }}>
+                                <h3 className={`${style.perks_icon} ${style.pm_remover}`}>
+                                    <FaChartBar />
+                                </h3>
+                            </div>
+                        </abbr>
                     </div>
                     <div className={style.addData} onClick={setActiveCard}>
                         <h3 className="poppins c-black">
-                            Add Data + 
+                            Add {activeState} + 
                         </h3>
                     </div>
                     {activeState == "project" && <Card_Looper type={"project"} data={state.project} />}

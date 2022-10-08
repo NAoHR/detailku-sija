@@ -181,44 +181,61 @@ const CertModal = () => {
                                 onSubmit={submitHandle}
                                 >
                                     <div className={styleModal.form_content}>
-                                        <input 
-                                        ref={certiTitleRef}
-                                        autoComplete={"off"}
-                                        defaultValue={state.certificateState.id?.title || ""}
-                                        type="text" 
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="Certificate Title"
-                                        spellCheck={false} 
-                                        />
-                                        <input 
-                                        type="text" 
-                                        ref={orgRef}
-                                        autoComplete={"off"}
-                                        defaultValue={state.certificateState.id?.organizer || ""}
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="organizer" 
-                                        spellCheck={false} />
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="certtitle">Certificate Title</label>
+                                            <input 
+                                            id="certtitle"
+                                            ref={certiTitleRef}
+                                            autoComplete={"off"}
+                                            defaultValue={state.certificateState.id?.title || ""}
+                                            type="text" 
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="Happiest Human Alive"
+                                            spellCheck={false} 
+                                            />
+                                        </div>
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="certorg">Organizer</label>
+                                            <input 
+                                            id="certorg"
+                                            type="text" 
+                                            ref={orgRef}
+                                            autoComplete={"off"}
+                                            defaultValue={state.certificateState.id?.organizer || ""}
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="Happy Co." 
+                                            spellCheck={false} />
+                                        </div>
+                                        
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="certid">Certificate Id</label>
+                                            <input 
+                                            id="certid"
+                                            type="text"
+                                            ref={certId} 
+                                            autoComplete={"off"}
+                                            defaultValue={state.certificateState.id?.certID || ""}
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="happy-chill-233" 
+                                            spellCheck={false} />
+                                        </div>
         
-                                        <input 
-                                        type="text"
-                                        ref={certId} 
-                                        autoComplete={"off"}
-                                        defaultValue={state.certificateState.id?.certID || ""}
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="Certificate ID" 
-                                        spellCheck={false} />
-        
-                                        <input 
-                                        type="text"
-                                        ref={certiLink} 
-                                        autoComplete={"off"}
-                                        defaultValue={state.certificateState.id?.certLink || ""}
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        placeholder="Certificate Link" 
-                                        spellCheck={false} />
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="certlink">Certificate Link</label>
+                                            <input 
+                                            id="certlink"
+                                            type="text"
+                                            ref={certiLink} 
+                                            autoComplete={"off"}
+                                            defaultValue={state.certificateState.id?.certLink || ""}
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            placeholder="website?cert=1233" 
+                                            spellCheck={false} />
+                                        </div>
+                                        
                                     </div>
         
                                     <button 

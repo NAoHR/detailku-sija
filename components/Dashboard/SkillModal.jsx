@@ -174,28 +174,39 @@ const SkillModal = () => {
                                 <form
                                 onSubmit={submitHandle}
                                 >
+                                    
                                     <div className={styleModal.form_content}>
-                                        <input 
-                                        ref={skillNameRef}
-                                        autoComplete={"off"}
-                                        defaultValue={state.skillState.id?.skillName || ""}
-                                        type="text" 
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="Skill Name"
-                                        spellCheck={false} 
-                                        />
-                                        <input 
-                                        type="number" 
-                                        ref={skillPercentageRef}
-                                        autoComplete={"off"}
-                                        defaultValue={state.skillState.id?.percentage || ""}
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="Skill Percentage" 
-                                        min={0}
-                                        max={100}
-                                        spellCheck={false} />
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="skillname">Skill Name </label>
+                                            <input 
+                                            id="skillname"
+                                            ref={skillNameRef}
+                                            autoComplete={"off"}
+                                            defaultValue={state.skillState.id?.skillName || ""}
+                                            type="text" 
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="JavaScript"
+                                            spellCheck={false} 
+                                            />
+                                        </div>
+
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="percentage">Skill Percentages </label>
+                                            <input 
+                                            id="percentage"
+                                            type="number" 
+                                            ref={skillPercentageRef}
+                                            autoComplete={"off"}
+                                            defaultValue={state.skillState.id?.percentage || ""}
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="Skill Percentage" 
+                                            min={0}
+                                            max={100}
+                                            spellCheck={false} />
+                                        </div>
+                                        
                                     </div>
         
                                     <button 

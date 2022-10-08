@@ -66,25 +66,33 @@ const AddPublicMessageModal = ({inputToggle, method, addNewMessage}) => {
                         method={method}
                         >
                             <div className={styleModal.form_content}>
-                                <input 
-                                autoComplete={"off"}
-                                type="text" 
-                                className={`${styleModal.input_modal} poppins`} 
-                                name="name"
-                                placeholder="Brandon"
-                                ref={nameElement}
-                                spellCheck={false} 
-                                />
+                                <div className={styleModal.input_perk}>
+                                    <label htmlFor="from">From</label>
+                                    <input 
+                                    autoComplete={"off"}
+                                    type="text" 
+                                    id="from"
+                                    className={`${styleModal.input_modal} poppins`} 
+                                    name="name"
+                                    placeholder="Brandon"
+                                    ref={nameElement}
+                                    spellCheck={false} 
+                                    />
+                                </div>
 
-                                <textarea 
-                                autoComplete={"off"}
-                                className={`${styleModal.input_modal} poppins ${styleModal.longText}`} 
-                                required={true}
-                                name="message"
-                                ref={messageElement}
-                                spellCheck={false}
-                                placeholder="Sija seru banget, banyak pengalaman yang gue dapet disini"
-                                />
+                                <div className={styleModal.input_perk}>
+                                    <label htmlFor="message">Your Message</label>
+                                    <textarea 
+                                    autoComplete={"off"}
+                                    className={`${styleModal.input_modal} poppins ${styleModal.longText}`} 
+                                    required={true}
+                                    id="message"
+                                    ref={messageElement}
+                                    spellCheck={false}
+                                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates quis dicta iure officiis deserunt sint error aliquid adipisci cum possimus laborum rerum consectetur sunt"
+                                    />
+                                </div>
+                                
                             </div>
 
                             <button 
