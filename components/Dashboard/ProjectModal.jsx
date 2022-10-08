@@ -181,37 +181,52 @@ const ProjectModal = () => {
                                 onSubmit={submitHandle}
                                 >
                                     <div className={styleModal.form_content}>
-                                        <input 
-                                        ref={projectNameRef}
-                                        autoComplete={"off"}
-                                        defaultValue={state.projectState.id?.name || ""}
-                                        type="text" 
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="project name"
-                                        spellCheck={false} 
-                                        />
-                                        
-                                        <input 
-                                        type="text" 
-                                        ref={projectLinkRef}
-                                        autoComplete={"off"}
-                                        defaultValue={state.projectState.id?.link || ""}
-                                        className={`${styleModal.input_modal} poppins`} 
-                                        required={true}
-                                        placeholder="project link" 
-                                        spellCheck={false} />
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="projectname">Project Name</label>
+                                            <input 
+                                            ref={projectNameRef}
+                                            id="projectname"
+                                            autoComplete={"off"}
+                                            defaultValue={state.projectState.id?.name || ""}
+                                            type="text" 
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="How To Be Happy 101"
+                                            spellCheck={false} 
+                                            />
+                                        </div>
 
-                                        <textarea 
-                                        autoComplete={"off"}
-                                        ref={projectDescriptionRef}
-                                        defaultValue={state.projectState.id?.description || ""}
-                                        className={`${styleModal.input_modal} poppins ${styleModal.longText}`} 
-                                        required={true}
-                                        name="message"
-                                        spellCheck={false}
-                                        placeholder="project description"
-                                        />
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="projectlink">Project Link</label>
+
+                                            <input 
+                                            type="text" 
+                                            id="projectlink"
+                                            ref={projectLinkRef}
+                                            autoComplete={"off"}
+                                            defaultValue={state.projectState.id?.link || ""}
+                                            className={`${styleModal.input_modal} poppins`} 
+                                            required={true}
+                                            placeholder="justbehappy.com" 
+                                            spellCheck={false} />
+                                        </div>
+
+                                        <div className={styleModal.input_perk}>
+                                            <label htmlFor="projectdescription">Project Description</label>
+
+                                            <textarea 
+                                            autoComplete={"off"}
+                                            id="projectdescription"
+                                            ref={projectDescriptionRef}
+                                            defaultValue={state.projectState.id?.description || ""}
+                                            className={`${styleModal.input_modal} poppins ${styleModal.longText}`} 
+                                            required={true}
+                                            spellCheck={false}
+                                            placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga ab odit voluptas saepe sapiente repellat libero blanditiis totam esse officiis temporibus rerum."
+                                            />
+                                        </div>
+                                        
+
 
                                     </div>
         
