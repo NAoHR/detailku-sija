@@ -40,6 +40,10 @@ const initialAuthState = {
         display : false,
         type: "",
         id: ""
+    },
+
+    userCredsState : {
+        display : false
     }
     
 }
@@ -154,7 +158,21 @@ const reducer = (state, action) => {
                 privateMessage : state.privateMessage.filter((v) => v._id !== state.pmState.id)
             }
         }
-            
+        
+
+        // user related
+        case "changeUserCredState": {
+            return {
+                ...state,
+                userCredsState : action.payload
+            }
+        }
+        case "editDetail": {
+            return {
+                ...state,
+                detail: action.payload
+            }
+        }
     }
 }
 const AuthContextProvider = ({children}) => {
