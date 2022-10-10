@@ -190,35 +190,47 @@ const AddPrivateModal = ({inputToggle, method, id}) => {
                         method={method}
                         >
                             <div className={styleModal.form_content}>
-                                <input 
-                                autoComplete={"off"}
-                                type="text" 
-                                className={`${styleModal.input_modal} poppins`} 
-                                name="name"
-                                required={true}
-                                placeholder="Brandon"
-                                ref={nameElement}
-                                spellCheck={false} 
-                                />
-                                <input 
-                                type="text" 
-                                autoComplete={"off"}
-                                className={`${styleModal.input_modal} poppins`} 
-                                name="email"
-                                required={true}
-                                ref={emailElement}
-                                placeholder="Brandon@gmail.com" 
-                                spellCheck={false} />
+                                <div className={styleModal.input_perk}>
+                                    <label htmlFor="name">Name</label>
+                                    <input 
+                                    autoComplete={"off"}
+                                    type="text" 
+                                    className={`${styleModal.input_modal} poppins`} 
+                                    id="name"
+                                    required={true}
+                                    placeholder="Brandon"
+                                    ref={nameElement}
+                                    spellCheck={false} 
+                                    />
+                                </div>
 
-                                <textarea 
-                                autoComplete={"off"}
-                                className={`${styleModal.input_modal} poppins ${styleModal.longText}`} 
-                                required={true}
-                                name="message"
-                                ref={messageElement}
-                                spellCheck={false}
-                                placeholder="hi 👋, i am interested in your project"
-                                />
+                                <div className={styleModal.input_perk}>
+                                    <label htmlFor="email">Email</label>
+                                    <input 
+                                    type="text" 
+                                    autoComplete={"off"}
+                                    className={`${styleModal.input_modal} poppins`} 
+                                    id="email"
+                                    required={true}
+                                    ref={emailElement}
+                                    placeholder="Brandon@gmail.com" 
+                                    spellCheck={false} />
+                                </div>
+
+                                <div className={styleModal.input_perk}>
+                                    <label htmlFor="message">Message</label>
+                                    <textarea 
+                                    autoComplete={"off"}
+                                    className={`${styleModal.input_modal} poppins ${styleModal.longText}`} 
+                                    required={true}
+                                    id="message"
+                                    ref={messageElement}
+                                    spellCheck={false}
+                                    placeholder="hi 👋, i am interested in your project"
+                                    />
+                                </div>
+                                
+
                             </div>
 
                             <button 

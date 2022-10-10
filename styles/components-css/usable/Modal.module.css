@@ -110,3 +110,6 @@
 .btn_modal:hover{
     cursor: pointer;
 }
+.trash:hover{
+    cursor: pointer;
+}

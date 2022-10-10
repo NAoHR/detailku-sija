@@ -129,7 +129,7 @@ const PmCard = ({data}) => {
                                 id: data._id
                             }
                         })
-                    }}>
+                    }} className={styleModal.trash}>
                         <FaTrash />
                     </h4>
                 </div>
