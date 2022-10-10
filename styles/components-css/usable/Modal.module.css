@@ -52,6 +52,8 @@
     width: 100%;
     padding: 10px;
     padding-top: 30px;
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 .form_content{
