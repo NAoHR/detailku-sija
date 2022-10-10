@@ -5,7 +5,7 @@ import style from "../../styles/components-css/Dashboard/DashboardNav.module.css
 import CustomLink from "../../utils/Custom_link";
 import {AiFillSetting, AiFillMessage} from "react-icons/ai";
 import {RiLogoutCircleRFill} from "react-icons/ri";
-import {FaUserCircle ,FaHome} from "react-icons/fa"
+import {FaUserEdit ,FaHome} from "react-icons/fa"
 
 
 
@@ -34,6 +34,20 @@ const DashboardNav = () => {
                         })
                     }}>
                         <AiFillMessage />
+                    </h4>
+                </abbr>
+
+                <abbr title="edit details">
+                    <h4 onClick={()=>{
+                        dispatch({
+                            type: "changeUserCredState",
+                            payload: {
+                                display : true,
+                                type: "edit"
+                            }
+                        })
+                    }}>
+                        <FaUserEdit />
                     </h4>
                 </abbr>
 

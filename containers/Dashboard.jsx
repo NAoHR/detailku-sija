@@ -10,6 +10,7 @@ import DashboardNav from "../components/Dashboard/DashboardNav";
 import CertModal from "../components/Dashboard/CertModal";
 import SkillModal from "../components/Dashboard/SkillModal";
 import PrivateMessage from "../components/Dashboard/PrivateMessage";
+import UserCredsModal from "../components/Dashboard/UserCredsModal";
 
 import {
     FaLink,FaInstagramSquare,
@@ -275,6 +276,7 @@ const Dashboard = () => {
             {state?.certificateState?.display && activeState === "cert" ? <CertModal /> : <></>}
             {state?.projectState?.display && activeState === "project" ? <ProjectModal /> : <></>}
             {state?.skillState?.display && activeState === "skill" ? <SkillModal /> : <></>}
+            {state?.userCredsState?.display && <UserCredsModal />}
 
             <div className={style.lovely_user_wrapper}>
                 <div className={style.lovely_top_user}>
@@ -307,7 +309,7 @@ const Dashboard = () => {
                             {state.detail?.description}
                             </p>
                         </div>
-                        <Link href={"state.detail?.web"}>
+                        {/* <Link href={"state.detail?.web"}>
                             <a>
                                 <p className={`${style.lovely_link} ${style.pm_remover}`}>
                                     <span className={style.lovely_gap}>
@@ -316,36 +318,95 @@ const Dashboard = () => {
                                     Tentang saya
                                 </p>
                             </a>
-                        </Link>
+                        </Link> */}
                         <div className={style.social_Media}>
-                            <Link href="https://instagram.com">
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaInstagramSquare />
-                                    </h3>
-                                </a>
-                            </Link>
-                            <Link href="https://instagram.com">
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaLinkedin />
-                                    </h3>
-                                </a>
-                            </Link>
-                            <Link href="https://instagram.com">
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaGithubSquare />
-                                    </h3>
-                                </a>
-                            </Link>
-                            <Link href={`mailto:najmim625@gmail.com`}>
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaEnvelope />
-                                    </h3>
-                                </a>
-                            </Link>
+                            {
+                                (function (){
+                                    if(state.detail.instagram && state.detail.instagram !== ""){
+                                        return (
+                                            <Link href={`https://instagram.com/${state.detail.instagram}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaInstagramSquare />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+
+                            {
+                                (function (){
+                                    if(state.detail.linkedin && state.detail.linkedin !== ""){
+                                        return (
+                                            <Link href={`https://linkedin.com/${state.detail.linkedin}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaLinkedin />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+
+                            {
+                                (function (){
+                                    if(state.detail.github && state.detail.github !== ""){
+                                        return (
+                                            <Link href={`https://github.com/${state.detail.github}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaGithubSquare />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+                            {
+                                (function (){
+                                    if(state.detail.email && state.detail.email !== ""){
+                                        return (
+                                            <Link href={`mailto:${state.detail.email}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaEnvelope />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+                            {
+                                (function (){
+                                    if(state.detail.web && state.detail.web !== ""){
+                                        return (
+                                            <Link href={state.detail.web}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaLink/>
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
                         </div>
                     </div>
                 </div>

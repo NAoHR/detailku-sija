@@ -35,7 +35,10 @@ const url = {
     editSkill : `${baseUrl}user/edit/skill`,
 
     // privateMessage
-    deletePrivateMessage : `${baseUrl}user/delete/privateMessage`
+    deletePrivateMessage : `${baseUrl}user/delete/privateMessage`,
+
+    // user related
+    editCreds: `${baseUrl}user/edit/creds`
 
 }
 
@@ -179,4 +182,14 @@ export const requestMethod = {
             }
         })
     },
+
+
+    // user related
+    editCreds: (id, body) => {
+        return axios.put(`${url.editCreds}/${id}`, body, {
+            headers : {
+                Authorization : getDttoken()
+            }
+        })
+    }
 }
