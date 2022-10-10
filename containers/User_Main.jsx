@@ -292,45 +292,94 @@ const User_Main = ({data}) => {
                             {data.detail.description}
                             </p>
                         </div>
-                        <Link href={data.detail.web}>
-                            <a>
-                                <p className={`${style.lovely_link} ${style.pm_remover}`}>
-                                    <span className={style.lovely_gap}>
-                                        <FaLink/>
-                                    </span>
-                                    Tentang saya
-                                </p>
-                            </a>
-                        </Link>
                         <div className={style.social_Media}>
-                            <Link href="https://instagram.com">
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaInstagramSquare />
-                                    </h3>
-                                </a>
-                            </Link>
-                            <Link href={data.detail.linkedin}>
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaLinkedin />
-                                    </h3>
-                                </a>
-                            </Link>
-                            <Link href={data.detail.github}>
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaGithubSquare />
-                                    </h3>
-                                </a>
-                            </Link>
-                            <Link href={`mailto:${data.detail.email}`}>
-                                <a>
-                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
-                                        <FaEnvelope />
-                                    </h3>
-                                </a>
-                            </Link>
+                        {
+                                (function (){
+                                    if(data.detail.instagram && data.detail.instagram !== ""){
+                                        return (
+                                            <Link href={`https://instagram.com/${data.detail.instagram}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaInstagramSquare />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+
+                            {
+                                (function (){
+                                    if(data.detail.linkedin && data.detail.linkedin !== ""){
+                                        return (
+                                            <Link href={`https://linkedin.com/${data.detail.linkedin}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaLinkedin />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+
+                            {
+                                (function (){
+                                    if(data.detail.github && data.detail.github !== ""){
+                                        return (
+                                            <Link href={`https://github.com/${data.detail.github}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaGithubSquare />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+                            {
+                                (function (){
+                                    if(data.detail.email && data.detail.email !== ""){
+                                        return (
+                                            <Link href={`mailto:${data.detail.email}`}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaEnvelope />
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
+                            {
+                                (function (){
+                                    if(data.detail.web && data.detail.web !== ""){
+                                        return (
+                                            <Link href={data.detail.web}>
+                                                <a>
+                                                    <h3 className={`${style.user_social} ${style.pm_remover}`}>
+                                                        <FaLink/>
+                                                    </h3>
+                                                </a>
+                                            </Link>
+                                        )
+                                    }
+                                    return <></>
+                                }())
+
+                            }
                         </div>
                     </div>
                 </div>
