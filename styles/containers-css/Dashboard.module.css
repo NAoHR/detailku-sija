@@ -301,11 +301,19 @@
 
 
 .addData{
-    display: inline-block;
-    padding: 5px 20px 5px 20px;
-    border-radius: 5px;
-    background-color: var(--orange);
-    border: 2px solid var(--black);
+    position: fixed;
+    bottom: 10px;
+    right: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--black);
+    border: 5px solid var(--orange);
+    z-index: 9;
 }
 
 .addData:hover{

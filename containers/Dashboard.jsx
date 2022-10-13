@@ -309,16 +309,7 @@ const Dashboard = () => {
                             {state.detail?.description}
                             </p>
                         </div>
-                        {/* <Link href={"state.detail?.web"}>
-                            <a>
-                                <p className={`${style.lovely_link} ${style.pm_remover}`}>
-                                    <span className={style.lovely_gap}>
-                                        <FaLink/>
-                                    </span>
-                                    Tentang saya
-                                </p>
-                            </a>
-                        </Link> */}
+                
                         <div className={style.social_Media}>
                             {
                                 (function (){
@@ -440,15 +431,15 @@ const Dashboard = () => {
                             </div>
                         </abbr>
                     </div>
-                    <div className={style.addData} onClick={setActiveCard}>
-                        <h3 className="poppins c-black">
-                            Add {activeState} + 
-                        </h3>
-                    </div>
                     {activeState == "project" && <Card_Looper type={"project"} data={state.project} />}
                     {activeState == "skill" && <Card_Looper type={"skill"} data={state.skill} />}
                     {activeState == "cert" && <Card_Looper type={"certificate"} data={state.certificate} />}
                 </div>
+            </div>
+            <div className={style.addData} onClick={setActiveCard}>
+                <h3 className="poppins c-light-orange">
+                    + 
+                </h3>
             </div>
             <DashboardNav />
             <Footer />
