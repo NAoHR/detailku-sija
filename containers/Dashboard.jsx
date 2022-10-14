@@ -11,6 +11,7 @@ import CertModal from "../components/Dashboard/CertModal";
 import SkillModal from "../components/Dashboard/SkillModal";
 import PrivateMessage from "../components/Dashboard/PrivateMessage";
 import UserCredsModal from "../components/Dashboard/UserCredsModal";
+import AuthModal from "../components/Dashboard/AuthModal";
 
 import {
     FaLink,FaInstagramSquare,
@@ -277,6 +278,7 @@ const Dashboard = () => {
             {state?.projectState?.display && activeState === "project" ? <ProjectModal /> : <></>}
             {state?.skillState?.display && activeState === "skill" ? <SkillModal /> : <></>}
             {state?.userCredsState?.display && <UserCredsModal />}
+            {state?.userAuthState?.display && <AuthModal />}
 
             <div className={style.lovely_user_wrapper}>
                 <div className={style.lovely_top_user}>
