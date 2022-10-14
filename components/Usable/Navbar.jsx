@@ -87,9 +87,9 @@ export default function Navbar(){
                         </CustomLink>
                     </span>
                     <span className={style.center_span}>
-                        <CustomLink path={"/publicmsg"}>
-                            <h1 className={`${style.center_side_content} ${page !== "publicmsg" && style.hovered}`} style={setColor(page,"publicmsg")}>
-                                Publicmessage
+                        <CustomLink path={"/memo"}>
+                            <h1 className={`${style.center_side_content} ${page !== "memo" && style.hovered}`} style={setColor(page,"memo")}>
+                                Memo
                             </h1>
                         </CustomLink>
                     </span>
@@ -154,9 +154,9 @@ export default function Navbar(){
                                 </CustomLink>
                             </div>
                             <div className={style.expander_item}>
-                                <CustomLink path={"/publicmsg"}>
-                                    <h1 className={style.expander_text} style={setColor(page,"publicmsg")}>
-                                        Publicmessage
+                                <CustomLink path={"/memo"}>
+                                    <h1 className={style.expander_text} style={setColor(page,"memo")}>
+                                        Memo
                                     </h1>
                                 </CustomLink>
                             </div>
