@@ -2,6 +2,7 @@ import axios from "axios";
 
 const baseUrl = "https://detailku-server.herokuapp.com/api/"
 const url = {
+    me : `${baseUrl}user/me`,
     // get
     job : `${baseUrl}client/jobs`,
     people : `${baseUrl}client/people`,
@@ -48,6 +49,13 @@ const getDttoken = () => {
 }
 
 export const requestMethod = {
+    me : () => {
+        return axios.get(url.me, {
+            headers : {
+                Authorization : getDttoken()
+            }
+        })
+    },
     // get
     getAllJob : () => {
         return axios.get(url.job);

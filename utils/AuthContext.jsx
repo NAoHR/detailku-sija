@@ -2,6 +2,7 @@ import { createContext, useReducer} from "react";
 import {toast} from "react-toastify";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { requestMethod } from "./apiCaller";
 export const AuthContext = createContext();
 
 const initialAuthState = {
@@ -196,12 +197,7 @@ const AuthContextProvider = ({children}) => {
     const router = useRouter();
     
     async function isLoggedIn(){
-        const dttoken = window.localStorage.getItem("dttoken");
-        const userCred = await axios.get("https://detailku-server.herokuapp.com/api/user/me", {
-            headers : { 
-                Authorization : dttoken
-            }
-        })
+        const userCred = await requestMethod.me()
         
         return userCred.data.data
     }
