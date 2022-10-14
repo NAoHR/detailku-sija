@@ -44,6 +44,9 @@ const initialAuthState = {
 
     userCredsState : {
         display : false
+    },
+    userAuthState : {
+        display : false
     }
     
 }
@@ -171,6 +174,19 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 detail: action.payload
+            }
+        }
+
+        case "changeUserAuthState": {
+            return {
+                ...state,
+                userAuthState : action.payload
+            }
+        }
+        case "editAuth": {
+            return {
+                ...state,
+                ...action.payload
             }
         }
     }
