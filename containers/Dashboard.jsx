@@ -335,7 +335,7 @@ const Dashboard = () => {
                                 (function (){
                                     if(state.detail.linkedin && state.detail.linkedin !== ""){
                                         return (
-                                            <Link href={`https://linkedin.com/${state.detail.linkedin}`}>
+                                            <Link href={`https://www.linkedin.com/in/${state.detail.linkedin}/`}>
                                                 <a>
                                                     <h3 className={`${style.user_social} ${style.pm_remover}`}>
                                                         <FaLinkedin />

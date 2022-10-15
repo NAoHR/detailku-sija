@@ -327,7 +327,7 @@ const User_Main = ({data}) => {
                                 (function (){
                                     if(data.detail.linkedin && data.detail.linkedin !== ""){
                                         return (
-                                            <Link href={`https://linkedin.com/${data.detail.linkedin}`}>
+                                            <Link href={`https://www.linkedin.com/in/${data.detail.linkedin}/`}>
                                                 <a>
                                                     <h3 className={`${style.user_social} ${style.pm_remover}`}>
                                                         <FaLinkedin />
