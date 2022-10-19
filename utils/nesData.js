@@ -69,33 +69,33 @@ const subjects = [
 const grade_data = [
     {
         title : "X SIJA 1",
-        teacher : "EVA YULIZAR, S.KOM",
+        teacher : "Eva Yulizar, S.Kom",
         imagePath : "X_SIJA_1.jpg"
     },
     {
         title : "X SIJA 2",
-        teacher : "Dra. Derliana P. ",
+        teacher : "Debora Oftalina S.S, S.Pd",
         imagePath : "X_SIJA_2.jpg"
     },
     {
         title : "XI SIJA 1",
-        teacher : "Sevia Helena Kiranti, S.Kom",
-        imagePath : "XI_SIJA_1.jpeg"
+        teacher : "Novita Andriani, S.E.",
+        imagePath : "XI_SIJA_1.JPG"
     },
     {
         title : "XI SIJA 2",
-        teacher : "Novita Andriani, S.E",
-        imagePath : "XI_SIJA_2.jpeg"
+        teacher : "Purwanto, M.Kom",
+        imagePath : "XI_SIJA_2.jpg"
     },
     {
         title : "XII SIJA 1",
-        teacher : "Riaty, S.Pd.",
+        teacher : "Aisyah Fatoni, M.Pd.",
         imagePath : "XII_SIJA_1.jpg"
     },
     {
         title : "XII SIJA 2",
-        teacher : "Aisyah Fatoni, M.Pd.",
-        imagePath : "XII_SIJA_1.jpg"
+        teacher : "Danial Ahadian R., M.Pd",
+        imagePath : "XII_SIJA_2.jpg"
     },
 ]
 
@@ -105,21 +105,17 @@ const teacherList = [
         image : "/teacher/bukuri.png"
     },
     {
-        name : "Eva Yulizar, S.Kom.",
-        image : "/teacher/bueva.png"
-    },
-    {
         name : "Danial Ahadian, M.Pd",
         image : "/teacher/pakdanial.png"
     },
     {
-        name : "Samsul Bahri, S.Pd.",
-        image : "/teacher/paksamsul.png"
+        name : "Drs. H. Sutaryo",
+        image : "/teacher/payopi.png"
     },
     {
-        name : "Sevia Helena Kiranti, S.Kom.",
-        image : "/teacher/busevia.png"
-    }
+        name : "Purwanto, M.Kom",
+        image : "/teacher/papur.png"
+    },
 ]
 
 const reqJob = [
