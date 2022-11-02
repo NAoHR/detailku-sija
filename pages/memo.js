@@ -3,13 +3,19 @@ import Loader from "../components/Usable/Loader";
 import { requestMethod } from "../utils/apiCaller";
 import NotFound from "../containers/NotFound";
 import { useEffect, useState } from "react";
-
+import ModalMessage from "../components/Usable/ModalMessage";
 
 const DecideToShow = ({data}) => {
     if(data === false){
       return <NotFound message={"Terjadi Error"} title={501} redirect={"/"}/>
     }
-    return <PublicMessage data={data}/>
+    return (
+        <>
+            <PublicMessage data={data}/>
+            <ModalMessage  title="Konten Sensitif" message={["Beberapa Konten Pada Laman Ini Mungkin Terbilang Sensitif"]}/>
+        </>
+        
+    )
   }
 
 export default function Publicmsg() {
