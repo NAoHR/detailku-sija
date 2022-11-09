@@ -136,7 +136,7 @@ const PublicMessage = ({ data }) => {
     const [modalPublicMessage, showMPM] = useState(false);
 
     function setPublicToRecentPost(post){
-        setPM(publicMessage.concat(post));
+        setPM([post].concat(publicMessage));
     }
 
     return (
