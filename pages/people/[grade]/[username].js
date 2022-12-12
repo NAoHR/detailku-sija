@@ -9,7 +9,7 @@ const DecideToShow = ({data,route}) =>{
     if(data === 0){
         return <NotFound message={"User Tidak Ditemukan"} title={"404"} redirect={`/people/${route}`} />
     }else if (data === false){
-        return <NotFound message={"Server Error"} title={"501"} redirect={"/"} />
+        return <NotFound message={"Server Backendnya Mati"} title={"Maaf"} redirect={"/"}/>
     }else if (data === 1){
         return <NotFound message={`User tidak ada di ${route.split("_").join(" ")}`} title={"404"} redirect={"/people"} />
     }

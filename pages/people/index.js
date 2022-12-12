@@ -6,7 +6,7 @@ import NotFound from "../../containers/NotFound"
 
 const DecideToShow = ({data}) => {
     if(data === false){
-        return <NotFound message={"Terjadi Error"} title={501} redirect={"/"}/>
+        return <NotFound message={"Server Backendnya Mati"} title={"Maaf"} redirect={"/"}/>
     }
     return <People data={data}/>
 }

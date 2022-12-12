@@ -7,7 +7,7 @@ import ModalMessage from "../components/Usable/ModalMessage";
 
 const DecideToShow = ({data}) => {
     if(data === false){
-      return <NotFound message={"Terjadi Error"} title={501} redirect={"/"}/>
+      return <NotFound message={"Server Backendnya Mati"} title={"Maaf"} redirect={"/"}/>
     }
     return (
         <>
